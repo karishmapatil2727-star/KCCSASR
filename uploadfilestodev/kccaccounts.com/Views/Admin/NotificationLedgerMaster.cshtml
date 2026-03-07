@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "NotificationLedgerMaster";
+}
+<style>
+    .dataTables_wrapper .dataTables_filter {
+        float: right !important;
+        margin-bottom: 5px !important;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Notification Ledger</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3">
+
+    </div>
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>
+                Deptt./College
+            </label>
+            <select id="ddlInstitute" class="form-control"></select>
+        </div>
+    </div>
+    <div class="col-lg-3">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-5">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading"> Account Ledger Information </div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <table id="tblNotificationPendingLedger" class="table table-striped table-bordered table-hover main-table">
+                        <thead>
+                            <tr>
+                                <th>Ledger Name</th>
+                                <th>Under Group</th>
+                                <th>Add</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">Account Ledger Information </div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <table id="tblNotificationConfirmedLedger" class="table table-striped table-bordered table-hover main-table">
+                        <thead>
+                            <tr>
+                                <th>Ledger Name</th>
+                                <th>Institute</th>
+                                <th>Under Group</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/CustomScripts/NotificationLedger.js"></script>

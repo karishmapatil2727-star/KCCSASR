@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "ModifyTransaction";
+}
+<style>
+    .dataTables_wrapper .dataTables_filter {
+        float: right !important;
+        margin-bottom: 5px !important;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Modify Transactions</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">Search Transaction</div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <div class="row table-top modify-pag-cls">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Voucher Type:
+                                </label>
+                                <select id="ddlSearchVocherTypes" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>
+                                    Voucher No:
+                                </label>
+                                <input type="text" id="txtSearchVoucherNo" class="form-control" placeholder="Please enter voucher no." value="@ViewBag.voucherNo" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="submit" id="btnSearch" class="btn btn-primary btn-column">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="row" id="dvLedgertable" style="display:none;">
+            <div class="col-lg-12">
+                <div class="panel panel-default panel-primary2">
+                    <div class="panel-heading">Vocucher Information</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-2">
+                                    <input type="hidden" id="txtMasterId" value="0" />
+                                    <div class="form-group">
+                                        <label>
+                                            Date:
+                                        </label>
+                                        <input type="text" id="txtDate" class="form-control" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <label>
+                                            Deptt./College :
+                                        </label>
+                                        <select id="ddlInstitute" class="form-control" disabled></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <label>
+                                            Voucher Type:
+                                        </label>
+                                        <select id="ddlVocherTypes" class="form-control" disabled></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <label>
+                                            Voucher No:
+                                        </label>
+                                        <input type="text" id="txtVoucherNo" class="form-control" disabled />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <label>
+                                            Cheque No./Cash:
+                                        </label>
+                                        <input type="text" id="txtChequeOrCash" class="form-control" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="dvNewLedgerInfo" style="display:none;">
+            <div class="col-lg-12">
+                <div class="panel panel-default panel-primary2">
+                    <div class="panel-heading">Add Ledger</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label>
+                                        D/C
+                                    </label>
+                                    <select id="ddlCrorDr" class="form-control">
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label>
+                                        Account Ledger:
+                                    </label>
+                                    <select id="ddlLedgers" class="form-control"></select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2" id="colDebit">
+                                <div class="form-group">
+                                    <label>
+                                        Debit:
+                                    </label>
+                                    <input type="text" id="txtDebit" class="form-control" onkeypress="return validateFloatKeyPress(this,event);" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2" id="colCredit">
+                                <div class="form-group">
+                                    <label>
+                                        Credit:
+                                    </label>
+                                    <input type="text" id="txtCredit" class="form-control" onkeypress="return validateFloatKeyPress(this,event);" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <button type="button" id="btnAddTolistProceed" class="btn btn-primary transactionProceed">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="dvLedgerDetails" style="display:none;">
+            <div class="col-lg-12">
+                <div class="panel panel-default panel-primary2">
+                    <div class="panel-heading">Account Ledger</div>
+                    <div class="panel-body">
+                        <div class="table-container">
+                            <table id="tblNewLedger" class="table table-striped table-bordered table-hover main-table">
+                                <thead>
+                                    <tr>
+                                        <th>Select</th>
+                                        <th>C/D</th>
+                                        <th>Ledger ID</th>
+                                        <th>Ledger Name</th>
+                                        <th>Debit</th>
+                                        <th>Credit</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="4">Total:</th>
+                                        <th><label id="lblDebitAmount"></label></th>
+                                        <th><label id="lblCreditAmount"></label></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label> Master Narration:</label>
+                                    <input type="text" id="txtNarration" class="form-control" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="dvAddTransaction" style="display:none;">
+            <div class="col-md-12">
+                <div class="pull-right">
+                    <button type="button" id="btnAddTransaction" class="btn btn-primary btn-space">Modify Transaction</button>
+                    <button type="button" id="btnDeleteRow" class="btn btn-danger btn-padding">Delete Ledger</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/CustomScripts/ModifyTransactions.js"></script>

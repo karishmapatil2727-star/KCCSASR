@@ -1,0 +1,96 @@
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\bin\Debug\AccountsAppWeb.Core.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\bin\Debug\AccountsAppWeb.Core.pdb
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\bin\Debug\System.ValueTuple.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\bin\Debug\System.ValueTuple.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csproj.CoreCompileInputs.cache
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csproj.CopyComplete
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.pdb
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\bin\Debug\itextsharp.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\bin\Debug\itextsharp.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\bin\Debug\AccountsAppWeb.Core.dll.config
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csprojAssemblyReference.cache
+E:\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.dll
+E:\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.pdb
+E:\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csprojResolveAssemblyReference.cache
+E:\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll.config
+E:\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll
+E:\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.pdb
+E:\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.dll
+E:\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.dll
+E:\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.xml
+E:\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.xml
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll.config
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.pdb
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.dll
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.dll
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.xml
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.xml
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.dll
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.pdb
+C:\D-Drive\Datanew\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csprojResolveAssemblyReference.cache
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll.config
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.pdb
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\Newtonsoft.Json.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Mvc.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Razor.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Razor.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\Microsoft.Web.Infrastructure.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Deployment.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.xml
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.xml
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Mvc.xml
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Razor.xml
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Razor.xml
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.xml
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Deployment.xml
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.dll
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.pdb
+C:\D-Drive\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csprojResolveAssemblyReference.cache
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll.config
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.pdb
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Mvc.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Razor.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Razor.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\Microsoft.Web.Infrastructure.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Deployment.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.xml
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.xml
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Mvc.xml
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Razor.xml
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Razor.xml
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.xml
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Deployment.xml
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.dll
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.pdb
+C:\Datanew1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csprojResolveAssemblyReference.cache
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll.config
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\AccountsAppWeb.Core.pdb
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Mvc.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Razor.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Razor.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\Microsoft.Web.Infrastructure.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Deployment.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\itextsharp.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.ValueTuple.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Mvc.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.Razor.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Razor.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\bin\System.Web.WebPages.Deployment.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.pdb
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb.Core\obj\Debug\AccountsAppWeb.Core.csprojResolveAssemblyReference.cache

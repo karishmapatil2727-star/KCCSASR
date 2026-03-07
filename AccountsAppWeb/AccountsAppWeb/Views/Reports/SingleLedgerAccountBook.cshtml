@@ -1,0 +1,227 @@
+﻿
+@{
+    ViewBag.Title = "Ledger Statements";
+}
+<style type="text/css">
+    .tableHeader {
+        width: 100px !important;
+    }
+
+    .ui-combobox {
+        width: 300px
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Ledger Statements Report</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">Select Type</div>
+            <div class="panel-body">
+                <div class="col-md-4">
+                    <label>Single Ledger </label> <input type="radio" name="radLedgerStatement" value="Single Ledger" onclick="radLedgerStatementClick(this.value)">
+                </div>
+                <div class="col-md-4">
+                    <label>Account Group </label> <input type="radio" name="radLedgerStatement" value="Account Group" onclick="radLedgerStatementClick(this.value)">
+                </div>
+                <div class="col-md-4">
+                    <label>All Ledgers</label> <input type="radio" name="radLedgerStatement" value="All Ledgers" onclick="radLedgerStatementClick(this.value)">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2" id="dvSingleLedger" style="display:none;">
+            <div class="panel-heading">Account Ledger</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Org. Name </label>
+                            <select id="ddlSingleLedgerInstitute" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label class="col-md-9">Select Ledger </label>
+                            <select id="ddlSingleLedgerLedgers" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>Starting Date </label>
+                            <div class="input-group date" id="dtSingleLedgerStaringDate">
+                                <input id="txtSingleLedgerStaringDate" type="text" class="form-control">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>Ending Date </label>
+                            <div class="input-group date" id="dtSingleLedgerEndingDate">
+                                <input id="txtSingleLedgerEndingDate" type="text" class="form-control">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" id="btnSingleLedgerView" class="btn btn-primary btn-column">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2" id="dvAccountGroup" style="display:none;">
+            <div class="panel-heading">Account Group</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>
+                                Org.Name:
+                            </label>
+                            <select id="ddlAccountGroupInstitute" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label> Select Group:</label>
+                            <select id="ddlAccountGroups" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>  Starting Date:</label>
+                            <div class="input-group date" id="dtAccountGroupStaringDate">
+                                <input id="txtAccountGroupStaringDate" type="text" class="form-control">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label> Ending Date:</label>
+                            <div class="input-group date" id="dtAccountGroupEndingDate">
+                                <input id="txtAccountGroupEndingDate" type="text" class="form-control">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" id="btnAccountGroupView" class="btn btn-primary btn-column">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2" id="dvAllLedgers" style="display:none;">
+            <div class="panel-heading">Account Ledger</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>  Org.Name:</label>
+                            <select id="ddlAllLedgersInstitute" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label> Starting Date:</label>
+                            <div class="input-group date" id="dtAllLedgersStaringDate">
+                                <input id="txtAllLedgersStaringDate" type="text" class="form-control">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label> Ending Date:</label>
+                            <div class="input-group date" id="dtAllLedgersEndingDate">
+                                <input id="txtAllLedgersEndingDate" type="text" class="form-control">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" id="btnAllLedgersView" class="btn btn-primary btn-column">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2" id="dvallreport" style="display:none;">
+            <div class="panel-heading">Ledger Statements Report</div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <table id="tblAccountStatementReport" class="table table-striped table-bordered table-hover main-table">
+                        <thead>
+                            <tr>
+                                <th colspan="10"> <span class="pull-right" id="spnOpenBalance"></span></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>Date</th>
+                                <th>V.Type</th>
+                                <th>V.No</th>
+                                <th>Cheque No</th>
+                                <th width="150px">Account</th>
+                                <th className="align-right">Debit</th>
+                                <th className="align-right">Credit</th>
+                                <th className="align-right">Balance</th>
+                                <th width="10%">Narration</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th>Total:</th>
+                                <th colspan="4"></th>
+                                <th> <span id="spnDebit"></span></th>
+                                <th> <span id="spnCredit"></span></th>
+                                <th> <span id="spnClosingBalance"></span></th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_TransactionDetails")
+<script src="~/Scripts/CustomScripts/SingleLedgerAccountBook.js"></script>
+
+

@@ -1,0 +1,82 @@
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\ApplicationInsights.config
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.dll.config
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.pdb
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Antlr3.Runtime.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.Agent.Intercept.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.DependencyCollector.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.Web.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.WindowsServer.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.ApplicationInsights.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.Web.Infrastructure.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Newtonsoft.Json.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Helpers.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Mvc.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Optimization.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Razor.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Deployment.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Razor.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\WebGrease.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.pdb
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Helpers.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Mvc.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Optimization.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Razor.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Deployment.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Razor.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Antlr3.Runtime.pdb
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Newtonsoft.Json.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.ApplicationInsights.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.DependencyCollector.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.WindowsServer.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.Web.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.XmlSerializers.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.csprojAssemblyReference.cache
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.csproj.CoreCompileInputs.cache
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.csproj.CopyComplete
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.pdb
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.ValueTuple.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\System.ValueTuple.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\NLog.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\NLog.xml
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\itextsharp.dll
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.dll.config
+G:\freelancer\AccountsApp\AccountsAppWeb\AccountsAppWeb\bin\itextsharp.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.pdb
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\obj\Release\AccountsAppWeb.csprojResolveAssemblyReference.cache
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\ApplicationInsights.config
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.dll.config
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.pdb
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.IO.Compression.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.pdb
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\itextsharp.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\NLog.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.ValueTuple.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Helpers.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Mvc.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Optimization.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.Razor.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Deployment.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Razor.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Antlr3.Runtime.pdb
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Newtonsoft.Json.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.ApplicationInsights.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.DependencyCollector.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.WindowsServer.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.Web.xml
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.XmlSerializers.dll

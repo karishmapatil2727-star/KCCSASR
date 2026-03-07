@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "AccountGroup";
+}
+<style type="text/css">
+    .ui-combobox {      
+        width: 580px;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">        
+        <h1 class="page-header">Account Group</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        @Html.Partial("_ModifyAccountGroup")
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        @Html.Partial("_AccountGroupList")
+    </div>
+</div>
+<script src="~/Scripts/CustomScripts/AccountGroup.js"></script>

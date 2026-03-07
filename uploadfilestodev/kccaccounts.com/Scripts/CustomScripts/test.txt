@@ -1,0 +1,4566 @@
+﻿[[
+	"LedgerId": 6243,
+	"LedgerName": "2% Presumptive Income",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9319,
+	"LedgerName": "20% Share Of Contract Staff Salary (KCE)",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9288,
+	"LedgerName": "20% Share Of New Appointee Teacher ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9320,
+	"LedgerName": "25% Share Of Contract Staff Salary (KCE)",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9289,
+	"LedgerName": "25% Share Of New Appointee Teacher",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5361,
+	"LedgerName": "5% Deficit Khalsa College",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9233,
+	"LedgerName": "5% Deficit Khalsa College For Women",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9301,
+	"LedgerName": "5% Deficit Khalsa College Of Education",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4029,
+	"LedgerName": "A.B.Construction - Stock ",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4030,
+	"LedgerName": "A.S.Construction Co. - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5979,
+	"LedgerName": "Admission Farm KCE",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3766,
+	"LedgerName": "Adv A/C A.S. Construction Co.",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2440,
+	"LedgerName": "Adv A/C Amrik Singh (Electric Supervisor).",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2946,
+	"LedgerName": "Adv A/C Apra Advertising Pvt.Ltd.",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9030,
+	"LedgerName": "Adv A/C Avtar Builders",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2409,
+	"LedgerName": "Adv A/C Bhupinder Singh - Contractor",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9147,
+	"LedgerName": "Adv A/C Cargo Motors Pvt Ltd",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3878,
+	"LedgerName": "Adv A/C Director Finance Khalsa College Of Engg. \u0026 Tech., R/Ave.,Asr",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6660,
+	"LedgerName": "Adv A/C Dr Charanjit Singh",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3189,
+	"LedgerName": "Adv A/C Export First",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4398,
+	"LedgerName": "Adv A/C Gandotra Builders",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1784,
+	"LedgerName": "Adv A/C Grand Builders",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5109,
+	"LedgerName": "Adv A/C Gurinder Singh Gill",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8441,
+	"LedgerName": "Adv A/C Harbhajan Singh Contractor",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5845,
+	"LedgerName": "Adv A/C Hardev Singh (Sewadar)",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8138,
+	"LedgerName": "Adv A/C J.D.Contractor \u0026 Builders",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1719,
+	"LedgerName": "Adv A/C M.M.Constructions",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7884,
+	"LedgerName": "Adv A/C Mahatma",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6178,
+	"LedgerName": "Adv A/C Mahinder Singh Bath",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1316,
+	"LedgerName": "Adv A/C Manager Dairy Farm",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 977,
+	"LedgerName": "Adv A/C Muni Lal Contractor",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3884,
+	"LedgerName": "Adv A/C New Fibre House",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7874,
+	"LedgerName": "Adv A/C Prashand Builders",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4643,
+	"LedgerName": "Adv A/C Prashant Associates",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5646,
+	"LedgerName": "Adv A/C Prof Amrik Singh",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3882,
+	"LedgerName": "Adv A/c Prof. Of Agriculture",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3885,
+	"LedgerName": "Adv A/c Quadrent Televenture",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6701,
+	"LedgerName": "Adv A/C Ravi Computer Service",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10177,
+	"LedgerName": "Adv A/C Ravinder Mohan Uppal \u0026 Co",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3880,
+	"LedgerName": "Adv A/c Sasta Iron Store",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3190,
+	"LedgerName": "Adv A/C Shri Rathi Steel Ltd.",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3881,
+	"LedgerName": "Adv A/C Siddharath Construction Co.",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2425,
+	"LedgerName": "Adv A/c Simran Builders",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3883,
+	"LedgerName": "Adv A/C Sound Experts",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8826,
+	"LedgerName": "Adv A/C Surjit Singh \u0026 Co",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1222,
+	"LedgerName": "Adv A/C Under Secretary",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1331,
+	"LedgerName": "Advertisement ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10024,
+	"LedgerName": "Agriculture Dept. Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10012,
+	"LedgerName": "Agriculture Economics Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3713,
+	"LedgerName": "Agriculture Equipments - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3687,
+	"LedgerName": "Agriculture Station - (Schedule A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10030,
+	"LedgerName": "Agriculture Station (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4052,
+	"LedgerName": "Agriculture Station 1.14 - (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8322,
+	"LedgerName": "Air Conditioner",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8786,
+	"LedgerName": "Air Conditioners 2017-18",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3899,
+	"LedgerName": "Amrik Singh Electric Supervisor - (Imprest Sch.F)",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1587,
+	"LedgerName": "Attandance Card",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4393,
+	"LedgerName": "Audit Fee",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3726,
+	"LedgerName": "Auditorium",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1812,
+	"LedgerName": "Auto Sweep Icici Bank",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9511,
+	"LedgerName": "Avtar Builder -Stock ",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4043,
+	"LedgerName": "Bagicha Singh - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1810,
+	"LedgerName": "Bank Charges",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4048,
+	"LedgerName": "Bank Interest Paid",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1811,
+	"LedgerName": "Bank Interest Rece ",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3948,
+	"LedgerName": "Bank of India A/C NO. 5859",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3868,
+	"LedgerName": "Batala Land Compensation Fdrs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3815,
+	"LedgerName": "Bawa Kartar Singh Prize",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3832,
+	"LedgerName": "Bawa Mool Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3817,
+	"LedgerName": "Bawa Parduman Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3789,
+	"LedgerName": "Bhagat Lachman Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3813,
+	"LedgerName": "Bhai Dit Singh Gold Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3854,
+	"LedgerName": "Bhai Hira Singh Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4045,
+	"LedgerName": "Bhupinder Singh - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3861,
+	"LedgerName": "Bibi Kamaljit Kaur Memo. Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10014,
+	"LedgerName": "Bio Centre Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3745,
+	"LedgerName": "Bio. Tech. Lab. Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10017,
+	"LedgerName": "Bio. Tech. Salalry",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10011,
+	"LedgerName": "Biotonical Garden Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3732,
+	"LedgerName": "Boundary Wall Nikka Singh Colony - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3665,
+	"LedgerName": "Boundary Wall Ram Tirath Road,Asr - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3704,
+	"LedgerName": "Boys School Generator Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3723,
+	"LedgerName": "Boys School New Class Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1314,
+	"LedgerName": "Brick Stock",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4091,
+	"LedgerName": "Building \u0026 Property Funds",
+	"AccountGroupName": "Building \u0026 Property Funds",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3692,
+	"LedgerName": "Building (Ranjit Avenue)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3748,
+	"LedgerName": "Building Construction Against Grants (KC) PG Block",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2034,
+	"LedgerName": "Building Rent (Punjab \u0026 Sind Bank)",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4966,
+	"LedgerName": "Building Rent Icici Bank Ltd",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9668,
+	"LedgerName": "Calculators",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3743,
+	"LedgerName": "Canning Centre Add. Room Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5980,
+	"LedgerName": "Canteen Rent KCE",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1,
+	"LedgerName": "Cash",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3877,
+	"LedgerName": "Cement Amount Recoerable - (Sch.E)",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3886,
+	"LedgerName": "Cement Amount Recoverable From KCW - (Sch.E)",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1659,
+	"LedgerName": "Cement Stock",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3900,
+	"LedgerName": "Centenary Bhawan Imprest A/C, Mohali",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3705,
+	"LedgerName": "Central Stores",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10025,
+	"LedgerName": "Chemistry Dept. Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3671,
+	"LedgerName": "Chemistry Lab Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8180,
+	"LedgerName": "Cheques In Hand",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4044,
+	"LedgerName": "Chopra Construction Co. - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 408,
+	"LedgerName": "Chownkidara Received",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3729,
+	"LedgerName": "Class IV Toilets",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5110,
+	"LedgerName": "Coffee Machine",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9362,
+	"LedgerName": "Coffee Machine ( Sch.A )",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3823,
+	"LedgerName": "Col. Bawa Jiwan Singh Mai Lachmi",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3680,
+	"LedgerName": "College Shops",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10020,
+	"LedgerName": "Commerce Dept. Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4099,
+	"LedgerName": "Compensation (Ghugh Land)",
+	"AccountGroupName": "Land Surplus Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4094,
+	"LedgerName": "Compensation (Imp.Trust)",
+	"AccountGroupName": "Land Surplus Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4096,
+	"LedgerName": "Compensation Batala Land",
+	"AccountGroupName": "Land Surplus Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4098,
+	"LedgerName": "Compensation Civil Aviation Dept.",
+	"AccountGroupName": "Land Surplus Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4093,
+	"LedgerName": "Compensation GND University",
+	"AccountGroupName": "Land Surplus Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1337,
+	"LedgerName": "Computer Expenses",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3733,
+	"LedgerName": "Computer Lab. KC Inf. Tech. \u0026 Mgt. - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3710,
+	"LedgerName": "Computer Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10010,
+	"LedgerName": "Computer Science Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6121,
+	"LedgerName": "Computers A/C",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9363,
+	"LedgerName": "Computers A/C ( Sch.A )",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3699,
+	"LedgerName": "Concrete Mixture \u0026 Vibrator Machine - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3913,
+	"LedgerName": "Connection Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 986,
+	"LedgerName": "Contingency ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2348,
+	"LedgerName": "Contract Money - Gaunsabad Land",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1217,
+	"LedgerName": "Contract Money Orchard \u0026 Fruits",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3685,
+	"LedgerName": "Co-Operative Stores",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3672,
+	"LedgerName": "Cubical Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3677,
+	"LedgerName": "Cycle Stand",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3679,
+	"LedgerName": "Dairy Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6248,
+	"LedgerName": "Dairy Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4086,
+	"LedgerName": "Dairy Debtors",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7627,
+	"LedgerName": "Dairy Electricity",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 411,
+	"LedgerName": "Dairy Farm - (Sch.E)",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2949,
+	"LedgerName": "Dairy Farm - Building Maintenance",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4085,
+	"LedgerName": "Dairy Milk Coupons",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 418,
+	"LedgerName": "Dairy Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6167,
+	"LedgerName": "Dairy Upkeep \u0026 Other Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 401,
+	"LedgerName": "Dearness Allowance",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10148,
+	"LedgerName": "Desk Fan",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3676,
+	"LedgerName": "Dharamshala",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 999,
+	"LedgerName": "Diesel,Insurance,Repair of Car",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 975,
+	"LedgerName": "Difference",
+	"AccountGroupName": "Loans (Liability)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7253,
+	"LedgerName": "Dispencary Refrigarator 2017-18",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10009,
+	"LedgerName": "Dispencary Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2395,
+	"LedgerName": "Dispensary Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7556,
+	"LedgerName": "Dispensery Electricity",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9036,
+	"LedgerName": "Donation \u0026 Subscriptions (election)",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5462,
+	"LedgerName": "Donation Paid",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 991,
+	"LedgerName": "Donation Received",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3824,
+	"LedgerName": "Dr. Bhagat Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3862,
+	"LedgerName": "Dr. Bhagat Singh Thind (New Scholarship)",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3809,
+	"LedgerName": "Dr. Jagat Singh Hailley Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3858,
+	"LedgerName": "Dr. Kamaldip Stipends",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3863,
+	"LedgerName": "Dr. Mahal Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3857,
+	"LedgerName": "Dr. Sawroop Singh Marwah Stipend",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9974,
+	"LedgerName": "Due With State Govt.",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3795,
+	"LedgerName": "Duncliffe Silver Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3907,
+	"LedgerName": "Earnest Money - Mohali",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3910,
+	"LedgerName": "Earnest Money - Simran Builders",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7741,
+	"LedgerName": "Earnest Money Avtar Builders",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3928,
+	"LedgerName": "Earnest Money Prashant Associates",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3927,
+	"LedgerName": "Earnest Money Sudhakar Co. - Mohali",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3892,
+	"LedgerName": "Edusoft Technocrate Solution Pvt Ltd",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1306,
+	"LedgerName": "E-Goverence Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10091,
+	"LedgerName": "Election Fund Fdr",
+	"AccountGroupName": "FDR Investments",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1299,
+	"LedgerName": "Electric Consumptions",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1294,
+	"LedgerName": "Electric Deptt Salary \u0026 Other Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3688,
+	"LedgerName": "Electric Installations \u0026 Fittings - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1334,
+	"LedgerName": "Electric Material",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3799,
+	"LedgerName": "Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7803,
+	"LedgerName": "Electricity Book Adjustment",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1324,
+	"LedgerName": "Electricity Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7553,
+	"LedgerName": "Electricity Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2155,
+	"LedgerName": "Electricity Printing \u0026 Stationery",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 406,
+	"LedgerName": "Electricity Rece",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3870,
+	"LedgerName": "Endowed Trusts \u0026 Special Maintenance Fdrs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4092,
+	"LedgerName": "Endowment Fund",
+	"AccountGroupName": "Endowment Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1809,
+	"LedgerName": "Endowment Fund Fdr",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3929,
+	"LedgerName": "EPF Payable - Chawindadevi",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2966,
+	"LedgerName": "ESI Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 988,
+	"LedgerName": "ESI Payable",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10147,
+	"LedgerName": "Exhuast Fan",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3755,
+	"LedgerName": "Expenditure Against PG Hostel Grant (KCW) - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3697,
+	"LedgerName": "Extension Bank Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3678,
+	"LedgerName": "Farm Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3689,
+	"LedgerName": "Farm Equipments \u0026 Water Channel - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3949,
+	"LedgerName": "Fdrs Pledged With CBSE",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10050,
+	"LedgerName": "Fdrs Pledged With Cbse (Sch-Fdr Investments)",
+	"AccountGroupName": "FDR Investments",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3950,
+	"LedgerName": "Fdrs Pledged With PSEB",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10051,
+	"LedgerName": "Fdrs Pledged With Pseb (Sch-Fdr Investments)",
+	"AccountGroupName": "FDR Investments",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3718,
+	"LedgerName": "Food Technology Laboratory Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10018,
+	"LedgerName": "Food Technology Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1226,
+	"LedgerName": "Fortesting Lllll",
+	"AccountGroupName": "Advances for Sale of Land",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2480,
+	"LedgerName": "Furniture",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8784,
+	"LedgerName": "Furniture",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9364,
+	"LedgerName": "Furniture ( Sch.A )",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 419,
+	"LedgerName": "Furniture Making Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8155,
+	"LedgerName": "Furniture Making Income",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4046,
+	"LedgerName": "G.N.Construction Co. - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4104,
+	"LedgerName": "G.T.B. Building \u0026 Development Society",
+	"AccountGroupName": "Advances for Sale of Land",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4047,
+	"LedgerName": "Gandotra Builders - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8156,
+	"LedgerName": "Ganpati Paints -Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3923,
+	"LedgerName": "Gas Service - (Sch.J)",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3934,
+	"LedgerName": "Gas Supplier - (Sch.J)",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4124,
+	"LedgerName": "General Fund",
+	"AccountGroupName": "General Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8783,
+	"LedgerName": "General Fund 2016-17",
+	"AccountGroupName": "General Fund",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2407,
+	"LedgerName": "Ghug Farm Land Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3642,
+	"LedgerName": "Ghug Farm Land Contract Money",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2406,
+	"LedgerName": "Ghug Farm Land Submersible Bore ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3869,
+	"LedgerName": "Ghug Land Compensation FDRs - (Sch.C)",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8585,
+	"LedgerName": "Gic Fund Rece",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3750,
+	"LedgerName": "Girls Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3724,
+	"LedgerName": "Girls Hostel Extension",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10013,
+	"LedgerName": "Girls Hostel Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3690,
+	"LedgerName": "Girls School",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3683,
+	"LedgerName": "Golden Jubilee Library",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3698,
+	"LedgerName": "Governing Council Hall \u0026 Its Furnishing (Incl. Generators)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4031,
+	"LedgerName": "Grand Builders - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6423,
+	"LedgerName": "Gurinder Singh -Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3786,
+	"LedgerName": "Guru Gobind Singh Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 410,
+	"LedgerName": "Gurudwara Fund Rece",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3770,
+	"LedgerName": "Gurudwara Sahib Additional Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10007,
+	"LedgerName": "Gurudwara Sahib Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3930,
+	"LedgerName": "Hardware Material",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9554,
+	"LedgerName": "Heritage Guest Hose Rent",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9841,
+	"LedgerName": "Heritage Guest House Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5225,
+	"LedgerName": "Honorary Secretary Office - Building Maintenance",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3769,
+	"LedgerName": "Honorary Secretary Office Fountain",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3701,
+	"LedgerName": "Honorary Secretary Office Over Head Tank \u0026 Bathroom",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3744,
+	"LedgerName": "Honorary Secretary Office Renovation",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2082,
+	"LedgerName": "Honorary Secretary Office Sumbersible Pump - (Sch.D)",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3935,
+	"LedgerName": "Honorary Secretary Office, Asr (Gas Security Indane) - (Sch.J)",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10016,
+	"LedgerName": "Hony Sec Office Mali Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3700,
+	"LedgerName": "Hostel Fans - (Sch.A)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 402,
+	"LedgerName": "House Rent Allowance",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 407,
+	"LedgerName": "House Rent Allowance Received",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6689,
+	"LedgerName": "Hso Gratuity Paid",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3947,
+	"LedgerName": "ICICI BANK A/C 006601025805",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3946,
+	"LedgerName": "ICICI BANK A/C NO. 006601025802",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3741,
+	"LedgerName": "ICICI Bank Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1040,
+	"LedgerName": "ICICI Bank Ltd (P.F.) A/C No. 006601025807 - (Sch.C)",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3874,
+	"LedgerName": "ICICI Bank Ltd. (ET) A/C No.006601025803 - (Sch.C)",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3875,
+	"LedgerName": "ICICI Bank Ltd. (Maculiffe) A/C No.006601025806 (Sch.C)",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3876,
+	"LedgerName": "ICICI Bank Ltd. (TGP) A/C No.006601025804 (Sch.C)",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1813,
+	"LedgerName": "Icici Bank Ltd.A/C No.006601025226",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4108,
+	"LedgerName": "ICICI Bank Rent",
+	"AccountGroupName": "Security Deposit",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3936,
+	"LedgerName": "Improvement Trust - (Sch.J)",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8289,
+	"LedgerName": "Income From Previous Year",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3629,
+	"LedgerName": "Insurance Claim",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4930,
+	"LedgerName": "Insurence Of Students",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7325,
+	"LedgerName": "Insurence Of Students Rece",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7241,
+	"LedgerName": "Interest On Auto Sweep ",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7772,
+	"LedgerName": "Interest On Batala Land Compansations",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7711,
+	"LedgerName": "Interest On Endowed Trust \u0026 Special Maintainence",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1808,
+	"LedgerName": "Interest On Endowment Fund FDR",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7771,
+	"LedgerName": "Interest On Ghug Land Compansation",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7774,
+	"LedgerName": "Interest On Land Compansations Gndu",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7773,
+	"LedgerName": "Interest On Land Surplus",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7096,
+	"LedgerName": "Interest On Late Payment Of Tds",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3628,
+	"LedgerName": "Interest On Provident Fund FDR",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7768,
+	"LedgerName": "Interest On T.G.P.F. Fdr",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7769,
+	"LedgerName": "Interest On Teacher General Pf School",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7770,
+	"LedgerName": "Interest On Technical Class Fund",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7487,
+	"LedgerName": "Interest Paid On Provident Fund",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9545,
+	"LedgerName": "Interest Rece On Tds Recoverable",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9966,
+	"LedgerName": "Interest Received From State Govt",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9398,
+	"LedgerName": "Invertor \u0026 Battery",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9507,
+	"LedgerName": "J.D.Builder \u0026 Contractor -Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3792,
+	"LedgerName": "Jhabal Fund",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3762,
+	"LedgerName": "Jind Hostel Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 993,
+	"LedgerName": "Joint Printing A/c",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4038,
+	"LedgerName": "Kamalman Preet Singh - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4013,
+	"LedgerName": "Khalsa College - Chawinda Devi  Security PSEB For Science Group",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9988,
+	"LedgerName": "Khalsa College - Chawinda Devi (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2154,
+	"LedgerName": "Khalsa College - Chawinda Devi Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3753,
+	"LedgerName": "Khalsa College - Chawinda Devi Bldg. Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4012,
+	"LedgerName": "Khalsa College - Chawinda Devi Ekectruc Security PSPCL",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1301,
+	"LedgerName": "Khalsa College - Chawinda Devi Principal Adv",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4123,
+	"LedgerName": "Khalsa College - Chawinda Devi Students Securities",
+	"AccountGroupName": "Student Securities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4014,
+	"LedgerName": "Khalsa College - Chawinda Devi Telephone Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3938,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali - ACD Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2164,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3740,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali - Building A/c",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3940,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali - Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1290,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3939,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali - PSEB Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4027,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali - Telephone Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9984,
+	"LedgerName": "Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2937,
+	"LedgerName": "Khalsa College 95% Deficit A/C (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7993,
+	"LedgerName": "Khalsa College Additional Post Fund",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10015,
+	"LedgerName": "Khalsa College Admin Office Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7420,
+	"LedgerName": "Khalsa College Administration Charges",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1325,
+	"LedgerName": "Khalsa College Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3686,
+	"LedgerName": "Khalsa College Agriculture Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3728,
+	"LedgerName": "Khalsa College Agriculture Department - Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4009,
+	"LedgerName": "Khalsa College Agriculture Department - Gas Cylinder",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3772,
+	"LedgerName": "Khalsa College Agriculture New Bldg. Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3937,
+	"LedgerName": "Khalsa College Agriculture Zoology Deptt. Gas Cylinders",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4142,
+	"LedgerName": "Khalsa College Amalgamated Fund 1.5 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4152,
+	"LedgerName": "Khalsa College Amalgamated Fund 1.5 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10038,
+	"LedgerName": "Khalsa College Amalgamated Fund 1.5 (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4041,
+	"LedgerName": "Khalsa College Autonomous - 1.8 (Stock)",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10054,
+	"LedgerName": "Khalsa College Autonomous (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4145,
+	"LedgerName": "Khalsa College Autonomous 1.8 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4155,
+	"LedgerName": "Khalsa College Autonomous Examination Fund 1.8 (Sch.N) ",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7456,
+	"LedgerName": "Khalsa College Bank Charges",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3693,
+	"LedgerName": "Khalsa College Boundary Wall",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3746,
+	"LedgerName": "Khalsa College Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2423,
+	"LedgerName": "Khalsa College Building Construction-1",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3734,
+	"LedgerName": "Khalsa College Building Renovation",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3696,
+	"LedgerName": "Khalsa College Canteen",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4147,
+	"LedgerName": "Khalsa College Collegiate Sr. Sec. School 1.17 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9949,
+	"LedgerName": "Khalsa College Computer \u0026 Food Science Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3758,
+	"LedgerName": "Khalsa College Computer Block",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10035,
+	"LedgerName": "Khalsa College Computer Courses (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4139,
+	"LedgerName": "Khalsa College Computer Courses 1.2 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9332,
+	"LedgerName": "Khalsa College Computer Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9334,
+	"LedgerName": "Khalsa College Computer Science Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10053,
+	"LedgerName": "Khalsa College Cpe Grant (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3962,
+	"LedgerName": "Khalsa College CPE Grant Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4163,
+	"LedgerName": "Khalsa College CPE Grants 1.20 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3763,
+	"LedgerName": "Khalsa College Dairy Farm Building/Alteration",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4010,
+	"LedgerName": "Khalsa College Elecric Security PSPCL",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2943,
+	"LedgerName": "Khalsa College Fee A/C",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9333,
+	"LedgerName": "Khalsa College Food Science Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3673,
+	"LedgerName": "Khalsa College for Women - Building \u0026 Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3964,
+	"LedgerName": "Khalsa College For Women 3.8 Uncovered Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3033,
+	"LedgerName": "Khalsa College For Women 95% Deficit A/C 3.5 (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2152,
+	"LedgerName": "Khalsa College For Women Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10034,
+	"LedgerName": "Khalsa College For Women Amalgamatd/Students Fund (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4113,
+	"LedgerName": "Khalsa College For Women Amalgamatd/Students Fund 3.4 (Schedule-N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4112,
+	"LedgerName": "Khalsa College For Women Amalgamated And Students Fund 3.4 (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7580,
+	"LedgerName": "Khalsa College For Women Bank Charges",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3717,
+	"LedgerName": "Khalsa College For Women Class Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3725,
+	"LedgerName": "Khalsa College For Women Computer Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3719,
+	"LedgerName": "Khalsa College For Women Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3779,
+	"LedgerName": "Khalsa College For Women Examination Hall",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3032,
+	"LedgerName": "Khalsa College For Women Fee A/C",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7581,
+	"LedgerName": "Khalsa College For Women Gratuity",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3715,
+	"LedgerName": "Khalsa College For Women Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3780,
+	"LedgerName": "Khalsa College For Women Hostel 9Th Plan",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10029,
+	"LedgerName": "Khalsa College For Women Hostel A/C (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4051,
+	"LedgerName": "Khalsa College For Women Hostel A/C 3.1 (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4067,
+	"LedgerName": "Khalsa College For Women Hostel Account 3.1 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3754,
+	"LedgerName": "Khalsa College For Women Indoor Stadium",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7546,
+	"LedgerName": "Khalsa College For Women Intt. On Salary Loan",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3716,
+	"LedgerName": "Khalsa College For Women Library Extn.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7626,
+	"LedgerName": "Khalsa College For Women Music Repair",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3757,
+	"LedgerName": "Khalsa College For Women New Bldg. Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3709,
+	"LedgerName": "Khalsa College For Women New Boundary Wall",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3721,
+	"LedgerName": "Khalsa College For Women New Class Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3775,
+	"LedgerName": "Khalsa College For Women New Class Rooms",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3765,
+	"LedgerName": "Khalsa College For Women New Girls Hostel Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3776,
+	"LedgerName": "Khalsa College For Women New Hostel Grant",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3773,
+	"LedgerName": "Khalsa College For Women Normal Grant Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9991,
+	"LedgerName": "Khalsa College For Women Nss (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4169,
+	"LedgerName": "Khalsa College For Women NSS 3.6 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3955,
+	"LedgerName": "Khalsa College For Women NSS Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10032,
+	"LedgerName": "Khalsa College For Women Pgdca \u0026 Pg Courses (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4109,
+	"LedgerName": "Khalsa College For Women PGDCA \u0026 PG Courses 3.2 - (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8153,
+	"LedgerName": "Khalsa College For Women Pgdca Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 984,
+	"LedgerName": "Khalsa College For Women Principal Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7579,
+	"LedgerName": "Khalsa College For Women Salary Uncovered",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3967,
+	"LedgerName": "Khalsa College For Women Self Finance Fee A/C",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3777,
+	"LedgerName": "Khalsa College For Women Seminar Hall Grant",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3774,
+	"LedgerName": "Khalsa College For Women Special Grant Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3722,
+	"LedgerName": "Khalsa College For Women Stand \u0026 Chowkidar Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3711,
+	"LedgerName": "Khalsa College For Women Store Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4167,
+	"LedgerName": "Khalsa College For Women Student Welfare Fund 3.3 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10033,
+	"LedgerName": "Khalsa College For Women Students Welfare Fund (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4111,
+	"LedgerName": "Khalsa College For Women Students Welfare Fund 3.3 - (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9992,
+	"LedgerName": "Khalsa College For Women Ugc (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4170,
+	"LedgerName": "Khalsa College For Women UGC Account 3.7 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3956,
+	"LedgerName": "Khalsa College For Women UGC Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4171,
+	"LedgerName": "Khalsa College For Women Uncoverd Salary 3.8 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9989,
+	"LedgerName": "Khalsa College For Women Uncovered (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3953,
+	"LedgerName": "Khalsa College For Women Uncovered Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3952,
+	"LedgerName": "Khalsa College For Women,Asr Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9979,
+	"LedgerName": "Khalsa College Girls High School (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4394,
+	"LedgerName": "Khalsa College Girls High School Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3782,
+	"LedgerName": "Khalsa College Girls High School Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3963,
+	"LedgerName": "Khalsa College Girls High School Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3720,
+	"LedgerName": "Khalsa College Girls High School Genset Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 992,
+	"LedgerName": "Khalsa College Girls High School Principal Adv",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3793,
+	"LedgerName": "Khalsa College Girls High School Prize Fund",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4070,
+	"LedgerName": "Khalsa College Girls High School Schedule - N",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3778,
+	"LedgerName": "Khalsa College Girls Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3731,
+	"LedgerName": "Khalsa College Girls Hostel Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7422,
+	"LedgerName": "Khalsa College Gratuity",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9994,
+	"LedgerName": "Khalsa College Gurudwara (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4161,
+	"LedgerName": "Khalsa College Gurudwara 1.18 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3960,
+	"LedgerName": "Khalsa College Gurudwara Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10102,
+	"LedgerName": "Khalsa College Hocky Acadmy Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4141,
+	"LedgerName": "Khalsa College Hostel 1.4 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4055,
+	"LedgerName": "Khalsa College Hostel 1.4 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10037,
+	"LedgerName": "Khalsa College Hostel 1.4 (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9335,
+	"LedgerName": "Khalsa College Hostel A/C Prospectus ",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8006,
+	"LedgerName": "Khalsa College Hostel Fan Rent",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3760,
+	"LedgerName": "Khalsa College Hostel Qtr. No. 11",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3771,
+	"LedgerName": "Khalsa College Hostel Qtr.No.9",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3739,
+	"LedgerName": "Khalsa College Hostel Special Grant",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4619,
+	"LedgerName": "Khalsa College Interest On Salary Loan",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1662,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Advertisement ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1764,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3988,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3987,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Electricity Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3945,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Payable Amount",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1296,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Principal Advance ",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4117,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Students Securities",
+	"AccountGroupName": "Student Securities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4026,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr - Telephone Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9986,
+	"LedgerName": "Khalsa College International Public School,Ranjit Avenue,Asr (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3816,
+	"LedgerName": "Khalsa College League Prize",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3738,
+	"LedgerName": "Khalsa College Library Extension",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4156,
+	"LedgerName": "Khalsa College Mess Account 1.11 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3957,
+	"LedgerName": "Khalsa College Mess Bank A/C ",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7522,
+	"LedgerName": "Khalsa College New Admission Block Consturction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10049,
+	"LedgerName": "Khalsa College Nss (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4162,
+	"LedgerName": "Khalsa College NSS 1.19 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3961,
+	"LedgerName": "Khalsa College NSS Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9299,
+	"LedgerName": "Khalsa College Of Admanistration Allowence",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3682,
+	"LedgerName": "Khalsa College Of Education (Bldg)",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9300,
+	"LedgerName": "Khalsa College Of Education 2% P.F.Share",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9302,
+	"LedgerName": "Khalsa College Of Education 2% Presumptive Income",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4054,
+	"LedgerName": "Khalsa College Of Education 95% Deficit A/C 2.3 - (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1326,
+	"LedgerName": "Khalsa College Of Education Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7569,
+	"LedgerName": "Khalsa College Of Education Bank Charges",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7570,
+	"LedgerName": "Khalsa College Of Education Bank Interest",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4780,
+	"LedgerName": "Khalsa College Of Education Building Manintainence",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8152,
+	"LedgerName": "Khalsa College Of Education Fee A/C",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3737,
+	"LedgerName": "Khalsa College Of Education Girls Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7571,
+	"LedgerName": "Khalsa College Of Education Gratuity",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6862,
+	"LedgerName": "Khalsa College Of Education Intt On Salary Loan",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10028,
+	"LedgerName": "Khalsa College Of Education Jind Hostel (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4050,
+	"LedgerName": "Khalsa College Of Education Jind Hostel 2.1 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4065,
+	"LedgerName": "Khalsa College Of Education Jind Hostel 2.1 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3712,
+	"LedgerName": "Khalsa College Of Education New Quarters",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10042,
+	"LedgerName": "Khalsa College Of Education Pgdca (Self Finance) (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4148,
+	"LedgerName": "Khalsa College Of Education PGDCA (Self Finance) 2.2 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4164,
+	"LedgerName": "Khalsa College Of Education PGDCA Self Finance 2.1 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1218,
+	"LedgerName": "Khalsa College Of Education Principal Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9303,
+	"LedgerName": "Khalsa College Of Education Principal Fund",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9950,
+	"LedgerName": "Khalsa College Of Education Salary A/C",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4166,
+	"LedgerName": "Khalsa College Of Education Student/Amalgamated Fund 2.5 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10044,
+	"LedgerName": "Khalsa College Of Education Students Fund Including Amalgamated (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4150,
+	"LedgerName": "Khalsa College Of Education Students Fund Including Amalgamated 2.5 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7572,
+	"LedgerName": "khalsa college of education uncovered salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4165,
+	"LedgerName": "Khalsa College Of Education Uncovered Salary Staff 2.4  (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10043,
+	"LedgerName": "Khalsa College Of Education Uncovered Staff Salary (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4149,
+	"LedgerName": "Khalsa College Of Education Uncovered Staff Salary 2.4 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1329,
+	"LedgerName": "Khalsa College Of Education,Ranjit Avenue,Asr - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3989,
+	"LedgerName": "Khalsa College Of Education,Ranjit Avenue,Asr - Electric Meter Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 480,
+	"LedgerName": "Khalsa College Of Education,Ranjit Avenue,Asr - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9978,
+	"LedgerName": "Khalsa College Of Education,Ranjit Avenue,Asr (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9506,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9968,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology, Amritsar (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1747,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3943,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - Bank A/C ",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4395,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - Building Construcion",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3992,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - Elecric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3991,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - Happy Home Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 414,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - Principal Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3990,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - PSEB Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4121,
+	"LedgerName": "Khalsa College Of Engineering \u0026 Technology,Ranjit Avenue,Asr - Students Securities",
+	"AccountGroupName": "Student Securities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 394,
+	"LedgerName": "Khalsa College of Engineering \u0026 Technology,Ranjit Avenue,Asr- SALARY",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1749,
+	"LedgerName": "Khalsa College Of Law - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3768,
+	"LedgerName": "Khalsa College Of Law - Building Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1592,
+	"LedgerName": "Khalsa College Of Law - Building Maintainence",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1320,
+	"LedgerName": "Khalsa College Of Law - Electricity Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1220,
+	"LedgerName": "Khalsa College Of Law - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3994,
+	"LedgerName": "Khalsa College of Law - Telephone Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9981,
+	"LedgerName": "Khalsa College Of Law (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9549,
+	"LedgerName": "Khalsa College Of Law- Student/Libarary Security ",
+	"AccountGroupName": "Student Securities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1748,
+	"LedgerName": "Khalsa College Of Magnagement \u0026 Technology,Ranjit Avenue,Asr - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9976,
+	"LedgerName": "Khalsa College Of Magnagement \u0026 Technology,Ranjit Avenue,Asr (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 415,
+	"LedgerName": "Khalsa College Of Management \u0026 Technology,Ranjit Avenue,Asr - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3995,
+	"LedgerName": "Khalsa College Of Nursing - ACD",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1718,
+	"LedgerName": "Khalsa College Of Nursing - Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2088,
+	"LedgerName": "Khalsa College Of Nursing - Building Maintenance",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4000,
+	"LedgerName": "Khalsa College Of Nursing - Gas Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9990,
+	"LedgerName": "Khalsa College Of Nursing - Hostel (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3864,
+	"LedgerName": "Khalsa College Of Nursing - Hostel Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3996,
+	"LedgerName": "Khalsa College Of Nursing - P.S.E.B.",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1224,
+	"LedgerName": "Khalsa College Of Nursing - Principal Adv",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3997,
+	"LedgerName": "Khalsa College Of Nursing - Security With ACD",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3998,
+	"LedgerName": "Khalsa College Of Nursing - Security With PSPCL",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4119,
+	"LedgerName": "Khalsa College Of Nursing - Students Securities",
+	"AccountGroupName": "Student Securities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3999,
+	"LedgerName": "Khalsa College Of Nursing - Telephone Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9983,
+	"LedgerName": "Khalsa College Of Nursing (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2162,
+	"LedgerName": "Khalsa College Of Pharmacy - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3752,
+	"LedgerName": "Khalsa College Of Pharmacy - Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3887,
+	"LedgerName": "Khalsa College Of Pharmacy - Fee Recoverable",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4002,
+	"LedgerName": "Khalsa College Of Pharmacy - Gas Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 417,
+	"LedgerName": "Khalsa College Of Pharmacy - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4122,
+	"LedgerName": "Khalsa College Of Pharmacy - Students Securities",
+	"AccountGroupName": "Student Securities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4001,
+	"LedgerName": "Khalsa College Of Pharmacy - Telephone Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9977,
+	"LedgerName": "Khalsa College Of Pharmacy (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2161,
+	"LedgerName": "Khalsa College Of Physical Education,Heir - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1297,
+	"LedgerName": "Khalsa College of Physical Education,Heir - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9987,
+	"LedgerName": "Khalsa College Of Physical Education,Heir (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9969,
+	"LedgerName": "Khalsa College Of Vet \u0026 Animal Sciences (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2084,
+	"LedgerName": "Khalsa College of Vety. \u0026 Animal Science - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3944,
+	"LedgerName": "Khalsa College of Vety. \u0026 Animal Science - Bank A/c",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1684,
+	"LedgerName": "Khalsa College Of Vety. \u0026 Animal Science - Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2160,
+	"LedgerName": "Khalsa College Of Vety. \u0026 Animal Science - Building Maintenance",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4003,
+	"LedgerName": "Khalsa College Of Vety. \u0026 Animal Science - Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3764,
+	"LedgerName": "Khalsa College of Vety. \u0026 Animal Science - Hospital",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4004,
+	"LedgerName": "Khalsa College of Vety. \u0026 Animal Science - Meter Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1207,
+	"LedgerName": "Khalsa College Of Vety. \u0026 Animal Science - Principal Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4006,
+	"LedgerName": "Khalsa College Of Vety. \u0026 Animal Science - Telephone Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10344,
+	"LedgerName": "Khalsa College Of Vety. \u0026 Animal Sciences Girls Hostel, Mahal",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8116,
+	"LedgerName": "Khalsa College P.G (Stock)",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10027,
+	"LedgerName": "Khalsa College P.G.Courses (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4049,
+	"LedgerName": "Khalsa College P.G.Courses 1.1 (Sch.-M) ",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10036,
+	"LedgerName": "Khalsa College Physiotherapy Courses (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4140,
+	"LedgerName": "Khalsa College Physiotherapy Courses 1.3 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 392,
+	"LedgerName": "Khalsa College Principal Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4143,
+	"LedgerName": "Khalsa College Principal Fund 1.6 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4153,
+	"LedgerName": "Khalsa College Principal Fund 1.6 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10039,
+	"LedgerName": "Khalsa College Principal Fund 1.6 (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4011,
+	"LedgerName": "Khalsa College PSEC Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1698,
+	"LedgerName": "Khalsa College Public School - Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3706,
+	"LedgerName": "Khalsa College Public School - Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1223,
+	"LedgerName": "Khalsa College Public School - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4007,
+	"LedgerName": "Khalsa College Public School - PSEB Electric Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4118,
+	"LedgerName": "Khalsa College Public School - Students Securities",
+	"AccountGroupName": "Student Securities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9982,
+	"LedgerName": "Khalsa College Public School (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3730,
+	"LedgerName": "khalsa college public school New Bus ",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6157,
+	"LedgerName": "Khalsa College Public School Sale Of Bus",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1327,
+	"LedgerName": "Khalsa College Public School,Heir - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4397,
+	"LedgerName": "Khalsa College Public School,Heir - Building Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4015,
+	"LedgerName": "Khalsa College Public School,Heir - Electricity Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1203,
+	"LedgerName": "Khalsa College Public School,Heir - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3942,
+	"LedgerName": "Khalsa College Public School,Heir - Principal Advance Payable A/c",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9980,
+	"LedgerName": "Khalsa College Public School,Heir ( Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8007,
+	"LedgerName": "Khalsa College Recovery Of Stock Material",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7992,
+	"LedgerName": "Khalsa College Registration Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3703,
+	"LedgerName": "Khalsa College Roads",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7421,
+	"LedgerName": "Khalsa College Salary Uncovered",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9993,
+	"LedgerName": "Khalsa College Scholarship (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4158,
+	"LedgerName": "Khalsa College Scholarship Account 1.13 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3959,
+	"LedgerName": "Khalsa College Scholership Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3879,
+	"LedgerName": "Khalsa College Senior Secondary School - Cement Recoverable",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1293,
+	"LedgerName": "Khalsa College Senior Secondary School - Principal Advance",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4069,
+	"LedgerName": "Khalsa College Senior Secondary School - Schedule-N",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3767,
+	"LedgerName": "Khalsa College Senior Secondary School - Toilet Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9985,
+	"LedgerName": "Khalsa College Senior Secondary School (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3702,
+	"LedgerName": "Khalsa College Senior Secondary School Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4039,
+	"LedgerName": "Khalsa College Students \u0026 Misc.Fund - 1.7 (Stock)",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4144,
+	"LedgerName": "Khalsa College Students \u0026 Misc.Fund 1.7 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4154,
+	"LedgerName": "Khalsa College Students \u0026 Misc.Fund 1.7 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10040,
+	"LedgerName": "Khalsa College Students \u0026 Misc.Fund 1.7 (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10045,
+	"LedgerName": "Khalsa College Summer Coaching (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4146,
+	"LedgerName": "Khalsa College Summer Coaching 1.16 (Sch.M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4159,
+	"LedgerName": "Khalsa College Summer Coaching 1.16 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8276,
+	"LedgerName": "Khalsa College Summer Coaching Income",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10052,
+	"LedgerName": "Khalsa College Ugc (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4157,
+	"LedgerName": "Khalsa College UGC Account 1.12 (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3958,
+	"LedgerName": "Khalsa College UGC Bank A/C",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2930,
+	"LedgerName": "Khalsa College Uncovered Salary Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3742,
+	"LedgerName": "Khalsa College Village Heir Bldg. Const.",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10041,
+	"LedgerName": "Khalsa Collegiate Sr.Sec.School (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4160,
+	"LedgerName": "Khalsa Collegiate Sr.Sec.School 1.17 - (Sch.N)",
+	"AccountGroupName": "Inter-Se Fund - (Schedule-N)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4396,
+	"LedgerName": "Khalsa University - Advance A/c ",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2944,
+	"LedgerName": "Khalsa University - Advertisement",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1759,
+	"LedgerName": "Khalsa University - Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3800,
+	"LedgerName": "Khalsa University - Establishment",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2481,
+	"LedgerName": "Khalsa University - Innova Car ",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4138,
+	"LedgerName": "Khalsa University - Invertor \u0026 Battery",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4088,
+	"LedgerName": "Khalsa University - Processing And Establishment Fee",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9971,
+	"LedgerName": "Khalsa University (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8157,
+	"LedgerName": "Khalsa University Endowment Fund Fdr",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8078,
+	"LedgerName": "Khalsa University Girls Hostel Building Contruction ",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1213,
+	"LedgerName": "Labour Cess Payable",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3931,
+	"LedgerName": "Ladder Iron",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4079,
+	"LedgerName": "Land Alloted By Improvement Trust In R/A,Asr.",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4103,
+	"LedgerName": "Land Behind Hostel",
+	"AccountGroupName": "Advances for Sale of Land",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3866,
+	"LedgerName": "Land Compensation Fund FDRs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3668,
+	"LedgerName": "Land For College",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4084,
+	"LedgerName": "Land Payment",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3867,
+	"LedgerName": "Land Surplus Fund FDRs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9901,
+	"LedgerName": "Lap Top",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1335,
+	"LedgerName": "Lease Line ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1994,
+	"LedgerName": "Lease Rent - Sher Shah Suri Road",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6138,
+	"LedgerName": "Legal Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1225,
+	"LedgerName": "Legal Fee",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3749,
+	"LedgerName": "Library Extension",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7617,
+	"LedgerName": "Loans To Subscribers",
+	"AccountGroupName": "Funds and Liabilities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4032,
+	"LedgerName": "M.M.Construction - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3831,
+	"LedgerName": "Macauliffe Memorial",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 416,
+	"LedgerName": "Maharani Jinda Girls Hostel Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3669,
+	"LedgerName": "Main Buildings",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2070,
+	"LedgerName": "Maintenance Of Building",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3830,
+	"LedgerName": "Major Jasbir Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3839,
+	"LedgerName": "Major Vir Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3784,
+	"LedgerName": "Mata Ishar Kaur",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1321,
+	"LedgerName": "Medical Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7817,
+	"LedgerName": "Medical Fee (Kce)",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7818,
+	"LedgerName": "Medical Fee (Kcghs)",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7820,
+	"LedgerName": "Medical Fee (Kcps)",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7819,
+	"LedgerName": "Medical Fee (Kcsss)",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3901,
+	"LedgerName": "Medical Officer",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 403,
+	"LedgerName": "Medical paid",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 409,
+	"LedgerName": "Medical Rece",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1216,
+	"LedgerName": "Medical Test Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3845,
+	"LedgerName": "Memorial Scholarship S. Joginder Singh Chawla",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4016,
+	"LedgerName": "Meter Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4017,
+	"LedgerName": "Meter Security.",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 404,
+	"LedgerName": "M-I-Am Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 990,
+	"LedgerName": "Milk Coupans",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2090,
+	"LedgerName": "Miscellenous Income",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3790,
+	"LedgerName": "Mool Singh Gold Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3691,
+	"LedgerName": "Motor \u0026 Tubewell",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3855,
+	"LedgerName": "Mr. Ram Nath Mahindroo",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3859,
+	"LedgerName": "Mrs. Jasbir Kaur",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3853,
+	"LedgerName": "Mrs. Seeta Chatwal Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3666,
+	"LedgerName": "Multipurpose School",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4033,
+	"LedgerName": "Muni Lal - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4019,
+	"LedgerName": "Municipal Corporation",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3708,
+	"LedgerName": "N.C.C.Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3751,
+	"LedgerName": "Nabha Hostel Mess Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10008,
+	"LedgerName": "Nabha Hostel Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3805,
+	"LedgerName": "Nabha Malwa Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3902,
+	"LedgerName": "Narinder Singh, Hony. Secy. Office",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5743,
+	"LedgerName": "NEXT EDUCATION INDIA PVT LTD",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10072,
+	"LedgerName": "Notice Period Salary",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9793,
+	"LedgerName": "Nursery \u0026 Orchard Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1307,
+	"LedgerName": "Nursery / Orchard Staff Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5515,
+	"LedgerName": "Oil Fillter Rediator",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8979,
+	"LedgerName": "Orient Fan Heater",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 413,
+	"LedgerName": "Osd Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3670,
+	"LedgerName": "Other Buildings",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4020,
+	"LedgerName": "Other Security - Khalsa College (Asr) Of Tech. \u0026 Business Studies,Mohali",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7616,
+	"LedgerName": "P.F. Interest Undisbursed",
+	"AccountGroupName": "Funds and Liabilities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4034,
+	"LedgerName": "Parshant Contractor - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4105,
+	"LedgerName": "Part Payment Sale Of Land",
+	"AccountGroupName": "Advances for Sale of Land",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8584,
+	"LedgerName": "Payable Avtar Builders",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8389,
+	"LedgerName": "Payable J.D.Constractor \u0026 Builders",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3891,
+	"LedgerName": "Payable To Daily Ajit",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8117,
+	"LedgerName": "Payable To Educomp Solutions Ltd",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8119,
+	"LedgerName": "Payable To S.S.Samundri",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8118,
+	"LedgerName": "Payable To Shri Rathi Steel Ltd",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3847,
+	"LedgerName": "Perpetual Endowment Fund For Scholarship In Memory Of Mr. Macauliffee",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3684,
+	"LedgerName": "Physics Lab. Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7555,
+	"LedgerName": "Physiotharapy Deptt Electricity",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10021,
+	"LedgerName": "Physiotheraphy Dept. Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3735,
+	"LedgerName": "Physiotherapy Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4080,
+	"LedgerName": "Plot No.950 In Ranjit Avenue,Asr",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10019,
+	"LedgerName": "Political Science Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3681,
+	"LedgerName": "Post Office Building",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4021,
+	"LedgerName": "Post Office Connection Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2479,
+	"LedgerName": "Power Factor Panel",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9365,
+	"LedgerName": "Power Factor Panel ( Sch.A )",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3727,
+	"LedgerName": "President\u0027s Room",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3694,
+	"LedgerName": "Primary School Construction",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3835,
+	"LedgerName": "Prince Of Wales",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3848,
+	"LedgerName": "Principal B.S. Tung (Mrs. Balbir Kaur)",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3838,
+	"LedgerName": "Principal G.A. Wathen",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3903,
+	"LedgerName": "Principal, Khalsa College International Public School,R/Ave.,Asr - Imprest Sch.F",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4042,
+	"LedgerName": "Principal,Khalsa College For Women,Asr - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4200,
+	"LedgerName": "Printer",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9366,
+	"LedgerName": "Printer ( Sch.A )",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8785,
+	"LedgerName": "Printer 2016-17",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1338,
+	"LedgerName": "Printing exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3791,
+	"LedgerName": "Prize Fund",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3890,
+	"LedgerName": "Prof. Of Chemistry",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3888,
+	"LedgerName": "Prof. Of Horticulture",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7809,
+	"LedgerName": "Profit From Agriculture Station ",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7810,
+	"LedgerName": "Profit From Student Farm",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 405,
+	"LedgerName": "Provident Fund Payable",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4022,
+	"LedgerName": "PSEB Electric Meter Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1317,
+	"LedgerName": "Public Relation Office - Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2363,
+	"LedgerName": "Public Relation Office - Newspapers",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3622,
+	"LedgerName": "Public Relation Office - Printer",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5227,
+	"LedgerName": "Public Relation Office - Printing \u0026 Stationery",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 479,
+	"LedgerName": "Public Relation Office - Salary \u0026 Other Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1762,
+	"LedgerName": "Public Relation Office - Telephone Exp.",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9930,
+	"LedgerName": "Public Relation Office Printer Sch-A",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3904,
+	"LedgerName": "Public Relation Officer - Advance",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 983,
+	"LedgerName": "Punjab \u0026 Sind Bank A/C No. 00311100030100",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3634,
+	"LedgerName": "Punjab National Bank A/C 3397002100014879",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 393,
+	"LedgerName": "Punjab National Bank A/c 3397009300413231",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7928,
+	"LedgerName": "Punjab National Bank A/C No. 3397000100513864 Pf",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5316,
+	"LedgerName": "Punjab National Bank A/C No. 3397002100015106",
+	"AccountGroupName": "Cash/Bank Balance(Sch.K)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4023,
+	"LedgerName": "Punjab State Education Board (Commerce Group Affiliation Boys School)",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4024,
+	"LedgerName": "Punjab State Electric Board For Transformers",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4025,
+	"LedgerName": "Punjab State Electricity Board Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10023,
+	"LedgerName": "Punjabi Dept. Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4082,
+	"LedgerName": "Purchase Of Land In Mohali Through KC Old Students Associa.",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3802,
+	"LedgerName": "Quetta Singh Sabha",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3836,
+	"LedgerName": "R.B. Parkash Chand Mehra",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8684,
+	"LedgerName": "Recoverable From Jagran Prakashan",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2439,
+	"LedgerName": "Recovery From Educomp Solutions Ltd.",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8086,
+	"LedgerName": "Recovery From Rojana Ajit",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7947,
+	"LedgerName": "Recovery From Tejbir Singh Welding Works",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1690,
+	"LedgerName": "Recovery Of Bricks",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1214,
+	"LedgerName": "Recovery Of Cement ",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1781,
+	"LedgerName": "Recovery Of Steels",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7095,
+	"LedgerName": "Recovery Of Tds ",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1780,
+	"LedgerName": "Recovery Of Tiles",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1779,
+	"LedgerName": "Refund Of Security - Prashant Associates",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6158,
+	"LedgerName": "Refund Of Ser Sec Keshav Kohli Kcps",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6164,
+	"LedgerName": "Refund Of Ser Security",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2051,
+	"LedgerName": "Refund Of Service Security - Jaspinder Singh (Works Deptt.)",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3894,
+	"LedgerName": "Refund To S.S.Samundri",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1761,
+	"LedgerName": "Renewal Of Website",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9948,
+	"LedgerName": "Rent  Rece",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 989,
+	"LedgerName": "Rent of Verka Milk Booth",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3787,
+	"LedgerName": "Riding Class",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3812,
+	"LedgerName": "S. Ajit Singh Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3851,
+	"LedgerName": "S. Balbir Singh Bakshi",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3804,
+	"LedgerName": "S. Bawa Charat Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3860,
+	"LedgerName": "S. Bela Singh Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3794,
+	"LedgerName": "S. Binod Singh Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3843,
+	"LedgerName": "S. Gurmukh Singh Chawla",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3814,
+	"LedgerName": "S. Gurmukh Singh Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3788,
+	"LedgerName": "S. Hira Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3803,
+	"LedgerName": "S. Hira Singh Stipend",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3818,
+	"LedgerName": "S. Ishwar Singh Punjabi",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3856,
+	"LedgerName": "S. Jagjit Singh Chawla",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3828,
+	"LedgerName": "S. Jawahar Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3811,
+	"LedgerName": "S. Kanwaljeet Singh Hoon",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3785,
+	"LedgerName": "S. Maninder Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3837,
+	"LedgerName": "S. Mittar Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3841,
+	"LedgerName": "S. Narain Singh Bibi Gurdip Kaur",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3783,
+	"LedgerName": "S. Narain Singh Chawla",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3833,
+	"LedgerName": "S. Narain Singh Granthi",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3806,
+	"LedgerName": "S. Naunidh Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3821,
+	"LedgerName": "S. Niranjan Singh Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3808,
+	"LedgerName": "S. Raghbir Singh Dane Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3846,
+	"LedgerName": "S. Rajinder Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3840,
+	"LedgerName": "S. Ranbir Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3834,
+	"LedgerName": "S. Sewa Singh Partap Singh Nabha",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3844,
+	"LedgerName": "S. Shamsher Singh Matharoo",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3827,
+	"LedgerName": "S. Sohan Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3825,
+	"LedgerName": "S. Surinder Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3849,
+	"LedgerName": "S. Surinder Singh Chatwal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3842,
+	"LedgerName": "S.B. Attar Singh Stipend",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3826,
+	"LedgerName": "S.B. Ishar Singh",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 395,
+	"LedgerName": "Salary ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3889,
+	"LedgerName": "Salary Payable - Mohali",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4087,
+	"LedgerName": "Salary To Staff KC In Anticipation Of Grants",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4183,
+	"LedgerName": "Sale Of Animals",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1210,
+	"LedgerName": "Sale Of Application Farms",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1588,
+	"LedgerName": "Sale Of Cement",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10101,
+	"LedgerName": "Sale Of Land",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7740,
+	"LedgerName": "Sale Of Milk",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1215,
+	"LedgerName": "Sale Of Nursary Plants ",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6916,
+	"LedgerName": "Sale Of Old Genset",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5981,
+	"LedgerName": "Sale Of Popular",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7991,
+	"LedgerName": "Sale Of Prospectus",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2345,
+	"LedgerName": "Sale Of Raddi",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1585,
+	"LedgerName": "Sale Of Saw Dust",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5514,
+	"LedgerName": "Sale Of Scrap",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1584,
+	"LedgerName": "Sale Of Vegetables",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9017,
+	"LedgerName": "Sale Of Voter Farms",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1583,
+	"LedgerName": "Sale Of Wheat",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3674,
+	"LedgerName": "Sanitary Installations",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3781,
+	"LedgerName": "Sarangra Village Boundary Wall",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3829,
+	"LedgerName": "Sardarni Gurdev Kaur Harnam Singh Medal",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3850,
+	"LedgerName": "Sardarni Surjit Singh Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6902,
+	"LedgerName": "Satnam Singh Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3759,
+	"LedgerName": "Sc. Apparatus, Furniture, Books \u0026 Fans",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4100,
+	"LedgerName": "School Teacher\u0027s (G.P.F.)",
+	"AccountGroupName": "Other Funds",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3667,
+	"LedgerName": "School Tubewell",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3906,
+	"LedgerName": "Security - A.B.Construction",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1323,
+	"LedgerName": "Security - A.S.Construction Co.",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8583,
+	"LedgerName": "Security - Avtar Builders",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2388,
+	"LedgerName": "Security - Bhupinder Singh Contractor",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3908,
+	"LedgerName": "Security - Chandan Plumber",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3909,
+	"LedgerName": "Security - Fiber Glass House",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3921,
+	"LedgerName": "Security - G.N.Construction",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1303,
+	"LedgerName": "Security - Gandotra Builders.",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3911,
+	"LedgerName": "Security - Ganpati Paints",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1782,
+	"LedgerName": "Security - Grand Builders",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7608,
+	"LedgerName": "Security - Gurwinder Singh",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1785,
+	"LedgerName": "Security - Kamal Manpreet Singh (Contractor)",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3912,
+	"LedgerName": "Security - Lakhwinder Singh",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1699,
+	"LedgerName": "Security - M.M.Construction",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3922,
+	"LedgerName": "Security - Mahatma",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1687,
+	"LedgerName": "Security - Muni Lal",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2089,
+	"LedgerName": "Security - Prashant Builders",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3915,
+	"LedgerName": "Security - Rana Partap",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3916,
+	"LedgerName": "Security - Sanjay Kumar",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3917,
+	"LedgerName": "Security - Shri Nidhi Realtors Pvt.Ltd.",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3918,
+	"LedgerName": "Security - Sidharath Construction Co.",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2424,
+	"LedgerName": "Security - Simran Builders",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3919,
+	"LedgerName": "Security - Sukhraj Construction Co.",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3920,
+	"LedgerName": "Security - Sun Builders",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4089,
+	"LedgerName": "Security 6 Months Basic Pay With D.E.O.Asr (International Public School)",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4090,
+	"LedgerName": "Security 6 Months Pay With DEO (Khalsa College Public School,Heir)",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4106,
+	"LedgerName": "Security Deposits - Staff ",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8664,
+	"LedgerName": "Security Gurdial Singh Building Contractor",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4967,
+	"LedgerName": "Security Harbhajan Singh",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8388,
+	"LedgerName": "Security J.D.Contractor \u0026 Builders",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6508,
+	"LedgerName": "Security Prashant Associates",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10272,
+	"LedgerName": "Security Satnam Construction Co",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10270,
+	"LedgerName": "Security Surjit Singh \u0026 Co",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10103,
+	"LedgerName": "Security Tejbir Welding",
+	"AccountGroupName": "Securities of Contractors(Sch.G)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6781,
+	"LedgerName": "Ser Sec Ajay Sehgal Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10305,
+	"LedgerName": "Ser Sec Aktilesh Pro Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9114,
+	"LedgerName": "Ser Sec Amandeep Kaur ",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8502,
+	"LedgerName": "Ser Sec Amarjit Singh Ku",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5976,
+	"LedgerName": "Ser Sec Babbu Kcghs",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7778,
+	"LedgerName": "Ser Sec Balbir Singh Jaffar",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8501,
+	"LedgerName": "Ser Sec Baldev Singh Ku",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5978,
+	"LedgerName": "ser sec balwinder singh kcghs",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10106,
+	"LedgerName": "Ser Sec Davinder Kotwal Works Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10178,
+	"LedgerName": "Ser Sec Davinder Kumar Works Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6010,
+	"LedgerName": "Ser Sec Gholi Electric Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6008,
+	"LedgerName": "ser sec gulshan electric deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6137,
+	"LedgerName": "Ser Sec Gurdev Singh",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8992,
+	"LedgerName": "Ser Sec Gurpreet Kaur Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9107,
+	"LedgerName": "Ser Sec Gurpreet Singh Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6129,
+	"LedgerName": "Ser Sec Harbhajan Singh Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6785,
+	"LedgerName": "Ser Sec Harneet Kaur Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6003,
+	"LedgerName": "Ser Sec Harpreet Singh Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5974,
+	"LedgerName": "Ser Sec Harsimranjit Kaur Kce",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6011,
+	"LedgerName": "Ser Sec Jagdish electric deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7615,
+	"LedgerName": "Ser Sec Jasbir Singh Electric Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6004,
+	"LedgerName": "Ser Sec Jaspal Singh electric deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8309,
+	"LedgerName": "Ser Sec Jaswant Singh Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6784,
+	"LedgerName": "ser sec jovanjeet kaur",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7779,
+	"LedgerName": "Ser Sec Kaswant Singh Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6783,
+	"LedgerName": "ser sec kawaldeep kaur kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9105,
+	"LedgerName": "Ser Sec Kiram Deep Kaur Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7086,
+	"LedgerName": "Ser Sec Kulvinder Singh",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10307,
+	"LedgerName": "Ser Sec Lakhwinder Singh Works Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8310,
+	"LedgerName": "Ser Sec Mandeep Kaur Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9402,
+	"LedgerName": "Ser Sec Mandeep Kumar Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7087,
+	"LedgerName": "Ser Sec Mandeep Singh Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10107,
+	"LedgerName": "Ser Sec Manjit Singh Sahi Works Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9115,
+	"LedgerName": "Ser Sec Mannu ",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6007,
+	"LedgerName": "ser sec manpreet singh electric deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6782,
+	"LedgerName": "Ser Sec Mukhtiar Lal Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9109,
+	"LedgerName": "Ser Sec Paramjit Kaur Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8600,
+	"LedgerName": "Ser Sec Pardeep Kumar Sharma ",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9106,
+	"LedgerName": "Ser Sec Parminder Singh Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9111,
+	"LedgerName": "Ser Sec Prabjit Kaur Bot Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8311,
+	"LedgerName": "Ser Sec Pritam Singh Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5977,
+	"LedgerName": "Ser Sec Radhe Kcghs",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9108,
+	"LedgerName": "Ser Sec Rajbir Singh Bot Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6006,
+	"LedgerName": "Ser Sec Ranjit Singh Electric Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8821,
+	"LedgerName": "Ser Sec Retish Kumar Works Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6013,
+	"LedgerName": "Ser Sec Sandeep Singh Electric Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9104,
+	"LedgerName": "Ser Sec Satinder Kaur Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6009,
+	"LedgerName": "Ser Sec Som Nath electric deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6921,
+	"LedgerName": "Ser Sec Sonu Electric Deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5975,
+	"LedgerName": "Ser Sec Sonu Singh Kcghs",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6005,
+	"LedgerName": "ser sec surinder singh electric deott",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 6014,
+	"LedgerName": "Ser Sec Tasvir singh electric deptt",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9110,
+	"LedgerName": "Ser Sec Ujjaljeet Kca",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 8578,
+	"LedgerName": "Server Hire Charges",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2903,
+	"LedgerName": "Service Security - Harbhajan Singh (Electric Superintendent)",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3798,
+	"LedgerName": "Service Security - Inder Preet Singh Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4107,
+	"LedgerName": "Service Security - Mohali",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 412,
+	"LedgerName": "Service Security - Nancy Sharma Hso",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1996,
+	"LedgerName": "Service Security - Sangeeta (Kcoe)",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2945,
+	"LedgerName": "Service Security - Sukhdev Singh KCA",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5464,
+	"LedgerName": "Service Security Rece",
+	"AccountGroupName": "Security Deposits Staff",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3714,
+	"LedgerName": "Sewerage Work",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4127,
+	"LedgerName": "Sher Shah Suri Road Plot,Asr",
+	"AccountGroupName": "Funds and Liabilities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7958,
+	"LedgerName": "Short Term Investment",
+	"AccountGroupName": "FDR Investments",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3736,
+	"LedgerName": "Shri Guru Hargobind Hostel",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4035,
+	"LedgerName": "Siddharth Construction Co. - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4036,
+	"LedgerName": "Simran Builders - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4990,
+	"LedgerName": "Sms Charges",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3852,
+	"LedgerName": "Smt. Balwinder Kaur Scholarship",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3810,
+	"LedgerName": "Smt. Leela Devi",
+	"AccountGroupName": "Endowed Trusts(Sch.B)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4101,
+	"LedgerName": "Special Mtce (G.P.G College Teachers)",
+	"AccountGroupName": "Other Funds",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2419,
+	"LedgerName": "Sri Guru Teg Bahadur College - Building Maintenance",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1763,
+	"LedgerName": "Sri Guru Teg Bahadur College For Women,Asr ",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9367,
+	"LedgerName": "Sri Guru Teg Bahadur College For Women,Asr  ( Sch.A )",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2055,
+	"LedgerName": "Sri Guru Teg Bahadur College For Women,Asr - Principal Advance",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9970,
+	"LedgerName": "Sri Guru Teg Bhadhur College For Women (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2967,
+	"LedgerName": "Staff Provident Fund ",
+	"AccountGroupName": "Funds and Liabilities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3627,
+	"LedgerName": "Staff Provident Fund Fdrs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3675,
+	"LedgerName": "Staff Quarters",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 5257,
+	"LedgerName": "Steel Stock",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1589,
+	"LedgerName": "Student Farm",
+	"AccountGroupName": "Funds and Liabilities",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10031,
+	"LedgerName": "Student Farm (Sch-Q)",
+	"AccountGroupName": "Branch Balances-Q",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4053,
+	"LedgerName": "Student Farm 1.15 - (Schedule-M)",
+	"AccountGroupName": "Inter-Se Balances (Schedule-M)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4199,
+	"LedgerName": "Subscription Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4037,
+	"LedgerName": "Sun Builders - Stock",
+	"AccountGroupName": "Stock Material With Contractors(Sch.L)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3893,
+	"LedgerName": "Sundry Creditors - Mohali",
+	"AccountGroupName": "Book Debits \u0026Advances(Sch.E)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2074,
+	"LedgerName": "Surplus/Deficit",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4083,
+	"LedgerName": "T.D.S.Recoverable",
+	"AccountGroupName": "Assets and Properties",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 978,
+	"LedgerName": "TDS Payable",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3871,
+	"LedgerName": "Teachers General P.F.Schools Fdrs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4102,
+	"LedgerName": "Technical Class Fund",
+	"AccountGroupName": "Other Funds",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3865,
+	"LedgerName": "Technical Class Fund FDRs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1305,
+	"LedgerName": "Telephone \u0026 Lease Line Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2163,
+	"LedgerName": "Testing",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3873,
+	"LedgerName": "TGP Fund College Fdrs",
+	"AccountGroupName": "Investment of Funds(Sch.c)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3624,
+	"LedgerName": "Tiles Stock",
+	"AccountGroupName": "Constructions Material Sch-I ",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4028,
+	"LedgerName": "Transformer Security",
+	"AccountGroupName": "Security Deposits(Sch.J)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1330,
+	"LedgerName": "U.P.S.",
+	"AccountGroupName": "Captial Expenditure(Sch.D)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9368,
+	"LedgerName": "U.P.S. ( Sch.A )",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3905,
+	"LedgerName": "Under Secretary",
+	"AccountGroupName": "With Impreset Holders(Sch.F)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 2422,
+	"LedgerName": "Uniforms",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1212,
+	"LedgerName": "Vat Payable",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4198,
+	"LedgerName": "Voter Fee",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9957,
+	"LedgerName": "W/O Steel Stock",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 9727,
+	"LedgerName": "Water \u0026 Sewerage Charges ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3932,
+	"LedgerName": "Water Charges Rece",
+	"AccountGroupName": "Income",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3695,
+	"LedgerName": "Water Tank",
+	"AccountGroupName": "Building \u0026 Property (Sch.A)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1765,
+	"LedgerName": "With Hold Amount Of Flush Door (Swaraj Contractor) ",
+	"AccountGroupName": "Payable/Adjusts Table Item(Sch.H)",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 3993,
+	"LedgerName": "With State Govt.",
+	"AccountGroupName": "FDR Investments",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1302,
+	"LedgerName": "Works Department - Contingency",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 4203,
+	"LedgerName": "Works Department - Stationery",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 7554,
+	"LedgerName": "Works Department Electricity ",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 985,
+	"LedgerName": "Works Department Salary \u0026 Other Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 1304,
+	"LedgerName": "Works Deptt Telephone Exp",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+], [
+	"LedgerId": 10022,
+	"LedgerName": "Ziology Dept. Salary",
+	"AccountGroupName": "Expenditure",
+	"Inst_ShortTitle": "Joint Account"
+]]

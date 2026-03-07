@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "ResetVouchers";
+}
+<style>
+    .dataTables_wrapper .dataTables_filter {
+        float: right !important;
+        margin-bottom: 5px !important;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">Reset Vouchers</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">Search For Vouchers</div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <div class="row table-top modify-pag-cls">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label> VocherType:</label>
+                                <select id="ddlVocherTypes" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label> From Date:</label>
+                                <div class="input-group date" id="dtgroupDate">
+                                    <input id="txtFromDate" type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-th"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button id="btnView" type="button" class="btn btn-primary btn-space btn-column">View</button>
+                                <button id="btnSave" type="button" class="btn btn-primary btn-column">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">
+                Vouchers Information
+            </div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <table class="table-fixed table table-striped table-bordered table-hover main-table" id="tblResetVochers">
+                        <thead>
+                            <tr>
+                                <th>TransactionMasterId</th>
+                                <th>NewNotiNum</th>
+                                <th>Transaction Date</th>
+                                <th>Old Voucher No</th>
+                                <th>New Voucher No</th>
+                                <th>Cheque No.</th>
+                                <th>Amount</th>
+                                <th>Insert Date</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/CustomScripts/ResetVochers.js"></script>
+
+

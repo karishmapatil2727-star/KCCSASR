@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="TransactionStatusURL" value="https://ipg.in.worldline.com/getTransactionStatus" />
+	<add key="CancelTransactionURL" value="https://ipg.in.worldline.com/doCancelRequest" />
+	<add key="RefundTransactionURL" value="https://ipg.in.worldline.com/doRefundRequest" />
+  </appSettings>
+</configuration>

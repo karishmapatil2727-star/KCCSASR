@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "BalanceTransfer";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Balance Transfer</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-10">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">
+                <div class="panel-body">
+                    <div class="table-container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6">Current Year:</div>
+                                    <div class="col-md-6"><span id="spnCurrentYear"></span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6">Next Year:</div>
+                                    <div class="col-md-6"><span id="spnNextYear"></span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" id="btnTransfer" class="btn btn-primary">Transfer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-8">
+                                <h2> Note:-</h2>
+
+                                <p>Before transfer balances, please make a Journal Entry against Surplus/Deficit values in Transaction Master.Otherwise it will create Difference in Balance Sheet.  For more information contact to Account Administration in sectriate Office</p>
+
+                                <p>If you already transfer balances into New Year. Now it will be removed  and new balances will be updated.</p>
+
+                                <p>Any Income or Expenses Ledger's Opening Balance will be removed, if you mention opening balance.</p>
+                                <p>Only Assets or Liabilities Ledger's Balances will be carrying forward. Into Next year.</p>
+                            </div>
+                            <div class="col-md-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/CustomScripts/BalanceTransfer.js"></script>

@@ -1,0 +1,30 @@
+﻿@{
+
+    ViewBag.Title = "BudgetDetails";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Budget Details</h1>
+    </div>
+</div>
+
+<div class="row" id="divModifyBudget">
+    <div class="col-lg-12">
+        @Html.Partial("_ModifyBudgetDetails")
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        @Html.Partial("_ViewBudgetDetails")
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        @Html.Partial("_BudgetDetailsList")
+    </div>
+</div>
+
+<script src="~/Scripts/CustomScripts/BudgetDetails.js"></script>

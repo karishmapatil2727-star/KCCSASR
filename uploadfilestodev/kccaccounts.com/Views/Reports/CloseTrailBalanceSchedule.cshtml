@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "CloseTrailBalanceSchedule";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Close Trail Balance (With Schedule Wise)</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">Close Trail Balance (With Schedule Wise)</div>
+            <div class="panel-body">
+                <div class="table-container1">
+                    <div class="row table-top">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label>
+                                    Org.Name:
+                                </label>
+                                <select id="ddlInstitute" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label>
+                                    Starting Date:
+                                </label>
+                                <div class="input-group date" id="dtStaringDate">
+                                    <input id="txtStaringDate" type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-th"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label>
+                                    Ending Date:
+                                </label>
+                                <div class="input-group date" id="dtEndingDate">
+                                    <input id="txtEndingDate" type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-th"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" id="btnView" class="btn btn-primary btn-column">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">Close Trail Balance (With Schedule Wise)</div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <table id="tblCloseTrailBalanceScheduleSheetReport" class="table-fixed table table-striped table-bordered table-hover main-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Particulars</th>
+                                <th className="align-right">Debit</th>
+                                <th className="align-right">Credit</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th><span id="spnTotalDebit"></span></th>
+                                <th><span id="spnTotalCredit"></span></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Partial("_groupSummaryReport")
+@Html.Partial("_groupSchSummaryReport")
+<script src="~/Scripts/CustomScripts/CloseTrailBalanceSchedule.js"></script>

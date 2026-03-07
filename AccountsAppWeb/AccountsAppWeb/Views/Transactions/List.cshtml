@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "List";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Transactions List</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">
+                Search for Transaction Vouchers
+            </div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <div class="row table-top list-pag-cls">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label>
+                                    Org.Name:
+                                </label>
+                                <select id="ddlInstitute" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label>
+                                    Vocher Type:
+                                </label>
+                                <select id="ddlVocherTypes" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label>
+                                    Starting Date:
+                                </label>
+                                <div class="input-group date" id="dtStaringDate">
+                                    <input id="txtStaringDate" type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-th"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label>
+                                    Ending Date:
+                                </label>
+                                <div class="input-group date" id="dtEndingDate">
+                                    <input id="txtEndingDate" type="text" class="form-control">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-th"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" id="btnView" class="btn btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default panel-primary2">
+            <div class="panel-heading">List Of Transaction Vouchers <span id="spnTitleText"></span> </div>
+            <div class="panel-body">
+                <div class="table-container">
+                    <table class="table-fixed table table-striped table-bordered table-hover main-table" id="tblListVocherList">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Date</th>
+                                <th>V.Type</th>
+                                <th>V. No</th>
+                                <th>Cheque No.</th>
+                                <th width="300px">Particular</th>
+                                <th className="align-right">Debit</th>
+                                <th className="align-right">Credit</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th>Total</th>
+                                <th colspan="4"></th>
+                                <th><span id="spnDebitAmount"></span></th>
+                                <th><span id="spnCreditAmount"></span></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/CustomScripts/TransactionsList.js"></script>

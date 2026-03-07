@@ -1,0 +1,42 @@
+﻿<div id="dvGroupSchSummaryRpt" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:850px;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Group Summary</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default panel-primary2">
+                            <div class="panel-heading"><span id="spnschGroupName"></span> </div>
+                            <div class="panel-body">
+                                <div class="table-container">
+                                    <table id="tblGroupSCHSummaryReport" class="table-fixed table table-striped table-bordered table-hover main-table" style="width:750px!important;">
+                                        <thead>
+                                            <tr>
+                                                <th>SerialId</th>
+                                                <th>Particulars</th>
+                                                <th className="align-right">Debit</th>
+                                                <th className="align-right">Credit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th colspan="2">Grand Total</th>
+                                                <th><span id="spnschGrpTotalDebit"></span></th>
+                                                <th><span id="spnschGrpTotalCredit"></span></th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
