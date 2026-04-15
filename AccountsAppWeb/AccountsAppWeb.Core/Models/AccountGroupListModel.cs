@@ -7,6 +7,7 @@
         public string UnderGroupTitle { get; set; }
         public string Nature { get; set; } 
         public int IsEnable { get; set; }
-       public bool IsCommonGroup { get; set; }
+        public bool IsCommonGroup { get; set; }
+        public bool IsParty { get; set; }
     }
 }

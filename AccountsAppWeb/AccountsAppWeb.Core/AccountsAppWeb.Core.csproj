@@ -36,6 +36,7 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
@@ -127,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="bin\AccountsAppWeb.Core.dll.config" />
     <None Include="bin\Release\AccountsAppWeb.Core.dll.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
@@ -146,10 +148,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost:60953/WebAPI/AccountsAppAPI.asmx">
+    <WebReferenceUrl Include="http://dev.kccsaccounts.com/webapi/AccountsAppAPI.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\com.kccsasr.accounts\</RelPath>
-      <UpdateFromURL>http://localhost:60953/WebAPI/AccountsAppAPI.asmx</UpdateFromURL>
+      <UpdateFromURL>http://dev.kccsaccounts.com/webapi/AccountsAppAPI.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
@@ -162,7 +164,11 @@
     <None Include="Web References\com.kccsasr.accounts\AccountsAppAPI.disco" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\AccountsAppWeb.Core.dll" />
+    <Content Include="bin\AccountsAppWeb.Core.pdb" />
     <Content Include="bin\AccountsAppWeb.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
     <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="bin\Release\AccountsAppWeb.Core.dll" />
     <Content Include="bin\Release\AccountsAppWeb.Core.pdb" />
@@ -171,6 +177,13 @@
     <Content Include="bin\Release\itextsharp.xml" />
     <Content Include="bin\Release\System.ValueTuple.dll" />
     <Content Include="bin\Release\System.ValueTuple.xml" />
+    <Content Include="bin\System.ValueTuple.dll" />
+    <Content Include="bin\System.ValueTuple.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />

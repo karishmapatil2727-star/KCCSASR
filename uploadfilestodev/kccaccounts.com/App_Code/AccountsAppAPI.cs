@@ -139,7 +139,7 @@ public class AccountsAppAPI : DataBaseConnection
             param = new SqlParameter[1];
             param[0] = new SqlParameter("@InstId", InstId);
             if(userName.Equals("300010"))
-            ds = SqlHelper.ExecuteDataset(con, CommandType.StoredProcedure, "DisplayVoucherDetails", param);
+                ds = SqlHelper.ExecuteDataset(con, CommandType.StoredProcedure, "DisplayVoucherDetails", param);
             SKey = "";
         }
         catch (Exception ex)
@@ -800,7 +800,7 @@ public class AccountsAppAPI : DataBaseConnection
         return ds;
     }
 
-   
+
     /// <summary>
     /// Function to fill AccountLedgers for combobox
     /// </summary>
@@ -861,7 +861,7 @@ public class AccountsAppAPI : DataBaseConnection
                 transaction.Add(LoopTD);
             }
             string jsonData = JsonConvert.SerializeObject(transaction);//Added for backup changes
-            int count= TransactionDetailsBackup(skey, jsonData);//Added for backup changes
+            int count = TransactionDetailsBackup(skey, jsonData);//Added for backup changes
             db.SaveChanges();
             TransactionNotificationInsert(InstId, TransactionMasterId);
             if (transactionDetail.Count == count)
@@ -970,7 +970,7 @@ public class AccountsAppAPI : DataBaseConnection
 
 
     [WebMethod]
-    public bool InsertAccountGroup(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify,bool IsCommonGroup, int financialYearId)
+    public bool InsertAccountGroup(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify, bool IsCommonGroup, int financialYearId, bool IsParty)
     {
         try
         {
@@ -989,8 +989,10 @@ public class AccountsAppAPI : DataBaseConnection
                 al.UpdateDate = DateTime.Now;
                 al.UpdateUserAccountId = Ac.UpdateUserAccountId;
                 db.SaveChanges();
+                // ADD — save IsParty via direct SQL
+                UpdateIsPartyBothTables(Ac.AccountGroupId, IsParty);
                 if(financialYearId.Equals(9))
-                UpdateAccountGroupById(SKey, Ac.AccountGroupId,IsCommonGroup);
+                    UpdateAccountGroupById(SKey, Ac.AccountGroupId,IsCommonGroup);
                 return true;
             }
 
@@ -1001,13 +1003,15 @@ public class AccountsAppAPI : DataBaseConnection
                 Ac.UpdateDate = System.DateTime.Now;
                 db.Add(Ac);
                 db.SaveChanges();
+                // ADD — save IsParty via direct SQL
+                UpdateIsPartyBothTables(Ac.AccountGroupId, IsParty);
 
                 //AccountGroup ag = new AccountGroup();
                 //ag.AccountGroupId = Ac.AccountGroupId;
                 //ag.InstId = InstId;
                 //db.Add(ag);
                 //db.SaveChanges();
-                   if (financialYearId.Equals(9))
+                if (financialYearId.Equals(9))
                     InsertAccountGroupById(SKey,Ac.AccountGroupId,InstId,IsCommonGroup);
 
 
@@ -1036,7 +1040,7 @@ public class AccountsAppAPI : DataBaseConnection
         }
         catch(Exception ex)
         {
-            return dt; }
+            return dt;}
     }
 
     [WebMethod]
@@ -1065,7 +1069,7 @@ public class AccountsAppAPI : DataBaseConnection
         }
         catch(Exception ex)
         {
-return ds; }
+            return ds; }
     }
 
     [WebMethod]
@@ -1128,7 +1132,7 @@ return ds; }
 
 
     [WebMethod]
-    public bool InsertAccountLedger(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId,int financialYearId)
+    public bool InsertAccountLedger(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId, int financialYearId, string GSTNo, bool IsGSTSales, string HSNCode, bool IsItem)
     {
         try
         {
@@ -1137,32 +1141,43 @@ return ds; }
                 var al = (from obj1 in db.AccountLedgerMasters
                           where obj1.LedgerId == alm.LedgerId
                           select obj1).FirstOrDefault();
+                if (al != null)
+                {
+                    al.AccountGroupId = alm.AccountGroupId;
+                    al.Address = alm.Address;
+                    al.CrOrDr = alm.CrOrDr;
+                    al.CST = alm.CST;
+                    al.Email = alm.Email;
+                    al.LedgerName = alm.LedgerName;
+                    al.LedgerNameAlias = alm.LedgerNameAlias;
+                    al.LedgerNamePrint = alm.LedgerNamePrint;
+                    al.Mobile = alm.Mobile;
+                    al.Narration = alm.Narration;
+                    al.PAN = alm.PAN;
+                    al.Phone = alm.Phone;
+                    al.TIN = alm.TIN;
+                    al.UpdateDate = DateTime.Now;
+                    al.UpdateUserAccountId = alm.UpdateUserAccountId;
+                    al.IsUnderSecretary = alm.IsUnderSecretary;
+                    al.IsShowMainCollege = alm.IsShowMainCollege;
 
-                al.AccountGroupId = alm.AccountGroupId;
-                al.Address = alm.Address;
-                al.CrOrDr = alm.CrOrDr;
-                al.CST = alm.CST;
-                al.Email = alm.Email;
-                al.LedgerName = alm.LedgerName;
-                al.LedgerNameAlias = alm.LedgerNameAlias;
-                al.LedgerNamePrint = alm.LedgerNamePrint;
-                al.Mobile = alm.Mobile;
-                al.Narration = alm.Narration;
-                al.PAN = alm.PAN;
-                al.Phone = alm.Phone;
-                al.TIN = alm.TIN;
-                al.UpdateDate = DateTime.Now;
-                al.UpdateUserAccountId = alm.UpdateUserAccountId;
-                al.IsUnderSecretary = alm.IsUnderSecretary;
-                al.IsShowMainCollege = alm.IsShowMainCollege;
-                //al.GST = alm.GST;
-                //al.IsGSTSales = alm.IsGSTSales;
+                    db.Dispose();
+                    db = new AccountsDB.EntitiesModel();
+                    db.AttachCopy(alm);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    UpdateLedgerFields(alm, GSTNo, IsGSTSales,HSNCode,IsItem);
+                }
+                if (al != null)
+                 SaveGSTFields(alm.LedgerId, GSTNo, IsGSTSales);
 
-                db.SaveChanges();
+                SaveItemFields(alm.LedgerId, HSNCode,IsItem);
 
                 UpdateAccountLedgerOpeningBalance(SKey, alm.LedgerId, ob.OB_OpeningBalance, ob.OB_CrOrDr, ob.OB_FinancialYearId, ob.OB_InstId, Convert.ToInt32(ob.OB_ForInstId), OldForInstId);
-                if(financialYearId.Equals(9))
-                UpdateAccountLedgerById(SKey, alm.LedgerId);
+                if (financialYearId.Equals(9))
+                    UpdateAccountLedgerById(SKey, alm.LedgerId);
                 //var obj = (from ac in db.AccountLedgerOpeningBalances
                 //           where ac.OB_InstId == ob.OB_InstId && ac.OB_LedgerId == ob.OB_LedgerId && ac.OB_FinancialYearId == ob.OB_FinancialYearId
                 //           select ac).FirstOrDefault();
@@ -1188,7 +1203,28 @@ return ds; }
             }
             else
             {
-                int Id = (from i in db.AccountLedgerMasters select i.LedgerId).Max(); // Getting Max LedgerId from Master Table
+                // GET MAX ID — with fallback
+                int Id = 0;
+                try
+                {
+                    // EXISTING CODE — unchanged
+                    Id = (from i in db.AccountLedgerMasters select i.LedgerId).Max();
+                }
+                catch
+                {
+                    // FALLBACK — direct SQL
+                    string connStrMax = AccountsDB.DataBaseConnection.Connection();
+                    using (SqlConnection conMax = new SqlConnection(connStrMax))
+                    {
+                        conMax.Open();
+                        SqlCommand cmdMax = new SqlCommand(
+                            "SELECT MAX(LedgerId) FROM Accounts.AccountLedgerMaster", conMax);
+                        object result = cmdMax.ExecuteScalar();
+                        Id = (result != null && result != DBNull.Value)
+                             ? Convert.ToInt32(result) : 0;
+                    }
+                }
+
                 alm.LedgerId = Id + 1;
                 alm.InsertDate = System.DateTime.Now;
                 alm.UpdateDate = System.DateTime.Now;
@@ -1204,6 +1240,10 @@ return ds; }
                 //db.Add(AL1);
                 //db.SaveChanges();
 
+                SaveGSTFields(alm.LedgerId, GSTNo, IsGSTSales);
+
+                SaveItemFields(alm.LedgerId, HSNCode, IsItem);
+
                 InsertLedgerDataForAllInst(SKey, AL.InstId, AL.ForInstId, alm.LedgerId);
 
                 ob.OB_InsertDate = DateTime.Now;
@@ -1211,12 +1251,18 @@ return ds; }
                 ob.OB_ForInstId = AL.ForInstId;
                 db.Add(ob);
                 db.SaveChanges();
-                if (financialYearId >=9)
-                UpdateAccountLedgerById(SKey, alm.LedgerId);
+                if (financialYearId >= 9)
+                    UpdateAccountLedgerById(SKey, alm.LedgerId);
             }
             return true;
         }
-        catch (Exception ex) { return false; }
+        catch (Exception ex)
+        {
+            System.IO.File.AppendAllText(@"C:\APIError.txt",
+        DateTime.Now + " InsertAccountLedger: " + ex.Message + "\r\n" +
+        ex.StackTrace + "\r\n\r\n");
+            return false;
+        }
 
     }
 
@@ -1241,10 +1287,39 @@ return ds; }
                 avc.OB_InstId = InstId;
                 avc.OB_LedgerId = LedgerId;
                 avc.OB_ForInstId = ForInstId;
-                db.Add(avc);
+                // WRAP ONLY db calls
+                try
+                {
+                    db.Add(avc);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    // FALLBACK — direct SQL insert
+                    string connStr = AccountsDB.DataBaseConnection.Connection();
+                    using (SqlConnection con = new SqlConnection(connStr))
+                    {
+                        con.Open();
+                        SqlCommand cmd = new SqlCommand(
+                            @"INSERT INTO Accounts.AccountLedgerOpeningBalance
+                            (OB_LedgerId, OB_InstId, OB_FinancialYearId,
+                             OB_ForInstId, OB_OpeningBalance, OB_CrOrDr,
+                             OB_DepartmentId, OB_InsertDate)
+                          VALUES
+                            (@LedgerId, @InstId, @FinancialYearId,
+                             @ForInstId, @OpeningBalance, @CrDr,
+                             0, @InsertDate)", con);
 
-
-                db.SaveChanges();
+                        cmd.Parameters.AddWithValue("@LedgerId", LedgerId);
+                        cmd.Parameters.AddWithValue("@InstId", InstId);
+                        cmd.Parameters.AddWithValue("@FinancialYearId", FinancialYearId);
+                        cmd.Parameters.AddWithValue("@ForInstId", ForInstId);
+                        cmd.Parameters.AddWithValue("@OpeningBalance", OpeningBalance);
+                        cmd.Parameters.AddWithValue("@CrDr", CrDr);
+                        cmd.Parameters.AddWithValue("@InsertDate", DateTime.Now);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
             }
             else
             {
@@ -1253,14 +1328,49 @@ return ds; }
                 obj.OB_CrOrDr = CrDr;
                 obj.OB_InsertDate = DateTime.Now;
                 obj.OB_ForInstId = ForInstId;
-                db.SaveChanges();
+                // WRAP ONLY db call
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    // FALLBACK — direct SQL update
+                    string connStr = AccountsDB.DataBaseConnection.Connection();
+                    using (SqlConnection con = new SqlConnection(connStr))
+                    {
+                        con.Open();
+                        SqlCommand cmd = new SqlCommand(
+                            @"UPDATE Accounts.AccountLedgerOpeningBalance SET
+                            OB_OpeningBalance  = @OpeningBalance,
+                            OB_CrOrDr         = @CrDr,
+                            OB_ForInstId      = @ForInstId,
+                            OB_InsertDate     = @InsertDate
+                          WHERE OB_LedgerId        = @LedgerId
+                          AND   OB_InstId          = @InstId
+                          AND   OB_FinancialYearId = @FinancialYearId
+                          AND   OB_ForInstId       = @OldForInstId", con);
 
+                        cmd.Parameters.AddWithValue("@OpeningBalance", OpeningBalance);
+                        cmd.Parameters.AddWithValue("@CrDr", CrDr);
+                        cmd.Parameters.AddWithValue("@ForInstId", ForInstId);
+                        cmd.Parameters.AddWithValue("@InsertDate", DateTime.Now);
+                        cmd.Parameters.AddWithValue("@LedgerId", LedgerId);
+                        cmd.Parameters.AddWithValue("@InstId", InstId);
+                        cmd.Parameters.AddWithValue("@FinancialYearId", FinancialYearId);
+                        cmd.Parameters.AddWithValue("@OldForInstId", OldForInstId);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
             }
-
             return true;
         }
-        catch { return false; }
-
+        catch (Exception ex)
+        {
+            System.IO.File.AppendAllText(@"C:\APIError.txt",
+                DateTime.Now + " UpdateOB: " + ex.Message + "\r\n");
+            return false;
+        }
     }
 
     [WebMethod]
@@ -1480,7 +1590,7 @@ return ds; }
     }
 
     [WebMethod]
-    public DataTable AccountGroupEnableById(string SKey, int AccountGroupId,int IsEnable)
+    public DataTable AccountGroupEnableById(string SKey, int AccountGroupId, int IsEnable)
     {
         try
         {
@@ -2521,30 +2631,201 @@ return ds; }
         return ds;
     }
 
-    ///// <summary>
-    ///// Function to fill Party for combobox
-    ///// </summary>
-    ///// <returns></returns>
-    //[WebMethod]
-    //public DataSet AccountPartyForGSTSales(string SKey, int InstId, int FinancialYearId, int DepartmentId, int GroupId, int ShowInTransactionPage)
-    //{
-    //    try
-    //    {
-    //        param = new SqlParameter[5];
-    //        param[0] = new SqlParameter("@InstId", InstId);
-    //        param[1] = new SqlParameter("@FinancialYearId", FinancialYearId);
-    //        param[2] = new SqlParameter("@GroupId", GroupId);
-    //        param[3] = new SqlParameter("@DepartmentId", DepartmentId);
-    //        param[4] = new SqlParameter("@ShowInTransactionPage", ShowInTransactionPage);
-    //        ds = SqlHelper.ExecuteDataset(con, CommandType.StoredProcedure, "Accounts.AccountPartyForGSTSales", param);
-    //        SKey = "";
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        SKey = ex.ToString();
-    //    }
-    //    return ds;
-    //}
+    private void SaveGSTFields(int ledgerId, string gstNo, bool isGSTSales)
+    {
+        try
+        {
+            // USE THIS — same connection string used everywhere in this class
+            string connStr = AccountsDB.DataBaseConnection.Connection();
+
+            using (SqlConnection con = new SqlConnection(connStr))
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand(
+                    @"UPDATE Accounts.AccountLedgerMaster 
+                  SET GSTNo       = @GSTNo, 
+                      IsGSTSales  = @IsGSTSales 
+                  WHERE LedgerId  = @LedgerId", con))
+                {
+                    cmd.Parameters.AddWithValue("@GSTNo",
+                        string.IsNullOrEmpty(gstNo) ? (object)DBNull.Value : gstNo);
+                    cmd.Parameters.AddWithValue("@IsGSTSales", isGSTSales);
+                    cmd.Parameters.AddWithValue("@LedgerId", ledgerId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
+    private bool UpdateLedgerFields(AccountLedgerMaster alm, string GSTNo, bool IsGSTSales, string HSNCode, bool IsItem)
+    {
+        try
+        {
+            string connStr = AccountsDB.DataBaseConnection.Connection();
+            using (SqlConnection con = new SqlConnection(connStr))
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand(
+                    @"UPDATE Accounts.AccountLedgerMaster SET
+                    AccountGroupId      = @AccountGroupId,
+                    Address             = @Address,
+                    CrOrDr              = @CrOrDr,
+                    CST                 = @CST,
+                    LedgerName          = @LedgerName,
+                    LedgerNameAlias     = @LedgerNameAlias,
+                    LedgerNamePrint     = @LedgerNamePrint,
+                    Mobile              = @Mobile,
+                    Narration           = @Narration,
+                    PAN                 = @PAN,
+                    TIN                 = @TIN,
+                    UpdateDate          = @UpdateDate,
+                    UpdateUserAccountId = @UpdateUserAccountId,
+                    GSTNo               = @GSTNo,
+                    IsGSTSales          = @IsGSTSales,
+                    HSNCode             = @HSNCode,
+                    IsItem              = @IsItem
+                WHERE LedgerId          = @LedgerId", con))
+                {
+                    cmd.Parameters.AddWithValue("@AccountGroupId", alm.AccountGroupId);
+                    cmd.Parameters.AddWithValue("@Address", (object)alm.Address ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@CrOrDr", (object)alm.CrOrDr ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@CST", (object)alm.CST ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@LedgerName", (object)alm.LedgerName ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@LedgerNameAlias", (object)alm.LedgerNameAlias ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@LedgerNamePrint", (object)alm.LedgerNamePrint ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Mobile", (object)alm.Mobile ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Narration", (object)alm.Narration ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@PAN", (object)alm.PAN ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@TIN", (object)alm.TIN ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@UpdateDate", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@UpdateUserAccountId", alm.UpdateUserAccountId);
+                    cmd.Parameters.AddWithValue("@GSTNo", string.IsNullOrEmpty(GSTNo) ? (object)DBNull.Value : GSTNo);
+                    cmd.Parameters.AddWithValue("@IsGSTSales", IsGSTSales);
+                    cmd.Parameters.AddWithValue("@HSNCode", string.IsNullOrEmpty(HSNCode) ? (object)DBNull.Value : HSNCode);
+                    cmd.Parameters.AddWithValue("@IsItem", IsItem);
+                    cmd.Parameters.AddWithValue("@LedgerId", alm.LedgerId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            return true;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    private void UpdateIsPartyBothTables(int accountGroupId, bool isParty)
+    {
+        try
+        {
+            string connStr = AccountsDB.DataBaseConnection.Connection();
+            using (SqlConnection sqlCon = new SqlConnection(connStr))
+            {
+                sqlCon.Open();
+
+                // 1. Update AccountGroupMaster
+                using (SqlCommand cmd1 = new SqlCommand(
+                    @"UPDATE Accounts.AccountGroupMaster 
+                  SET IsParty = @IsParty 
+                  WHERE AccountGroupId = @AccountGroupId", sqlCon))
+                {
+                    cmd1.Parameters.AddWithValue("@IsParty", isParty ? 1 : 0);
+                    cmd1.Parameters.AddWithValue("@AccountGroupId", accountGroupId);
+                    int rows1 = cmd1.ExecuteNonQuery();
+                }
+
+                // 2. Update AccountGroup (all institute rows — this is what vAccountGroup reads)
+                using (SqlCommand cmd2 = new SqlCommand(
+                    @"UPDATE Accounts.AccountGroup 
+                  SET IsParty = @IsParty 
+                  WHERE AccountGroupId = @AccountGroupId", sqlCon))
+                {
+                    cmd2.Parameters.AddWithValue("@IsParty", isParty ? 1 : 0);
+                    cmd2.Parameters.AddWithValue("@AccountGroupId", accountGroupId);
+                    int rows2 = cmd2.ExecuteNonQuery();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    private void SaveItemFields(int ledgerId, string hsnCode, bool isItem)
+    {
+        try
+        {
+            string connStr = AccountsDB.DataBaseConnection.Connection();
+            using (SqlConnection con = new SqlConnection(connStr))
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand(
+                    @"UPDATE Accounts.AccountLedgerMaster
+                  SET    HSNCode  = @HSNCode,
+                         IsItem   = @IsItem
+                  WHERE  LedgerId = @LedgerId", con))
+                {
+                    cmd.Parameters.AddWithValue("@HSNCode",
+                        string.IsNullOrEmpty(hsnCode)
+                            ? (object)DBNull.Value : hsnCode);
+                    cmd.Parameters.AddWithValue("@IsItem", isItem);
+                    cmd.Parameters.AddWithValue("@LedgerId", ledgerId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+    // EXISTING — shown for reference
+    [WebMethod]
+    public DataSet GetPartyLedgersForGST(string SKey, int InstId, int FinancialYearId)
+    {
+        string connStr = AccountsDB.DataBaseConnection.Connection();
+        using (SqlConnection con = new SqlConnection(connStr))
+        {
+            SqlCommand cmd = new SqlCommand("[Accounts].[GetPartyLedgersForGST]", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@InstId", InstId);
+            cmd.Parameters.AddWithValue("@FinancialYearId", FinancialYearId);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
+    }
+    [WebMethod]
+    public DataSet GetItemsByIncomeGSTSalesGroup(string SKey, int InstId, int FinancialYearId)
+    {
+        try
+        {
+            string connStr = AccountsDB.DataBaseConnection.Connection();
+            using (SqlConnection con = new SqlConnection(connStr))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "[Accounts].[GetItemsByIncomeGSTSalesGroup]", con);  // ← stored proc
+                cmd.CommandType = CommandType.StoredProcedure;           // ← not inline SQL
+                cmd.Parameters.AddWithValue("@InstId", InstId);
+                cmd.Parameters.AddWithValue("@FinancialYearId", FinancialYearId);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                return ds;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
 }
 
-    
+

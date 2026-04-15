@@ -8,6 +8,7 @@
         public string Inst_ShortTitle { get; set; }
         public string CrOrDr { get; set; }
         public decimal OpeningBalance { get; set; }
-       public int IsEnable { get; set; }
+        public int IsEnable { get; set; }
+        public string GSTNo { get; internal set; }
     }
 }

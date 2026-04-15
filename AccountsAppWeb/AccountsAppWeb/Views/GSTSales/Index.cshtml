@@ -19,64 +19,34 @@
             <div class="col-lg-2">
                 <label>Invoice Date</label>
                 <div class="input-group date" id="dtInvoiceDate">
-                    @Html.TextBoxFor(
-                        m => m.InvoiceDate,
-                        new
-                        {
-                            @class = "form-control",
-                            @id = "txtInvoiceDate",
-                            autocomplete = "off"
-                        }
-                    )
+                    @Html.TextBoxFor(m => m.InvoiceDate, new { @class = "form-control", @id = "txtInvoiceDate", autocomplete = "off" })
                     <span class="input-group-addon">
                         <i class="glyphicon glyphicon-th"></i>
                     </span>
                 </div>
             </div>
-
-
             <div class="col-lg-2">
                 <label>Invoice No</label>
-                @Html.TextBoxFor(m => m.InvoiceNo,
-                    new { @class = "form-control", @readonly = "readonly" })
+                @Html.TextBoxFor(m => m.InvoiceNo, new { @class = "form-control", @readonly = "readonly" })
             </div>
-
             <div class="col-lg-3">
                 <label>Party</label>
-                @Html.DropDownListFor(m => m.PartyName,
-                    new SelectList(Model.PartyList),
-                    "Select Party",
-                    new { @class = "form-control", id = "ddlParty" })
+                @Html.DropDownListFor(m => m.SelectedPartyId, Model.PartyList ?? new List<SelectListItem>(),"-- Select Party --",new { @class = "form-control", id = "ddlParty" })
             </div>
-
             <div class="col-lg-2">
                 <label>GST Slab</label>
-                @Html.DropDownListFor(m => m.GSTSlab,
-                    Model.GSTSlabList.Select(x => new SelectListItem
-                    {
-                        Value = x.ToString(),
-                        Text = x + "%"
-                    }),
-                    "Select GST Slab",
-                    new { @class = "form-control", id = "ddlGSTSlab" })
+                @Html.DropDownListFor(m => m.GSTSlab, Model.GSTSlabList.Select(x => new SelectListItem { Value = x.ToString(), Text = x + "%" }), "Select GST Slab", new { @class = "form-control", id = "ddlGSTSlab" })
             </div>
             <div class="col-lg-3">
                 <label>GST Type</label>
-                @Html.DropDownListFor(m => m.GSTType,
-                    new SelectList(Model.GSTTypeList),
-                    "Select GST Type",
-                    new { @class = "form-control", id = "ddlGSTType" })
+                @Html.DropDownListFor(m => m.GSTType, new SelectList(Model.GSTTypeList), "Select GST Type", new { @class = "form-control", id = "ddlGSTType" })
             </div>
         </div>
-
         <br />
         <!-- 🔴 FIXED BUTTON -->
-        <button type="button"
-                id="btnGSTProceed"
-                class="btn btn-primary btn-padding">
+        <button type="button" id="btnGSTProceed" class="btn btn-primary btn-padding">
             Proceed
         </button>
-
     </div>
 </div>
 
@@ -88,46 +58,19 @@
              id="dvAddGSTItem"
              style="display:none;">
             <div class="panel-heading">Add GST Item</div>
-
             <div class="panel-body">
                 <div class="row">
-
                     <div class="col-lg-6">
                         <label>Item</label>
-                        <select id="ddlGSTItems" class="form-control">
-                            <option>Select Item</option>
-                            <option>
-                                Sponsorship – Book Festival Unit – Khalsa College, Amritsar
-                            </option>
-                            <option>
-                                Khalsa College For Women Uncovered (Sch-Q)
-                            </option>
-                        </select>
+                        @Html.DropDownListFor(m => m.SelectedItemId, Model.ItemList ?? new List<SelectListItem>(), "Select Item", new { @class = "form-control", id = "ddlGSTItems" })
                     </div>
-                    <div class="col-lg-2">
-                        <label>HSN Code</label>
-                        <input type="text"
-                               id="txtHSN"
-                               class="form-control" />
-                    </div>
-
-
                     <div class="col-lg-3">
                         <label>Amount</label>
-                        <input type="text"
-                               id="txtItemAmount"
-                               class="form-control" />
+                        <input type="text" id="txtItemAmount" class="form-control" />
                     </div>
-
                     <div class="col-lg-3">
-                        <button type="button"
-                                id="btnAddGSTItem"
-                                class="btn btn-primary"
-                                style="margin-top:25px;">
-                            Proceed
-                        </button>
+                        <button type="button" id="btnAddGSTItem" class="btn btn-primary" style="margin-top:25px;"> Proceed </button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -138,13 +81,9 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default panel-primary2"
-             id="dvGSTItemTable"
-             style="display:none;">
+        <div class="panel panel-default panel-primary2" id="dvGSTItemTable" style="display:none;">
             <div class="panel-heading">GST Item Information</div>
-
             <div class="panel-body">
-
                 <table id="tblGSTItems" class="table table-bordered">
                     <thead>
                         <tr>
@@ -171,6 +110,7 @@
                         <div class="pull-right">
                             <button type="button" id="btnAddSalesGST" class="btn btn-primary btn-space btn-padding">Add Sales GST</button>
                             <button type="button" id="btnDeleteRow" class="btn btn-danger btn-padding">Delete Sales</button>
+                            <button type="button" id="btnViewInvoice" class="btn btn-primary btn-space btn-padding">View Invoice</button>
                         </div>
                     </div>
                 </div>
@@ -204,12 +144,13 @@
                 <div id="summaryGrand">
                     Grand Total : <span id="lblGrandTotal">0.00</span> ₹
                 </div>
-
-
             </div>
         </div>
     </div>
 
 </div>
-
+<!-- HSN Map variable FIRST, before JS file -->
+<script>
+    var itemHSNMap = @Html.Raw(Model.ItemHSNMapJson ?? "{}");
+</script>
 <script src="~/Scripts/CustomScripts/SalesGST.js"></script>

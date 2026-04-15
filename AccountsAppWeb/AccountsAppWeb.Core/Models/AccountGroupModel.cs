@@ -14,5 +14,6 @@ namespace AccountsAppWeb.Core.Models
         public string Nature { get; set; }
         public bool IsAdminGroup { get; set; }
         public bool IsCommonGroup { get; set; }
+        public bool IsParty { get; set; }
     }
 }

@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default panel-primary2">
-            <div class="panel-heading">Account Ledger </div>
+            <div class="panel-heading">Account Ledger</div>
             <div class="panel-body">
                 <div class="table-container1">
                     <div class="row table-top">
@@ -43,7 +43,10 @@
                                     @Html.CheckBoxFor(model => model.IsGSTSales, new { id = "chkIsGSTSales" })
                                     <label for="chkIsGSTSales">IsGSTSales</label>
                                 </div>
-
+                                <div class="col-md-12">
+                                    @Html.CheckBoxFor(model => model.IsItem, new { id = "chkIsItem" })
+                                    <label for="chkIsItem">IsItem</label>
+                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
@@ -59,11 +62,12 @@
 
                                 </div>
                                 <div id="gstPanSection" class="form-group" style="display:none;">
-                                    <label>GST</label>
-                                    @Html.EditorFor(model => model.GST, new { htmlAttributes = new { @class = "form-control" } })
-                                    @Html.ValidationMessageFor(model => model.GST, "", new { @class = "text-danger" })
+                                    <label>GST No</label>
+                                    @Html.EditorFor(model => model.GSTNo, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.GSTNo, "", new { @class = "text-danger" })
 
                                 </div>
+
                                 <div class="form-group">
                                     <label>PAN</label>
                                     @Html.EditorFor(model => model.PAN, new { htmlAttributes = new { @class = "form-control" } })
@@ -81,6 +85,11 @@
                                     @Html.EditorFor(model => model.Narration, new { htmlAttributes = new { @class = "form-control" } })
                                     @Html.ValidationMessageFor(model => model.Narration, "", new { @class = "text-danger" })
                                 </div>
+                                <div id="divHSNCode" class="form-group" style="display:none;">
+                                    <label>HSN / SAC Code</label>
+                                    @Html.TextBoxFor(model => model.HSNCode, new { @class = "form-control", id = "HSNCode" })
+                                </div>
+
                             </div>
                             <div class="col-md-12">
                                 <button id="btnSaveLedger" type="submit" class="btn btn-primary btn-space">Save</button>
@@ -114,35 +123,66 @@
     </div>
 </div>
 <script>
-    $(document).ready(function () {
 
-        toggleGSTFields();
-
-        $("#chkIsGSTSales").change(function () {
-            toggleGSTFields();
-        });
-
-        function toggleGSTFields() {
-
-            if ($("#chkIsGSTSales").is(":checked")) {
-
-                // Disable TIN & CST
-                $("#TIN").prop("disabled", true);
-                $("#CST").prop("disabled", true);
-
-                // Show GST + PAN
-                $("#gstPanSection").slideDown();
-
-            } else {
-
-                // Enable TIN & CST
-                $("#TIN").prop("disabled", false);
-                $("#CST").prop("disabled", false);
-
-                // Hide GST + PAN
-                $("#gstPanSection").slideUp();
+    // Declare as window property — truly global
+    window.toggleGSTFields = function () {
+        if ($("#chkIsGSTSales").is(":checked")) {
+            $("#TIN").prop("disabled", true);
+            $("#CST").prop("disabled", true);
+            $("#gstPanSection").show();
+        } else {
+            $("#TIN").prop("disabled", false);
+            $("#CST").prop("disabled", false);
+            $("#gstPanSection").hide();
+            if (!window.isLoadingEdit) {
+                $("#GSTNo").val('');
             }
         }
+    };
+    window.toggleHSNField = function () {
+        if ($("#chkIsItem").is(":checked")) {
+            $("#divHSNCode").show();
+        } else {
+            $("#divHSNCode").hide();  // fixed
+            if (!window.isLoadingEdit) {
+                $("#HSNCode").val('');
+            }
+        }
+    };
 
+    $(document).ready(function () {
+
+        window.toggleGSTFields();
+        window.toggleHSNField();
+
+        // Only fire on real user interaction
+        $("#chkIsGSTSales").off('change').on('change', function () {
+            if (!window.isLoadingEdit) {
+                window.toggleGSTFields();
+            }
+        });
+
+        $("#chkIsItem").off('change').on('change', function () {
+            debugger;
+            if (!window.isLoadingEdit) {
+                window.toggleHSNField();
+            }
+        });
+
+        // Reset button
+        $("button[type='reset']").off('click').on('click', function () {
+            setTimeout(function () {
+                window.isLoadingEdit = false;
+                $('#chkIsGSTSales').prop('checked', false);
+                $('#GSTNo').val('');
+                $('#TIN').prop('disabled', false);
+                $('#CST').prop('disabled', false);
+                $('#gstPanSection').hide();
+                $('#chkIsItem').prop('checked', false);
+                $('#HSNCode').val('');
+                $('#divHSNCode').hide();
+            }, 100);
+        });
     });
+
 </script>

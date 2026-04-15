@@ -35,6 +35,10 @@ namespace AccountsAppWeb.Core.Models
 
         public bool IsGSTSales { get; set; }
 
-        public string GST { get; set; }
+        public string GSTNo { get; set; }
+
+        public bool IsItem { get; set; }
+
+        public string HSNCode { get; set; }
     }
 }

@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="AccountsAppWeb_Core_com_kccsasr_accounts_AccountsAppAPI" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:63189/WebAPI/AccountsAppAPI.asmx</Value>
+      <Value Profile="(Default)">http://dev.kccsaccounts.com/webapi/AccountsAppAPI.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -5,6 +5,8 @@ using System.Data;
 using AccountsAppWeb.Core.Extensions;
 using System;
 using System.Linq;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace AccountsAppWeb.Core
 {
@@ -18,7 +20,7 @@ namespace AccountsAppWeb.Core
         }
 
         #region account ledger
-        public AccountLedgerModel GetAccountLedger(int instituteId, int financialYearId, int deptId, int ledgerId,int showInTransactionPage)
+        public AccountLedgerModel GetAccountLedger(int instituteId, int financialYearId, int deptId, int ledgerId, int showInTransactionPage)
         {
             DataSet dSet = accountsAppAPI.AccountLedgerForTransaction(sKey, instituteId, financialYearId, deptId, 1, showInTransactionPage);
             if (dSet != null)
@@ -30,9 +32,9 @@ namespace AccountsAppWeb.Core
             else
                 return new AccountLedgerModel();
         }
-        public List<AccountLedgerListViewModel> GetAccountLedgerList(int instituteId, int financialYearId, int deptId,int showInTransactionPage)
+        public List<AccountLedgerListViewModel> GetAccountLedgerList(int instituteId, int financialYearId, int deptId, int showInTransactionPage)
         {
-            DataSet dSet = accountsAppAPI.AccountLedgerForTransaction(sKey, instituteId, financialYearId, deptId, 1,showInTransactionPage);
+            DataSet dSet = accountsAppAPI.AccountLedgerForTransaction(sKey, instituteId, financialYearId, deptId, 1, showInTransactionPage);
             if (dSet != null)
                 return dSet.Tables[0].DataTableToList<AccountLedgerListViewModel>();
             else
@@ -88,9 +90,8 @@ namespace AccountsAppWeb.Core
                 TIN = ledgerModel.TIN,
                 CST = ledgerModel.CST,
                 PAN = ledgerModel.PAN,
-                IsGSTSales = ledgerModel.IsGSTSales,
-                GST = ledgerModel.GST
             };
+
             alm.IsAdminLedger = false;
             alm.LedgerId = ledgerModel.LedgerId;
             alm.IsUnderSecretary = false;
@@ -111,7 +112,8 @@ namespace AccountsAppWeb.Core
                 OB_OpeningBalance = ledgerModel.OpeningBalance,
                 OB_InsertDate = DateTime.Now,
                 OB_ForInstId = instituteId
-            }, IsModify, instituteId,financialYearId);
+            }, IsModify, instituteId, financialYearId, ledgerModel.GSTNo, ledgerModel.IsGSTSales,ledgerModel.HSNCode,ledgerModel.IsItem);
+
             if (IsModify)
             {
                 accountsAppAPI.UpdateAccountLedger(sKey, instituteId, instituteId, instituteId, ledgerModel.LedgerId, ledgerModel.OpeningBalance, financialYearId);
@@ -121,9 +123,9 @@ namespace AccountsAppWeb.Core
         #endregion
 
         #region accountgroup
-        public List<AccountGroupListModel> GetAccountGroupsList(int instituteId,int showInLedger, int financialYearId)
+        public List<AccountGroupListModel> GetAccountGroupsList(int instituteId, int showInLedger, int financialYearId)
         {
-            DataSet dSet = accountsAppAPI.GetAccountGroup(sKey, instituteId, showInLedger,financialYearId);
+            DataSet dSet = accountsAppAPI.GetAccountGroup(sKey, instituteId, showInLedger, financialYearId);
             if (dSet != null)
                 return dSet.Tables[0].DataTableToList<AccountGroupListModel>();
             return new List<AccountGroupListModel>();
@@ -139,7 +141,7 @@ namespace AccountsAppWeb.Core
         {
             return accountsAppAPI.IsAccountGroupIsAlreadyExist(sKey, instituteId, groupName, groupId);
         }
-        public bool InsertAccountGroup(int userId, int instituteId, bool IsModify, AccountGroupModel groupModel,int financialYearId)
+        public bool InsertAccountGroup(int userId, int instituteId, bool IsModify, AccountGroupModel groupModel, int financialYearId)
         {
             return accountsAppAPI.InsertAccountGroup(sKey, new AccountGroupMaster()
             {
@@ -155,15 +157,15 @@ namespace AccountsAppWeb.Core
                 UpdateUserAccountId = userId,
                 UpdateDate = DateTime.Now,
                 IsAdminGroup = false
-            }, instituteId, IsModify,groupModel.IsCommonGroup,financialYearId);
+            }, instituteId, IsModify, groupModel.IsCommonGroup, financialYearId, groupModel.IsParty);
         }
-        public AccountGroupModel GetAccountGroup(int instituteId, int groupId,int showInLedger, int financialYearId)
+        public AccountGroupModel GetAccountGroup(int instituteId, int groupId, int showInLedger, int financialYearId)
         {
-            DataSet dSet = accountsAppAPI.GetAccountGroup(sKey, instituteId,showInLedger,financialYearId);
+            DataSet dSet = accountsAppAPI.GetAccountGroup(sKey, instituteId, showInLedger, financialYearId);
             if (dSet != null)
             {
                 var accountGroupList = dSet.Tables[0].DataTableToList<AccountGroupModel>();
-                return accountGroupList.Where(rec => rec.AccountGroupId == groupId).FirstOrDefault();
+                return accountGroupList.Where(rec => rec.AccountGroupId == groupId).FirstOrDefault();              
             }
             else
                 return new AccountGroupModel();
@@ -178,7 +180,7 @@ namespace AccountsAppWeb.Core
             return string.Empty;
         }
 
-        public string EnableAccountGroup(int groupId,string btnText)
+        public string EnableAccountGroup(int groupId, string btnText)
         {
             int IsEnable = btnText.Equals("Enable") ? 1 : 0;
             DataTable dt = accountsAppAPI.AccountGroupEnableById(sKey, groupId, IsEnable);
@@ -200,7 +202,7 @@ namespace AccountsAppWeb.Core
         }
         #endregion
 
-       
+
         #region Notification Ledger Master
         public List<NotificationPendingLedger> NotificationPendingLedgerList(int instituteId)
         {
@@ -305,7 +307,7 @@ namespace AccountsAppWeb.Core
                 table.Rows.Add(row2);
                 table.AcceptChanges();
             }
-            return accountsAppAPI.LedgerTableConrent(sKey,instituteId,financialId,table);
+            return accountsAppAPI.LedgerTableConrent(sKey, instituteId, financialId, table);
         }
 
         private DataTable CreateTable()
@@ -325,14 +327,58 @@ namespace AccountsAppWeb.Core
             };
         }
 
-        //public List<AccountLedgerMaster> GetPartyList(int instituteId, int financialYearId, int deptId, int showInTransactionPage)
-        //{
-        //    DataSet dSet = accountsAppAPI.AccountPartyForGSTSales(sKey, instituteId, financialYearId, deptId, 1, showInTransactionPage);
-        //    if (dSet != null)
-        //        return dSet.Tables[0].DataTableToList<AccountLedgerMaster>();
-        //    else
-        //        return new List<AccountLedgerMaster>();
-        //}
+        public List<AccountLedgerListViewModel> GetPartyList(string sKey, int instituteId, int financialYearId)
+        {
+            try
+            {
+                string connStr = System.Configuration.ConfigurationManager
+                                    .ConnectionStrings["DataContext"].ConnectionString;
+                using (SqlConnection con = new SqlConnection(connStr))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("[Accounts].[GetPartyLedgersForGST]", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@InstId", instituteId);
+                    cmd.Parameters.AddWithValue("@FinancialYearId", financialYearId);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    if (ds != null && ds.Tables.Count > 0)
+                        return ds.Tables[0].DataTableToList<AccountLedgerListViewModel>();
+                    return new List<AccountLedgerListViewModel>();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;   
+            }
+        }
 
+        public List<GSTItemModel> GetItemsByIncomeGSTSalesGroup(string sKey, int instituteId, int financialYearId)
+        {
+            try
+            {
+                string connStr = System.Configuration.ConfigurationManager
+                                    .ConnectionStrings["DataContext"].ConnectionString;
+                using (SqlConnection con = new SqlConnection(connStr))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("[Accounts].[GetItemsByIncomeGSTSalesGroup]", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@InstId", instituteId);
+                    cmd.Parameters.AddWithValue("@FinancialYearId", financialYearId);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    if (ds != null && ds.Tables.Count > 0)
+                        return ds.Tables[0].DataTableToList<GSTItemModel>();
+                    return new List<GSTItemModel>();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;   
+            }
+        }
     }
 }

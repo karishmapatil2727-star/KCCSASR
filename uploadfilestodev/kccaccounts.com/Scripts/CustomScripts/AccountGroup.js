@@ -11,7 +11,7 @@ $.getJSON('/Base/GetUserData', function (data) {
         $('#btnDeleteRec').on('click', function () {
             deleteGroupRecord();
         });
-        if(userData.InstituteId!='300010')
+        if (userData.InstituteId != '300010')
             $('#addGrpPnl').hide();
     });
 });
@@ -124,6 +124,18 @@ function loadAccountGroupList() {
             { data: "AccountGroupId", name: "Group Id" },
             { data: "AccountGroupName", name: "Group Name" },
             { data: "UnderGroupTitle", name: "Under Group" },
+            {
+                data: "IsParty",
+                name: "Party GST Group",
+                "render": function (data, type, full, meta) {
+                    // If IsParty is true (1), show Yes; else show No
+                    if (data === true || data === 1) {
+                        return '<span class="label label-success">Yes</span>';
+                    } else {
+                        return '<span class="label label-default">No</span>';
+                    }
+                }
+            },
             { data: "Nature", name: "Nature" },
             {
                 "title": "Edit",
@@ -160,11 +172,11 @@ function loadAccountGroupList() {
                  "sortable": false,
                  "className": "tr-edit",
                  "render": function (data, type, full, meta) {
-                     if (userData.IsEnableGroupPage && full.IsEnable == '1' && userData.FinancialYearId>='9') {
-                        return '<a href="#" onClick="enableAccountGroup(' + full.AccountGroupId + ',' + full.IsEnable + ')" class="btn btn-success btn-padding" id="btnDisable">Enabled</a>';
+                     if (userData.IsEnableGroupPage && full.IsEnable == '1' && userData.FinancialYearId >= '9') {
+                         return '<a href="#" onClick="enableAccountGroup(' + full.AccountGroupId + ',' + full.IsEnable + ')" class="btn btn-success btn-padding" id="btnDisable">Enabled</a>';
                      }
                      else if (userData.IsEnableGroupPage && full.IsEnable == '0' && userData.FinancialYearId >= '9') {
-                        return '<a href="#" onClick="enableAccountGroup(' + full.AccountGroupId + ',' + full.IsEnable + ')" class="btn btn-danger btn-padding" id="btnEnable">Disabled</a>';
+                         return '<a href="#" onClick="enableAccountGroup(' + full.AccountGroupId + ',' + full.IsEnable + ')" class="btn btn-danger btn-padding" id="btnEnable">Disabled</a>';
                      }
                      else
                          return '';
@@ -189,6 +201,7 @@ function accountGroupOnFailure(error) {
     alert('error occured while saving the data');
 }
 function editAccountGroup(groupId) {
+    debugger;
 
     $.ajax({
         type: "GET",
@@ -197,12 +210,23 @@ function editAccountGroup(groupId) {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (data) {
-           // alert(data.IsCommonGroup);
+            // alert(data.IsCommonGroup);
             $('#AccountGroupId').val(data.AccountGroupId);
             $('#AccountGroupName').val(data.AccountGroupName);
             $('#AccountGroupNameAlias').val(data.AccountGroupNameAlias);
             $("#GroupUnder option:contains(" + data.UnderGroupTitle + ")").attr('selected', true);
             $('#Nature').val(data.Nature);
+            if ($('#GroupUnder').data('combobox')) {
+                $('#GroupUnder').combobox('destroy');
+            }
+            $('#GroupUnder').val(data.GroupUnder);
+            $('#GroupUnder').combobox();
+            $('#GroupUnder').parent()
+                .find('input.ui-autocomplete-input')
+                .val(data.UnderGroupTitle);
+
+            $('#IsCommonGroup').prop('checked',
+                data.IsCommonGroup === true || data.IsCommonGroup == 1);
             if (data.IsCommonGroup) {
                 $("#IsCommonGroup").prop("checked", true);
             }
@@ -216,6 +240,12 @@ function editAccountGroup(groupId) {
                 $('#AccountGroupName').attr('readonly', false);
                 $('#AccountGroupNameAlias').attr('readonly', false)
             }
+            //if (isParty === "True" || isParty === "true" || isParty == 1) {
+            //    $('#IsParty').prop('checked', true);
+            //} else {
+            //    $('#IsParty').prop('checked', false);
+            //}
+            $('#IsParty').prop('checked', data.IsParty === true || data.IsParty == 1);
         },
         error: function (error) { console.log(error); }
     });
@@ -230,7 +260,7 @@ function enableAccountGroup(groupId, btnText) {
     else
         btnText = "Enable";
 
-     $.ajax({
+    $.ajax({
         type: "GET",
         url: '/Admin/EnableAccountGroup',
         data: { groupId: groupId, btnText: btnText },
@@ -248,7 +278,7 @@ function enableAccountGroup(groupId, btnText) {
             HideLoading();
         }
     });
-    
+
 }
 function deleteGroupRecord() {
     var groupId = $('#hdnGroupId').val();

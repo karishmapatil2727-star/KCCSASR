@@ -61,6 +61,9 @@ D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.dll
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.IO.Compression.dll
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.pdb
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.XmlSerializers.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\BouncyCastle.Cryptography.dll
+D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\BouncyCastle.Cryptography.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\itextsharp.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\NLog.xml
@@ -72,11 +75,9 @@ D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Deployment.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\System.Web.WebPages.Razor.xml
-D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Antlr3.Runtime.pdb
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Newtonsoft.Json.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.ApplicationInsights.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.DependencyCollector.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.WindowsServer.xml
 D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\Microsoft.AI.Web.xml
-D:\KCCSASR\CODE-19-2-2026\Datanew1 1\Datanew1\AccountsAppWeb\AccountsAppWeb\bin\AccountsAppWeb.Core.XmlSerializers.dll

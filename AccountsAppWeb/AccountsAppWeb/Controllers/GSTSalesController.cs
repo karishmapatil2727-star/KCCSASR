@@ -6,19 +6,39 @@ using System.Web.Security;
 using Newtonsoft.Json;
 using System.Web;
 using System.Collections;
-using AccountsAppWeb.Infrastructure;
 using NLog;
+using System.Linq;
+using AccountsAppWeb.Infrastructure;
 
 namespace AccountsAppWeb.Controllers
 {
     [Infrastructure.LogonAuthorize]
     public class GSTSalesController : BaseController
     {
+        private AdminManager _adminManager = new AdminManager();
+        private UserModel user;
+
+        public GSTSalesController()
+        {
+            // ✅ Use UserManager same as AdminController
+            user = UserManager.User;
+        }
         // GET: GSTSales
         public ActionResult Index()
         {
-            var model = CreateDefaultModel();
-            return View(model);
+            try
+            {
+                var model = CreateDefaultModel();
+                ReloadLists(model);
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                return Content("<h2>GST Sales Error:</h2><pre>" +
+                    ex.Message + "<br/><br/>" +
+                    ex.StackTrace + "</pre>");
+            }
+
         }
 
         // POST: GSTSales (Proceed)
@@ -55,7 +75,7 @@ namespace AccountsAppWeb.Controllers
             model.Items.Add(new GSTSalesItemVM
             {
                 ItemName = model.SelectedItemName,
-                HSN = model.HSN,
+                HSN = model.HSNCode,
                 BaseAmount = model.Amount,
                 CGST = cgst,
                 SGST = sgst,
@@ -127,13 +147,19 @@ namespace AccountsAppWeb.Controllers
             };
         }
 
-
         private void ReloadLists(GSTSalesHeaderVM model)
-        {
-            model.PartyList = new GSTSalesHeaderVM().PartyList;
-            model.GSTSlabList = new GSTSalesHeaderVM().GSTSlabList;
-            model.GSTTypeList = new GSTSalesHeaderVM().GSTTypeList;
-            model.ItemList = new GSTSalesHeaderVM().ItemList;
+        {            
+            int instId = user.InstituteId;
+            int financialYearId = user.FinancialYearId;
+            string sKey = string.Empty;
+            var parties = _adminManager.GetPartyList(sKey,instId, financialYearId);
+            model.PartyList = parties != null && parties.Count > 0 ? parties.Select(x => new SelectListItem { Value = x.LedgerId.ToString(), Text = x.LedgerName}).ToList() : new System.Collections.Generic.List<SelectListItem>();
+            var items = _adminManager.GetItemsByIncomeGSTSalesGroup(sKey, instId, financialYearId);
+            model.ItemList = items != null && items.Count > 0 ? items.Select(x => new SelectListItem{ Value = x.LedgerId.ToString(),Text = x.LedgerName}).ToList(): new System.Collections.Generic.List<SelectListItem>();
+            model.ItemHSNMapJson = items != null && items.Count > 0 ? JsonConvert.SerializeObject( items.ToDictionary(x => x.LedgerId.ToString(),x => x.HSNCode ?? string.Empty)): "{}";
+            var defaults = new GSTSalesHeaderVM();
+            model.GSTSlabList = defaults.GSTSlabList;
+            model.GSTTypeList = defaults.GSTTypeList;
         }
     }
 }

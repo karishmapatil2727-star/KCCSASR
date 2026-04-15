@@ -30,52 +30,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
     [System.Web.Services.WebServiceBindingAttribute(Name="AccountsAppAPISoap", Namespace="http://kccsasr.org/")]
     public partial class AccountsAppAPI : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
-        private System.Threading.SendOrPostCallback ReconciliationLedgerConfirmedUpdateOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ReconciliationSelectAllLedgersOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ReconciliationLedgersByInstIdOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback OpeningTrialDetailedOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback OpeningBalanceByAccountGroupIdOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback KDL_FetchMaxIdOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback KDL_InsertContactInfoOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback KDL_InsertMakeBillOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback KDL_InsertBillTransactionsOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback BalanceTransferEndYearOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CreateLedgerVoucherBykeywordOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback NegativeCashBalanceOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback MoveTransactiontoOtherLedtgerOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback LedgerTableConrentOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback LedgerTableConrentLoadDataOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback TransactionPermissionSelectOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback TransactionPermissionUpdateOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback PrintTransactionVoucherSlipOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetLastDateForDataEntryOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback AllowTransactionInTheseDatesOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback AccountLedgerIndexOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback TransactionDetailsBackupOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback AccountGenreteLedgerTranscationListAllIndexOperationCompleted;
-        
         private System.Threading.SendOrPostCallback MenuBindOperationCompleted;
         
         private System.Threading.SendOrPostCallback LoadUserOperationCompleted;
@@ -127,16 +81,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         private System.Threading.SendOrPostCallback AccountLedgerOperationCompleted;
         
         private System.Threading.SendOrPostCallback AccountLedgerForTransactionOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback AccountLedgerForBudgetOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ViewAccountLedgerForBudgetOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback InsertOrUpdateAccountBudgetOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetBudgetDetailsForExpenditureOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback GetBudgetDetailsForIncomeOperationCompleted;
         
         private System.Threading.SendOrPostCallback TransactionMasterAndDetailByIdOperationCompleted;
         
@@ -240,6 +184,56 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         
         private System.Threading.SendOrPostCallback ReconciliationLedgerConfirmedDeleteOperationCompleted;
         
+        private System.Threading.SendOrPostCallback ReconciliationLedgerConfirmedUpdateOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ReconciliationSelectAllLedgersOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ReconciliationLedgersByInstIdOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback OpeningTrialDetailedOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback OpeningBalanceByAccountGroupIdOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback KDL_FetchMaxIdOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback KDL_InsertContactInfoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback KDL_InsertMakeBillOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback KDL_InsertBillTransactionsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback BalanceTransferEndYearOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CreateLedgerVoucherBykeywordOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback NegativeCashBalanceOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback MoveTransactiontoOtherLedtgerOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback LedgerTableConrentOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback LedgerTableConrentLoadDataOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TransactionPermissionSelectOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TransactionPermissionUpdateOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback PrintTransactionVoucherSlipOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetLastDateForDataEntryOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AllowTransactionInTheseDatesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AccountLedgerIndexOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TransactionDetailsBackupOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AccountGenreteLedgerTranscationListAllIndexOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetPartyLedgersForGSTOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetItemsByIncomeGSTSalesGroupOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -277,80 +271,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
                 this.useDefaultCredentialsSetExplicitly = true;
             }
         }
-        
-        /// <remarks/>
-        public event ReconciliationLedgerConfirmedUpdateCompletedEventHandler ReconciliationLedgerConfirmedUpdateCompleted;
-        
-        /// <remarks/>
-        public event ReconciliationSelectAllLedgersCompletedEventHandler ReconciliationSelectAllLedgersCompleted;
-        
-        /// <remarks/>
-        public event ReconciliationLedgersByInstIdCompletedEventHandler ReconciliationLedgersByInstIdCompleted;
-        
-        /// <remarks/>
-        public event OpeningTrialDetailedCompletedEventHandler OpeningTrialDetailedCompleted;
-        
-        /// <remarks/>
-        public event OpeningBalanceByAccountGroupIdCompletedEventHandler OpeningBalanceByAccountGroupIdCompleted;
-        
-        /// <remarks/>
-        public event KDL_FetchMaxIdCompletedEventHandler KDL_FetchMaxIdCompleted;
-        
-        /// <remarks/>
-        public event KDL_InsertContactInfoCompletedEventHandler KDL_InsertContactInfoCompleted;
-        
-        /// <remarks/>
-        public event KDL_InsertMakeBillCompletedEventHandler KDL_InsertMakeBillCompleted;
-
-        internal DataSet AccountPartyForGSTSales(string sKey, int instituteId, int financialYearId, int deptId, int v, int showInTransactionPage)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <remarks/>
-        public event KDL_InsertBillTransactionsCompletedEventHandler KDL_InsertBillTransactionsCompleted;
-        
-        /// <remarks/>
-        public event BalanceTransferEndYearCompletedEventHandler BalanceTransferEndYearCompleted;
-        
-        /// <remarks/>
-        public event CreateLedgerVoucherBykeywordCompletedEventHandler CreateLedgerVoucherBykeywordCompleted;
-        
-        /// <remarks/>
-        public event NegativeCashBalanceCompletedEventHandler NegativeCashBalanceCompleted;
-        
-        /// <remarks/>
-        public event MoveTransactiontoOtherLedtgerCompletedEventHandler MoveTransactiontoOtherLedtgerCompleted;
-        
-        /// <remarks/>
-        public event LedgerTableConrentCompletedEventHandler LedgerTableConrentCompleted;
-        
-        /// <remarks/>
-        public event LedgerTableConrentLoadDataCompletedEventHandler LedgerTableConrentLoadDataCompleted;
-        
-        /// <remarks/>
-        public event TransactionPermissionSelectCompletedEventHandler TransactionPermissionSelectCompleted;
-        
-        /// <remarks/>
-        public event TransactionPermissionUpdateCompletedEventHandler TransactionPermissionUpdateCompleted;
-        
-        /// <remarks/>
-        public event PrintTransactionVoucherSlipCompletedEventHandler PrintTransactionVoucherSlipCompleted;
-        
-        /// <remarks/>
-        public event GetLastDateForDataEntryCompletedEventHandler GetLastDateForDataEntryCompleted;
-        
-        /// <remarks/>
-        public event AllowTransactionInTheseDatesCompletedEventHandler AllowTransactionInTheseDatesCompleted;
-        
-        /// <remarks/>
-        public event AccountLedgerIndexCompletedEventHandler AccountLedgerIndexCompleted;
-        
-        /// <remarks/>
-        public event TransactionDetailsBackupCompletedEventHandler TransactionDetailsBackupCompleted;
-        
-        /// <remarks/>
-        public event AccountGenreteLedgerTranscationListAllIndexCompletedEventHandler AccountGenreteLedgerTranscationListAllIndexCompleted;
         
         /// <remarks/>
         public event MenuBindCompletedEventHandler MenuBindCompleted;
@@ -429,21 +349,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         
         /// <remarks/>
         public event AccountLedgerForTransactionCompletedEventHandler AccountLedgerForTransactionCompleted;
-        
-        /// <remarks/>
-        public event AccountLedgerForBudgetCompletedEventHandler AccountLedgerForBudgetCompleted;
-        
-        /// <remarks/>
-        public event ViewAccountLedgerForBudgetCompletedEventHandler ViewAccountLedgerForBudgetCompleted;
-        
-        /// <remarks/>
-        public event InsertOrUpdateAccountBudgetCompletedEventHandler InsertOrUpdateAccountBudgetCompleted;
-        
-        /// <remarks/>
-        public event GetBudgetDetailsForExpenditureCompletedEventHandler GetBudgetDetailsForExpenditureCompleted;
-        
-        /// <remarks/>
-        public event GetBudgetDetailsForIncomeCompletedEventHandler GetBudgetDetailsForIncomeCompleted;
         
         /// <remarks/>
         public event TransactionMasterAndDetailByIdCompletedEventHandler TransactionMasterAndDetailByIdCompleted;
@@ -599,799 +504,79 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         public event ReconciliationLedgerConfirmedDeleteCompletedEventHandler ReconciliationLedgerConfirmedDeleteCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/ReconciliationLedgerConfirmedUpdate", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet ReconciliationLedgerConfirmedUpdate(string SKey, int NotificationToLedgerId, int Id) {
-            object[] results = this.Invoke("ReconciliationLedgerConfirmedUpdate", new object[] {
-                        SKey,
-                        NotificationToLedgerId,
-                        Id});
-            return ((System.Data.DataSet)(results[0]));
-        }
+        public event ReconciliationLedgerConfirmedUpdateCompletedEventHandler ReconciliationLedgerConfirmedUpdateCompleted;
         
         /// <remarks/>
-        public void ReconciliationLedgerConfirmedUpdateAsync(string SKey, int NotificationToLedgerId, int Id) {
-            this.ReconciliationLedgerConfirmedUpdateAsync(SKey, NotificationToLedgerId, Id, null);
-        }
+        public event ReconciliationSelectAllLedgersCompletedEventHandler ReconciliationSelectAllLedgersCompleted;
         
         /// <remarks/>
-        public void ReconciliationLedgerConfirmedUpdateAsync(string SKey, int NotificationToLedgerId, int Id, object userState) {
-            if ((this.ReconciliationLedgerConfirmedUpdateOperationCompleted == null)) {
-                this.ReconciliationLedgerConfirmedUpdateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnReconciliationLedgerConfirmedUpdateOperationCompleted);
-            }
-            this.InvokeAsync("ReconciliationLedgerConfirmedUpdate", new object[] {
-                        SKey,
-                        NotificationToLedgerId,
-                        Id}, this.ReconciliationLedgerConfirmedUpdateOperationCompleted, userState);
-        }
+        public event ReconciliationLedgersByInstIdCompletedEventHandler ReconciliationLedgersByInstIdCompleted;
         
-        private void OnReconciliationLedgerConfirmedUpdateOperationCompleted(object arg) {
-            if ((this.ReconciliationLedgerConfirmedUpdateCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ReconciliationLedgerConfirmedUpdateCompleted(this, new ReconciliationLedgerConfirmedUpdateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/ReconciliationSelectAllLedgers", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet ReconciliationSelectAllLedgers(string SKey, int InstId, int ToInstId, int FinancialYearId, System.DateTime ToDate) {
-            object[] results = this.Invoke("ReconciliationSelectAllLedgers", new object[] {
-                        SKey,
-                        InstId,
-                        ToInstId,
-                        FinancialYearId,
-                        ToDate});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ReconciliationSelectAllLedgersAsync(string SKey, int InstId, int ToInstId, int FinancialYearId, System.DateTime ToDate) {
-            this.ReconciliationSelectAllLedgersAsync(SKey, InstId, ToInstId, FinancialYearId, ToDate, null);
-        }
-        
-        /// <remarks/>
-        public void ReconciliationSelectAllLedgersAsync(string SKey, int InstId, int ToInstId, int FinancialYearId, System.DateTime ToDate, object userState) {
-            if ((this.ReconciliationSelectAllLedgersOperationCompleted == null)) {
-                this.ReconciliationSelectAllLedgersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnReconciliationSelectAllLedgersOperationCompleted);
-            }
-            this.InvokeAsync("ReconciliationSelectAllLedgers", new object[] {
-                        SKey,
-                        InstId,
-                        ToInstId,
-                        FinancialYearId,
-                        ToDate}, this.ReconciliationSelectAllLedgersOperationCompleted, userState);
-        }
-        
-        private void OnReconciliationSelectAllLedgersOperationCompleted(object arg) {
-            if ((this.ReconciliationSelectAllLedgersCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ReconciliationSelectAllLedgersCompleted(this, new ReconciliationSelectAllLedgersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/ReconciliationLedgersByInstId", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet ReconciliationLedgersByInstId(string SKey, int InstId, int LedgerId, int ToInstId, int ToLedgerId, int FinancialYearId, System.DateTime ToDate) {
-            object[] results = this.Invoke("ReconciliationLedgersByInstId", new object[] {
-                        SKey,
-                        InstId,
-                        LedgerId,
-                        ToInstId,
-                        ToLedgerId,
-                        FinancialYearId,
-                        ToDate});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ReconciliationLedgersByInstIdAsync(string SKey, int InstId, int LedgerId, int ToInstId, int ToLedgerId, int FinancialYearId, System.DateTime ToDate) {
-            this.ReconciliationLedgersByInstIdAsync(SKey, InstId, LedgerId, ToInstId, ToLedgerId, FinancialYearId, ToDate, null);
-        }
-        
-        /// <remarks/>
-        public void ReconciliationLedgersByInstIdAsync(string SKey, int InstId, int LedgerId, int ToInstId, int ToLedgerId, int FinancialYearId, System.DateTime ToDate, object userState) {
-            if ((this.ReconciliationLedgersByInstIdOperationCompleted == null)) {
-                this.ReconciliationLedgersByInstIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnReconciliationLedgersByInstIdOperationCompleted);
-            }
-            this.InvokeAsync("ReconciliationLedgersByInstId", new object[] {
-                        SKey,
-                        InstId,
-                        LedgerId,
-                        ToInstId,
-                        ToLedgerId,
-                        FinancialYearId,
-                        ToDate}, this.ReconciliationLedgersByInstIdOperationCompleted, userState);
-        }
-        
-        private void OnReconciliationLedgersByInstIdOperationCompleted(object arg) {
-            if ((this.ReconciliationLedgersByInstIdCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ReconciliationLedgersByInstIdCompleted(this, new ReconciliationLedgersByInstIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/OpeningTrialDetailed", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet OpeningTrialDetailed(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime FromDate, System.DateTime ToDate) {
-            object[] results = this.Invoke("OpeningTrialDetailed", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        ForInstId,
-                        AccountGroupId,
-                        FromDate,
-                        ToDate});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void OpeningTrialDetailedAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime FromDate, System.DateTime ToDate) {
-            this.OpeningTrialDetailedAsync(SKey, InstId, FinancialYearId, ForInstId, AccountGroupId, FromDate, ToDate, null);
-        }
-        
-        /// <remarks/>
-        public void OpeningTrialDetailedAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime FromDate, System.DateTime ToDate, object userState) {
-            if ((this.OpeningTrialDetailedOperationCompleted == null)) {
-                this.OpeningTrialDetailedOperationCompleted = new System.Threading.SendOrPostCallback(this.OnOpeningTrialDetailedOperationCompleted);
-            }
-            this.InvokeAsync("OpeningTrialDetailed", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        ForInstId,
-                        AccountGroupId,
-                        FromDate,
-                        ToDate}, this.OpeningTrialDetailedOperationCompleted, userState);
-        }
-        
-        private void OnOpeningTrialDetailedOperationCompleted(object arg) {
-            if ((this.OpeningTrialDetailedCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.OpeningTrialDetailedCompleted(this, new OpeningTrialDetailedCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/OpeningBalanceByAccountGroupId", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet OpeningBalanceByAccountGroupId(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime ToDate, bool IsIncludeChildAccountGroup, string MyGuid) {
-            object[] results = this.Invoke("OpeningBalanceByAccountGroupId", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        ForInstId,
-                        AccountGroupId,
-                        ToDate,
-                        IsIncludeChildAccountGroup,
-                        MyGuid});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void OpeningBalanceByAccountGroupIdAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime ToDate, bool IsIncludeChildAccountGroup, string MyGuid) {
-            this.OpeningBalanceByAccountGroupIdAsync(SKey, InstId, FinancialYearId, ForInstId, AccountGroupId, ToDate, IsIncludeChildAccountGroup, MyGuid, null);
-        }
-        
-        /// <remarks/>
-        public void OpeningBalanceByAccountGroupIdAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime ToDate, bool IsIncludeChildAccountGroup, string MyGuid, object userState) {
-            if ((this.OpeningBalanceByAccountGroupIdOperationCompleted == null)) {
-                this.OpeningBalanceByAccountGroupIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnOpeningBalanceByAccountGroupIdOperationCompleted);
-            }
-            this.InvokeAsync("OpeningBalanceByAccountGroupId", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        ForInstId,
-                        AccountGroupId,
-                        ToDate,
-                        IsIncludeChildAccountGroup,
-                        MyGuid}, this.OpeningBalanceByAccountGroupIdOperationCompleted, userState);
-        }
-        
-        private void OnOpeningBalanceByAccountGroupIdOperationCompleted(object arg) {
-            if ((this.OpeningBalanceByAccountGroupIdCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.OpeningBalanceByAccountGroupIdCompleted(this, new OpeningBalanceByAccountGroupIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_FetchMaxId", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int KDL_FetchMaxId(string SKey, string val) {
-            object[] results = this.Invoke("KDL_FetchMaxId", new object[] {
-                        SKey,
-                        val});
-            return ((int)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void KDL_FetchMaxIdAsync(string SKey, string val) {
-            this.KDL_FetchMaxIdAsync(SKey, val, null);
-        }
-        
-        /// <remarks/>
-        public void KDL_FetchMaxIdAsync(string SKey, string val, object userState) {
-            if ((this.KDL_FetchMaxIdOperationCompleted == null)) {
-                this.KDL_FetchMaxIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_FetchMaxIdOperationCompleted);
-            }
-            this.InvokeAsync("KDL_FetchMaxId", new object[] {
-                        SKey,
-                        val}, this.KDL_FetchMaxIdOperationCompleted, userState);
-        }
-        
-        private void OnKDL_FetchMaxIdOperationCompleted(object arg) {
-            if ((this.KDL_FetchMaxIdCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.KDL_FetchMaxIdCompleted(this, new KDL_FetchMaxIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_InsertContactInfo", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool KDL_InsertContactInfo(string SKey, System.Data.DataTable dt) {
-            object[] results = this.Invoke("KDL_InsertContactInfo", new object[] {
-                        SKey,
-                        dt});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void KDL_InsertContactInfoAsync(string SKey, System.Data.DataTable dt) {
-            this.KDL_InsertContactInfoAsync(SKey, dt, null);
-        }
-        
-        /// <remarks/>
-        public void KDL_InsertContactInfoAsync(string SKey, System.Data.DataTable dt, object userState) {
-            if ((this.KDL_InsertContactInfoOperationCompleted == null)) {
-                this.KDL_InsertContactInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_InsertContactInfoOperationCompleted);
-            }
-            this.InvokeAsync("KDL_InsertContactInfo", new object[] {
-                        SKey,
-                        dt}, this.KDL_InsertContactInfoOperationCompleted, userState);
-        }
-        
-        private void OnKDL_InsertContactInfoOperationCompleted(object arg) {
-            if ((this.KDL_InsertContactInfoCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.KDL_InsertContactInfoCompleted(this, new KDL_InsertContactInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_InsertMakeBill", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool KDL_InsertMakeBill(string SKey, System.Data.DataTable dt) {
-            object[] results = this.Invoke("KDL_InsertMakeBill", new object[] {
-                        SKey,
-                        dt});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void KDL_InsertMakeBillAsync(string SKey, System.Data.DataTable dt) {
-            this.KDL_InsertMakeBillAsync(SKey, dt, null);
-        }
-        
-        /// <remarks/>
-        public void KDL_InsertMakeBillAsync(string SKey, System.Data.DataTable dt, object userState) {
-            if ((this.KDL_InsertMakeBillOperationCompleted == null)) {
-                this.KDL_InsertMakeBillOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_InsertMakeBillOperationCompleted);
-            }
-            this.InvokeAsync("KDL_InsertMakeBill", new object[] {
-                        SKey,
-                        dt}, this.KDL_InsertMakeBillOperationCompleted, userState);
-        }
-        
-        private void OnKDL_InsertMakeBillOperationCompleted(object arg) {
-            if ((this.KDL_InsertMakeBillCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.KDL_InsertMakeBillCompleted(this, new KDL_InsertMakeBillCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_InsertBillTransactions", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool KDL_InsertBillTransactions(string SKey, System.Data.DataTable dt) {
-            object[] results = this.Invoke("KDL_InsertBillTransactions", new object[] {
-                        SKey,
-                        dt});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void KDL_InsertBillTransactionsAsync(string SKey, System.Data.DataTable dt) {
-            this.KDL_InsertBillTransactionsAsync(SKey, dt, null);
-        }
-        
-        /// <remarks/>
-        public void KDL_InsertBillTransactionsAsync(string SKey, System.Data.DataTable dt, object userState) {
-            if ((this.KDL_InsertBillTransactionsOperationCompleted == null)) {
-                this.KDL_InsertBillTransactionsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_InsertBillTransactionsOperationCompleted);
-            }
-            this.InvokeAsync("KDL_InsertBillTransactions", new object[] {
-                        SKey,
-                        dt}, this.KDL_InsertBillTransactionsOperationCompleted, userState);
-        }
-        
-        private void OnKDL_InsertBillTransactionsOperationCompleted(object arg) {
-            if ((this.KDL_InsertBillTransactionsCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.KDL_InsertBillTransactionsCompleted(this, new KDL_InsertBillTransactionsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/BalanceTransferEndYear", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool BalanceTransferEndYear(string SKey, System.DateTime FromDate, System.DateTime ToDate, int FinancialYearId, int InstId) {
-            object[] results = this.Invoke("BalanceTransferEndYear", new object[] {
-                        SKey,
-                        FromDate,
-                        ToDate,
-                        FinancialYearId,
-                        InstId});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void BalanceTransferEndYearAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int FinancialYearId, int InstId) {
-            this.BalanceTransferEndYearAsync(SKey, FromDate, ToDate, FinancialYearId, InstId, null);
-        }
-        
-        /// <remarks/>
-        public void BalanceTransferEndYearAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int FinancialYearId, int InstId, object userState) {
-            if ((this.BalanceTransferEndYearOperationCompleted == null)) {
-                this.BalanceTransferEndYearOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBalanceTransferEndYearOperationCompleted);
-            }
-            this.InvokeAsync("BalanceTransferEndYear", new object[] {
-                        SKey,
-                        FromDate,
-                        ToDate,
-                        FinancialYearId,
-                        InstId}, this.BalanceTransferEndYearOperationCompleted, userState);
-        }
-        
-        private void OnBalanceTransferEndYearOperationCompleted(object arg) {
-            if ((this.BalanceTransferEndYearCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.BalanceTransferEndYearCompleted(this, new BalanceTransferEndYearCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/CreateLedgerVoucherBykeyword", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet CreateLedgerVoucherBykeyword(string SKey, int InstId, int FinancialYearId, string SearchValue) {
-            object[] results = this.Invoke("CreateLedgerVoucherBykeyword", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        SearchValue});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CreateLedgerVoucherBykeywordAsync(string SKey, int InstId, int FinancialYearId, string SearchValue) {
-            this.CreateLedgerVoucherBykeywordAsync(SKey, InstId, FinancialYearId, SearchValue, null);
-        }
-        
-        /// <remarks/>
-        public void CreateLedgerVoucherBykeywordAsync(string SKey, int InstId, int FinancialYearId, string SearchValue, object userState) {
-            if ((this.CreateLedgerVoucherBykeywordOperationCompleted == null)) {
-                this.CreateLedgerVoucherBykeywordOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateLedgerVoucherBykeywordOperationCompleted);
-            }
-            this.InvokeAsync("CreateLedgerVoucherBykeyword", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        SearchValue}, this.CreateLedgerVoucherBykeywordOperationCompleted, userState);
-        }
-        
-        private void OnCreateLedgerVoucherBykeywordOperationCompleted(object arg) {
-            if ((this.CreateLedgerVoucherBykeywordCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CreateLedgerVoucherBykeywordCompleted(this, new CreateLedgerVoucherBykeywordCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/NegativeCashBalance", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet NegativeCashBalance(string SKey, int InstId, int FinancialYearId) {
-            object[] results = this.Invoke("NegativeCashBalance", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void NegativeCashBalanceAsync(string SKey, int InstId, int FinancialYearId) {
-            this.NegativeCashBalanceAsync(SKey, InstId, FinancialYearId, null);
-        }
-        
-        /// <remarks/>
-        public void NegativeCashBalanceAsync(string SKey, int InstId, int FinancialYearId, object userState) {
-            if ((this.NegativeCashBalanceOperationCompleted == null)) {
-                this.NegativeCashBalanceOperationCompleted = new System.Threading.SendOrPostCallback(this.OnNegativeCashBalanceOperationCompleted);
-            }
-            this.InvokeAsync("NegativeCashBalance", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId}, this.NegativeCashBalanceOperationCompleted, userState);
-        }
-        
-        private void OnNegativeCashBalanceOperationCompleted(object arg) {
-            if ((this.NegativeCashBalanceCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.NegativeCashBalanceCompleted(this, new NegativeCashBalanceCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/MoveTransactiontoOtherLedtger", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool MoveTransactiontoOtherLedtger(string SKey, int InstId, int FinancialYearId, int FromLedgerId, int ToLedgerId) {
-            object[] results = this.Invoke("MoveTransactiontoOtherLedtger", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        FromLedgerId,
-                        ToLedgerId});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void MoveTransactiontoOtherLedtgerAsync(string SKey, int InstId, int FinancialYearId, int FromLedgerId, int ToLedgerId) {
-            this.MoveTransactiontoOtherLedtgerAsync(SKey, InstId, FinancialYearId, FromLedgerId, ToLedgerId, null);
-        }
-        
-        /// <remarks/>
-        public void MoveTransactiontoOtherLedtgerAsync(string SKey, int InstId, int FinancialYearId, int FromLedgerId, int ToLedgerId, object userState) {
-            if ((this.MoveTransactiontoOtherLedtgerOperationCompleted == null)) {
-                this.MoveTransactiontoOtherLedtgerOperationCompleted = new System.Threading.SendOrPostCallback(this.OnMoveTransactiontoOtherLedtgerOperationCompleted);
-            }
-            this.InvokeAsync("MoveTransactiontoOtherLedtger", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        FromLedgerId,
-                        ToLedgerId}, this.MoveTransactiontoOtherLedtgerOperationCompleted, userState);
-        }
-        
-        private void OnMoveTransactiontoOtherLedtgerOperationCompleted(object arg) {
-            if ((this.MoveTransactiontoOtherLedtgerCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.MoveTransactiontoOtherLedtgerCompleted(this, new MoveTransactiontoOtherLedtgerCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/LedgerTableConrent", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool LedgerTableConrent(string SKey, int InstId, int FinancialYearId, System.Data.DataTable MyTb) {
-            object[] results = this.Invoke("LedgerTableConrent", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        MyTb});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void LedgerTableConrentAsync(string SKey, int InstId, int FinancialYearId, System.Data.DataTable MyTb) {
-            this.LedgerTableConrentAsync(SKey, InstId, FinancialYearId, MyTb, null);
-        }
-        
-        /// <remarks/>
-        public void LedgerTableConrentAsync(string SKey, int InstId, int FinancialYearId, System.Data.DataTable MyTb, object userState) {
-            if ((this.LedgerTableConrentOperationCompleted == null)) {
-                this.LedgerTableConrentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnLedgerTableConrentOperationCompleted);
-            }
-            this.InvokeAsync("LedgerTableConrent", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        MyTb}, this.LedgerTableConrentOperationCompleted, userState);
-        }
-        
-        private void OnLedgerTableConrentOperationCompleted(object arg) {
-            if ((this.LedgerTableConrentCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.LedgerTableConrentCompleted(this, new LedgerTableConrentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/LedgerTableConrentLoadData", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet LedgerTableConrentLoadData(string SKey, int InstId, int FinancialYearId) {
-            object[] results = this.Invoke("LedgerTableConrentLoadData", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void LedgerTableConrentLoadDataAsync(string SKey, int InstId, int FinancialYearId) {
-            this.LedgerTableConrentLoadDataAsync(SKey, InstId, FinancialYearId, null);
-        }
-        
-        /// <remarks/>
-        public void LedgerTableConrentLoadDataAsync(string SKey, int InstId, int FinancialYearId, object userState) {
-            if ((this.LedgerTableConrentLoadDataOperationCompleted == null)) {
-                this.LedgerTableConrentLoadDataOperationCompleted = new System.Threading.SendOrPostCallback(this.OnLedgerTableConrentLoadDataOperationCompleted);
-            }
-            this.InvokeAsync("LedgerTableConrentLoadData", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId}, this.LedgerTableConrentLoadDataOperationCompleted, userState);
-        }
-        
-        private void OnLedgerTableConrentLoadDataOperationCompleted(object arg) {
-            if ((this.LedgerTableConrentLoadDataCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.LedgerTableConrentLoadDataCompleted(this, new LedgerTableConrentLoadDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/TransactionPermissionSelect", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet TransactionPermissionSelect(string SKey, int FinancialYearId) {
-            object[] results = this.Invoke("TransactionPermissionSelect", new object[] {
-                        SKey,
-                        FinancialYearId});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void TransactionPermissionSelectAsync(string SKey, int FinancialYearId) {
-            this.TransactionPermissionSelectAsync(SKey, FinancialYearId, null);
-        }
-        
         /// <remarks/>
-        public void TransactionPermissionSelectAsync(string SKey, int FinancialYearId, object userState) {
-            if ((this.TransactionPermissionSelectOperationCompleted == null)) {
-                this.TransactionPermissionSelectOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTransactionPermissionSelectOperationCompleted);
-            }
-            this.InvokeAsync("TransactionPermissionSelect", new object[] {
-                        SKey,
-                        FinancialYearId}, this.TransactionPermissionSelectOperationCompleted, userState);
-        }
-        
-        private void OnTransactionPermissionSelectOperationCompleted(object arg) {
-            if ((this.TransactionPermissionSelectCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.TransactionPermissionSelectCompleted(this, new TransactionPermissionSelectCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event OpeningTrialDetailedCompletedEventHandler OpeningTrialDetailedCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/TransactionPermissionUpdate", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool TransactionPermissionUpdate(string SKey, int FinancialYearId, int InstitutionId, bool IsTransactionAddAllow, bool IsTransactionEditAllow, bool IsOpeningBalanceEditAllow, bool IsNewLedgerAddAllow) {
-            object[] results = this.Invoke("TransactionPermissionUpdate", new object[] {
-                        SKey,
-                        FinancialYearId,
-                        InstitutionId,
-                        IsTransactionAddAllow,
-                        IsTransactionEditAllow,
-                        IsOpeningBalanceEditAllow,
-                        IsNewLedgerAddAllow});
-            return ((bool)(results[0]));
-        }
+        public event OpeningBalanceByAccountGroupIdCompletedEventHandler OpeningBalanceByAccountGroupIdCompleted;
         
         /// <remarks/>
-        public void TransactionPermissionUpdateAsync(string SKey, int FinancialYearId, int InstitutionId, bool IsTransactionAddAllow, bool IsTransactionEditAllow, bool IsOpeningBalanceEditAllow, bool IsNewLedgerAddAllow) {
-            this.TransactionPermissionUpdateAsync(SKey, FinancialYearId, InstitutionId, IsTransactionAddAllow, IsTransactionEditAllow, IsOpeningBalanceEditAllow, IsNewLedgerAddAllow, null);
-        }
+        public event KDL_FetchMaxIdCompletedEventHandler KDL_FetchMaxIdCompleted;
         
         /// <remarks/>
-        public void TransactionPermissionUpdateAsync(string SKey, int FinancialYearId, int InstitutionId, bool IsTransactionAddAllow, bool IsTransactionEditAllow, bool IsOpeningBalanceEditAllow, bool IsNewLedgerAddAllow, object userState) {
-            if ((this.TransactionPermissionUpdateOperationCompleted == null)) {
-                this.TransactionPermissionUpdateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTransactionPermissionUpdateOperationCompleted);
-            }
-            this.InvokeAsync("TransactionPermissionUpdate", new object[] {
-                        SKey,
-                        FinancialYearId,
-                        InstitutionId,
-                        IsTransactionAddAllow,
-                        IsTransactionEditAllow,
-                        IsOpeningBalanceEditAllow,
-                        IsNewLedgerAddAllow}, this.TransactionPermissionUpdateOperationCompleted, userState);
-        }
+        public event KDL_InsertContactInfoCompletedEventHandler KDL_InsertContactInfoCompleted;
         
-        private void OnTransactionPermissionUpdateOperationCompleted(object arg) {
-            if ((this.TransactionPermissionUpdateCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.TransactionPermissionUpdateCompleted(this, new TransactionPermissionUpdateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/PrintTransactionVoucherSlip", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet PrintTransactionVoucherSlip(string SKey, int TransactionMasterId) {
-            object[] results = this.Invoke("PrintTransactionVoucherSlip", new object[] {
-                        SKey,
-                        TransactionMasterId});
-            return ((System.Data.DataSet)(results[0]));
-        }
+        public event KDL_InsertMakeBillCompletedEventHandler KDL_InsertMakeBillCompleted;
         
         /// <remarks/>
-        public void PrintTransactionVoucherSlipAsync(string SKey, int TransactionMasterId) {
-            this.PrintTransactionVoucherSlipAsync(SKey, TransactionMasterId, null);
-        }
+        public event KDL_InsertBillTransactionsCompletedEventHandler KDL_InsertBillTransactionsCompleted;
         
         /// <remarks/>
-        public void PrintTransactionVoucherSlipAsync(string SKey, int TransactionMasterId, object userState) {
-            if ((this.PrintTransactionVoucherSlipOperationCompleted == null)) {
-                this.PrintTransactionVoucherSlipOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPrintTransactionVoucherSlipOperationCompleted);
-            }
-            this.InvokeAsync("PrintTransactionVoucherSlip", new object[] {
-                        SKey,
-                        TransactionMasterId}, this.PrintTransactionVoucherSlipOperationCompleted, userState);
-        }
+        public event BalanceTransferEndYearCompletedEventHandler BalanceTransferEndYearCompleted;
         
-        private void OnPrintTransactionVoucherSlipOperationCompleted(object arg) {
-            if ((this.PrintTransactionVoucherSlipCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.PrintTransactionVoucherSlipCompleted(this, new PrintTransactionVoucherSlipCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/GetLastDateForDataEntry", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.DateTime GetLastDateForDataEntry() {
-            object[] results = this.Invoke("GetLastDateForDataEntry", new object[0]);
-            return ((System.DateTime)(results[0]));
-        }
+        public event CreateLedgerVoucherBykeywordCompletedEventHandler CreateLedgerVoucherBykeywordCompleted;
         
         /// <remarks/>
-        public void GetLastDateForDataEntryAsync() {
-            this.GetLastDateForDataEntryAsync(null);
-        }
+        public event NegativeCashBalanceCompletedEventHandler NegativeCashBalanceCompleted;
         
         /// <remarks/>
-        public void GetLastDateForDataEntryAsync(object userState) {
-            if ((this.GetLastDateForDataEntryOperationCompleted == null)) {
-                this.GetLastDateForDataEntryOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetLastDateForDataEntryOperationCompleted);
-            }
-            this.InvokeAsync("GetLastDateForDataEntry", new object[0], this.GetLastDateForDataEntryOperationCompleted, userState);
-        }
-        
-        private void OnGetLastDateForDataEntryOperationCompleted(object arg) {
-            if ((this.GetLastDateForDataEntryCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetLastDateForDataEntryCompleted(this, new GetLastDateForDataEntryCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event MoveTransactiontoOtherLedtgerCompletedEventHandler MoveTransactiontoOtherLedtgerCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AllowTransactionInTheseDates", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.DateTime[] AllowTransactionInTheseDates() {
-            object[] results = this.Invoke("AllowTransactionInTheseDates", new object[0]);
-            return ((System.DateTime[])(results[0]));
-        }
+        public event LedgerTableConrentCompletedEventHandler LedgerTableConrentCompleted;
         
         /// <remarks/>
-        public void AllowTransactionInTheseDatesAsync() {
-            this.AllowTransactionInTheseDatesAsync(null);
-        }
+        public event LedgerTableConrentLoadDataCompletedEventHandler LedgerTableConrentLoadDataCompleted;
         
         /// <remarks/>
-        public void AllowTransactionInTheseDatesAsync(object userState) {
-            if ((this.AllowTransactionInTheseDatesOperationCompleted == null)) {
-                this.AllowTransactionInTheseDatesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAllowTransactionInTheseDatesOperationCompleted);
-            }
-            this.InvokeAsync("AllowTransactionInTheseDates", new object[0], this.AllowTransactionInTheseDatesOperationCompleted, userState);
-        }
+        public event TransactionPermissionSelectCompletedEventHandler TransactionPermissionSelectCompleted;
         
-        private void OnAllowTransactionInTheseDatesOperationCompleted(object arg) {
-            if ((this.AllowTransactionInTheseDatesCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.AllowTransactionInTheseDatesCompleted(this, new AllowTransactionInTheseDatesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AccountLedgerIndex", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet AccountLedgerIndex(string SKey, string Jsondata, int InstId) {
-            object[] results = this.Invoke("AccountLedgerIndex", new object[] {
-                        SKey,
-                        Jsondata,
-                        InstId});
-            return ((System.Data.DataSet)(results[0]));
-        }
+        public event TransactionPermissionUpdateCompletedEventHandler TransactionPermissionUpdateCompleted;
         
         /// <remarks/>
-        public void AccountLedgerIndexAsync(string SKey, string Jsondata, int InstId) {
-            this.AccountLedgerIndexAsync(SKey, Jsondata, InstId, null);
-        }
+        public event PrintTransactionVoucherSlipCompletedEventHandler PrintTransactionVoucherSlipCompleted;
         
         /// <remarks/>
-        public void AccountLedgerIndexAsync(string SKey, string Jsondata, int InstId, object userState) {
-            if ((this.AccountLedgerIndexOperationCompleted == null)) {
-                this.AccountLedgerIndexOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAccountLedgerIndexOperationCompleted);
-            }
-            this.InvokeAsync("AccountLedgerIndex", new object[] {
-                        SKey,
-                        Jsondata,
-                        InstId}, this.AccountLedgerIndexOperationCompleted, userState);
-        }
-        
-        private void OnAccountLedgerIndexOperationCompleted(object arg) {
-            if ((this.AccountLedgerIndexCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.AccountLedgerIndexCompleted(this, new AccountLedgerIndexCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event GetLastDateForDataEntryCompletedEventHandler GetLastDateForDataEntryCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/TransactionDetailsBackup", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int TransactionDetailsBackup(string SKey, string Jsondata) {
-            object[] results = this.Invoke("TransactionDetailsBackup", new object[] {
-                        SKey,
-                        Jsondata});
-            return ((int)(results[0]));
-        }
+        public event AllowTransactionInTheseDatesCompletedEventHandler AllowTransactionInTheseDatesCompleted;
         
         /// <remarks/>
-        public void TransactionDetailsBackupAsync(string SKey, string Jsondata) {
-            this.TransactionDetailsBackupAsync(SKey, Jsondata, null);
-        }
+        public event AccountLedgerIndexCompletedEventHandler AccountLedgerIndexCompleted;
         
         /// <remarks/>
-        public void TransactionDetailsBackupAsync(string SKey, string Jsondata, object userState) {
-            if ((this.TransactionDetailsBackupOperationCompleted == null)) {
-                this.TransactionDetailsBackupOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTransactionDetailsBackupOperationCompleted);
-            }
-            this.InvokeAsync("TransactionDetailsBackup", new object[] {
-                        SKey,
-                        Jsondata}, this.TransactionDetailsBackupOperationCompleted, userState);
-        }
+        public event TransactionDetailsBackupCompletedEventHandler TransactionDetailsBackupCompleted;
         
-        private void OnTransactionDetailsBackupOperationCompleted(object arg) {
-            if ((this.TransactionDetailsBackupCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.TransactionDetailsBackupCompleted(this, new TransactionDetailsBackupCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AccountGenreteLedgerTranscationListAllIndex", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet AccountGenreteLedgerTranscationListAllIndex(string SKey, System.DateTime FromDate, System.DateTime ToDate, int LedgerId, int InstId, int DepartmentId, int FinancialYearId, int ForInstId, int AccountGroupId) {
-            object[] results = this.Invoke("AccountGenreteLedgerTranscationListAllIndex", new object[] {
-                        SKey,
-                        FromDate,
-                        ToDate,
-                        LedgerId,
-                        InstId,
-                        DepartmentId,
-                        FinancialYearId,
-                        ForInstId,
-                        AccountGroupId});
-            return ((System.Data.DataSet)(results[0]));
-        }
+        public event AccountGenreteLedgerTranscationListAllIndexCompletedEventHandler AccountGenreteLedgerTranscationListAllIndexCompleted;
         
         /// <remarks/>
-        public void AccountGenreteLedgerTranscationListAllIndexAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int LedgerId, int InstId, int DepartmentId, int FinancialYearId, int ForInstId, int AccountGroupId) {
-            this.AccountGenreteLedgerTranscationListAllIndexAsync(SKey, FromDate, ToDate, LedgerId, InstId, DepartmentId, FinancialYearId, ForInstId, AccountGroupId, null);
-        }
+        public event GetPartyLedgersForGSTCompletedEventHandler GetPartyLedgersForGSTCompleted;
         
         /// <remarks/>
-        public void AccountGenreteLedgerTranscationListAllIndexAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int LedgerId, int InstId, int DepartmentId, int FinancialYearId, int ForInstId, int AccountGroupId, object userState) {
-            if ((this.AccountGenreteLedgerTranscationListAllIndexOperationCompleted == null)) {
-                this.AccountGenreteLedgerTranscationListAllIndexOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAccountGenreteLedgerTranscationListAllIndexOperationCompleted);
-            }
-            this.InvokeAsync("AccountGenreteLedgerTranscationListAllIndex", new object[] {
-                        SKey,
-                        FromDate,
-                        ToDate,
-                        LedgerId,
-                        InstId,
-                        DepartmentId,
-                        FinancialYearId,
-                        ForInstId,
-                        AccountGroupId}, this.AccountGenreteLedgerTranscationListAllIndexOperationCompleted, userState);
-        }
-        
-        private void OnAccountGenreteLedgerTranscationListAllIndexOperationCompleted(object arg) {
-            if ((this.AccountGenreteLedgerTranscationListAllIndexCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.AccountGenreteLedgerTranscationListAllIndexCompleted(this, new AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event GetItemsByIncomeGSTSalesGroupCompletedEventHandler GetItemsByIncomeGSTSalesGroupCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/MenuBind", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -2410,191 +1595,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AccountLedgerForBudget", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet AccountLedgerForBudget(string SKey, int InstId, int FinancialYearId) {
-            object[] results = this.Invoke("AccountLedgerForBudget", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void AccountLedgerForBudgetAsync(string SKey, int InstId, int FinancialYearId) {
-            this.AccountLedgerForBudgetAsync(SKey, InstId, FinancialYearId, null);
-        }
-        
-        /// <remarks/>
-        public void AccountLedgerForBudgetAsync(string SKey, int InstId, int FinancialYearId, object userState) {
-            if ((this.AccountLedgerForBudgetOperationCompleted == null)) {
-                this.AccountLedgerForBudgetOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAccountLedgerForBudgetOperationCompleted);
-            }
-            this.InvokeAsync("AccountLedgerForBudget", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId}, this.AccountLedgerForBudgetOperationCompleted, userState);
-        }
-        
-        private void OnAccountLedgerForBudgetOperationCompleted(object arg) {
-            if ((this.AccountLedgerForBudgetCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.AccountLedgerForBudgetCompleted(this, new AccountLedgerForBudgetCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/ViewAccountLedgerForBudget", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet ViewAccountLedgerForBudget(string SKey, int InstId, int FinancialYearId, int LedgerId) {
-            object[] results = this.Invoke("ViewAccountLedgerForBudget", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        LedgerId});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ViewAccountLedgerForBudgetAsync(string SKey, int InstId, int FinancialYearId, int LedgerId) {
-            this.ViewAccountLedgerForBudgetAsync(SKey, InstId, FinancialYearId, LedgerId, null);
-        }
-        
-        /// <remarks/>
-        public void ViewAccountLedgerForBudgetAsync(string SKey, int InstId, int FinancialYearId, int LedgerId, object userState) {
-            if ((this.ViewAccountLedgerForBudgetOperationCompleted == null)) {
-                this.ViewAccountLedgerForBudgetOperationCompleted = new System.Threading.SendOrPostCallback(this.OnViewAccountLedgerForBudgetOperationCompleted);
-            }
-            this.InvokeAsync("ViewAccountLedgerForBudget", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        LedgerId}, this.ViewAccountLedgerForBudgetOperationCompleted, userState);
-        }
-        
-        private void OnViewAccountLedgerForBudgetOperationCompleted(object arg) {
-            if ((this.ViewAccountLedgerForBudgetCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ViewAccountLedgerForBudgetCompleted(this, new ViewAccountLedgerForBudgetCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/InsertOrUpdateAccountBudget", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool InsertOrUpdateAccountBudget(string SKey, int InstId, int FinancialYearId, int LedgerId, decimal BudgetAmount, decimal BudgetAmount_4Months, System.DateTime InsertDate, decimal Financial0BudgetAmount, decimal Financial1BudgetAmount, decimal Financial2BudgetAmount, decimal Financial3BudgetAmount, decimal Financial4BudgetAmount) {
-            object[] results = this.Invoke("InsertOrUpdateAccountBudget", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        LedgerId,
-                        BudgetAmount,
-                        BudgetAmount_4Months,
-                        InsertDate,
-                        Financial0BudgetAmount,
-                        Financial1BudgetAmount,
-                        Financial2BudgetAmount,
-                        Financial3BudgetAmount,
-                        Financial4BudgetAmount});
-            return ((bool)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void InsertOrUpdateAccountBudgetAsync(string SKey, int InstId, int FinancialYearId, int LedgerId, decimal BudgetAmount, decimal BudgetAmount_4Months, System.DateTime InsertDate, decimal Financial0BudgetAmount, decimal Financial1BudgetAmount, decimal Financial2BudgetAmount, decimal Financial3BudgetAmount, decimal Financial4BudgetAmount) {
-            this.InsertOrUpdateAccountBudgetAsync(SKey, InstId, FinancialYearId, LedgerId, BudgetAmount, BudgetAmount_4Months, InsertDate, Financial0BudgetAmount, Financial1BudgetAmount, Financial2BudgetAmount, Financial3BudgetAmount, Financial4BudgetAmount, null);
-        }
-        
-        /// <remarks/>
-        public void InsertOrUpdateAccountBudgetAsync(string SKey, int InstId, int FinancialYearId, int LedgerId, decimal BudgetAmount, decimal BudgetAmount_4Months, System.DateTime InsertDate, decimal Financial0BudgetAmount, decimal Financial1BudgetAmount, decimal Financial2BudgetAmount, decimal Financial3BudgetAmount, decimal Financial4BudgetAmount, object userState) {
-            if ((this.InsertOrUpdateAccountBudgetOperationCompleted == null)) {
-                this.InsertOrUpdateAccountBudgetOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertOrUpdateAccountBudgetOperationCompleted);
-            }
-            this.InvokeAsync("InsertOrUpdateAccountBudget", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId,
-                        LedgerId,
-                        BudgetAmount,
-                        BudgetAmount_4Months,
-                        InsertDate,
-                        Financial0BudgetAmount,
-                        Financial1BudgetAmount,
-                        Financial2BudgetAmount,
-                        Financial3BudgetAmount,
-                        Financial4BudgetAmount}, this.InsertOrUpdateAccountBudgetOperationCompleted, userState);
-        }
-        
-        private void OnInsertOrUpdateAccountBudgetOperationCompleted(object arg) {
-            if ((this.InsertOrUpdateAccountBudgetCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.InsertOrUpdateAccountBudgetCompleted(this, new InsertOrUpdateAccountBudgetCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/GetBudgetDetailsForExpenditure", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetBudgetDetailsForExpenditure(string SKey, int InstId, int FinancialYearId) {
-            object[] results = this.Invoke("GetBudgetDetailsForExpenditure", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetBudgetDetailsForExpenditureAsync(string SKey, int InstId, int FinancialYearId) {
-            this.GetBudgetDetailsForExpenditureAsync(SKey, InstId, FinancialYearId, null);
-        }
-        
-        /// <remarks/>
-        public void GetBudgetDetailsForExpenditureAsync(string SKey, int InstId, int FinancialYearId, object userState) {
-            if ((this.GetBudgetDetailsForExpenditureOperationCompleted == null)) {
-                this.GetBudgetDetailsForExpenditureOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetBudgetDetailsForExpenditureOperationCompleted);
-            }
-            this.InvokeAsync("GetBudgetDetailsForExpenditure", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId}, this.GetBudgetDetailsForExpenditureOperationCompleted, userState);
-        }
-        
-        private void OnGetBudgetDetailsForExpenditureOperationCompleted(object arg) {
-            if ((this.GetBudgetDetailsForExpenditureCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetBudgetDetailsForExpenditureCompleted(this, new GetBudgetDetailsForExpenditureCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/GetBudgetDetailsForIncome", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetBudgetDetailsForIncome(string SKey, int InstId, int FinancialYearId) {
-            object[] results = this.Invoke("GetBudgetDetailsForIncome", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId});
-            return ((System.Data.DataSet)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void GetBudgetDetailsForIncomeAsync(string SKey, int InstId, int FinancialYearId) {
-            this.GetBudgetDetailsForIncomeAsync(SKey, InstId, FinancialYearId, null);
-        }
-        
-        /// <remarks/>
-        public void GetBudgetDetailsForIncomeAsync(string SKey, int InstId, int FinancialYearId, object userState) {
-            if ((this.GetBudgetDetailsForIncomeOperationCompleted == null)) {
-                this.GetBudgetDetailsForIncomeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetBudgetDetailsForIncomeOperationCompleted);
-            }
-            this.InvokeAsync("GetBudgetDetailsForIncome", new object[] {
-                        SKey,
-                        InstId,
-                        FinancialYearId}, this.GetBudgetDetailsForIncomeOperationCompleted, userState);
-        }
-        
-        private void OnGetBudgetDetailsForIncomeOperationCompleted(object arg) {
-            if ((this.GetBudgetDetailsForIncomeCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GetBudgetDetailsForIncomeCompleted(this, new GetBudgetDetailsForIncomeCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/TransactionMasterAndDetailById", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public System.Data.DataSet TransactionMasterAndDetailById(string SKey, int InstId, int TransactionMasterId) {
             object[] results = this.Invoke("TransactionMasterAndDetailById", new object[] {
@@ -2819,24 +1819,25 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/InsertAccountGroup", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool InsertAccountGroup(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify, bool IsCommonGroup, int financialYearId) {
+        public bool InsertAccountGroup(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify, bool IsCommonGroup, int financialYearId, bool IsParty) {
             object[] results = this.Invoke("InsertAccountGroup", new object[] {
                         SKey,
                         Ac,
                         InstId,
                         IsModify,
                         IsCommonGroup,
-                        financialYearId});
+                        financialYearId,
+                        IsParty});
             return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public void InsertAccountGroupAsync(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify, bool IsCommonGroup, int financialYearId) {
-            this.InsertAccountGroupAsync(SKey, Ac, InstId, IsModify, IsCommonGroup, financialYearId, null);
+        public void InsertAccountGroupAsync(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify, bool IsCommonGroup, int financialYearId, bool IsParty) {
+            this.InsertAccountGroupAsync(SKey, Ac, InstId, IsModify, IsCommonGroup, financialYearId, IsParty, null);
         }
         
         /// <remarks/>
-        public void InsertAccountGroupAsync(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify, bool IsCommonGroup, int financialYearId, object userState) {
+        public void InsertAccountGroupAsync(string SKey, AccountGroupMaster Ac, int InstId, bool IsModify, bool IsCommonGroup, int financialYearId, bool IsParty, object userState) {
             if ((this.InsertAccountGroupOperationCompleted == null)) {
                 this.InsertAccountGroupOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertAccountGroupOperationCompleted);
             }
@@ -2846,7 +1847,8 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
                         InstId,
                         IsModify,
                         IsCommonGroup,
-                        financialYearId}, this.InsertAccountGroupOperationCompleted, userState);
+                        financialYearId,
+                        IsParty}, this.InsertAccountGroupOperationCompleted, userState);
         }
         
         private void OnInsertAccountGroupOperationCompleted(object arg) {
@@ -3081,7 +2083,7 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/InsertAccountLedger", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool InsertAccountLedger(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId, int financialYearId) {
+        public bool InsertAccountLedger(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId, int financialYearId, string GSTNo, bool IsGSTSales, string HSNCode, bool IsItem) {
             object[] results = this.Invoke("InsertAccountLedger", new object[] {
                         SKey,
                         alm,
@@ -3089,17 +2091,21 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
                         ob,
                         IsModify,
                         OldForInstId,
-                        financialYearId});
+                        financialYearId,
+                        GSTNo,
+                        IsGSTSales,
+                        HSNCode,
+                        IsItem});
             return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public void InsertAccountLedgerAsync(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId, int financialYearId) {
-            this.InsertAccountLedgerAsync(SKey, alm, AL, ob, IsModify, OldForInstId, financialYearId, null);
+        public void InsertAccountLedgerAsync(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId, int financialYearId, string GSTNo, bool IsGSTSales, string HSNCode, bool IsItem) {
+            this.InsertAccountLedgerAsync(SKey, alm, AL, ob, IsModify, OldForInstId, financialYearId, GSTNo, IsGSTSales, HSNCode, IsItem, null);
         }
         
         /// <remarks/>
-        public void InsertAccountLedgerAsync(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId, int financialYearId, object userState) {
+        public void InsertAccountLedgerAsync(string SKey, AccountLedgerMaster alm, AccountLedger AL, AccountLedgerOpeningBalance ob, bool IsModify, int OldForInstId, int financialYearId, string GSTNo, bool IsGSTSales, string HSNCode, bool IsItem, object userState) {
             if ((this.InsertAccountLedgerOperationCompleted == null)) {
                 this.InsertAccountLedgerOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertAccountLedgerOperationCompleted);
             }
@@ -3110,7 +2116,11 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
                         ob,
                         IsModify,
                         OldForInstId,
-                        financialYearId}, this.InsertAccountLedgerOperationCompleted, userState);
+                        financialYearId,
+                        GSTNo,
+                        IsGSTSales,
+                        HSNCode,
+                        IsItem}, this.InsertAccountLedgerOperationCompleted, userState);
         }
         
         private void OnInsertAccountLedgerOperationCompleted(object arg) {
@@ -4410,6 +3420,867 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/ReconciliationLedgerConfirmedUpdate", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet ReconciliationLedgerConfirmedUpdate(string SKey, int NotificationToLedgerId, int Id) {
+            object[] results = this.Invoke("ReconciliationLedgerConfirmedUpdate", new object[] {
+                        SKey,
+                        NotificationToLedgerId,
+                        Id});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ReconciliationLedgerConfirmedUpdateAsync(string SKey, int NotificationToLedgerId, int Id) {
+            this.ReconciliationLedgerConfirmedUpdateAsync(SKey, NotificationToLedgerId, Id, null);
+        }
+        
+        /// <remarks/>
+        public void ReconciliationLedgerConfirmedUpdateAsync(string SKey, int NotificationToLedgerId, int Id, object userState) {
+            if ((this.ReconciliationLedgerConfirmedUpdateOperationCompleted == null)) {
+                this.ReconciliationLedgerConfirmedUpdateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnReconciliationLedgerConfirmedUpdateOperationCompleted);
+            }
+            this.InvokeAsync("ReconciliationLedgerConfirmedUpdate", new object[] {
+                        SKey,
+                        NotificationToLedgerId,
+                        Id}, this.ReconciliationLedgerConfirmedUpdateOperationCompleted, userState);
+        }
+        
+        private void OnReconciliationLedgerConfirmedUpdateOperationCompleted(object arg) {
+            if ((this.ReconciliationLedgerConfirmedUpdateCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ReconciliationLedgerConfirmedUpdateCompleted(this, new ReconciliationLedgerConfirmedUpdateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/ReconciliationSelectAllLedgers", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet ReconciliationSelectAllLedgers(string SKey, int InstId, int ToInstId, int FinancialYearId, System.DateTime ToDate) {
+            object[] results = this.Invoke("ReconciliationSelectAllLedgers", new object[] {
+                        SKey,
+                        InstId,
+                        ToInstId,
+                        FinancialYearId,
+                        ToDate});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ReconciliationSelectAllLedgersAsync(string SKey, int InstId, int ToInstId, int FinancialYearId, System.DateTime ToDate) {
+            this.ReconciliationSelectAllLedgersAsync(SKey, InstId, ToInstId, FinancialYearId, ToDate, null);
+        }
+        
+        /// <remarks/>
+        public void ReconciliationSelectAllLedgersAsync(string SKey, int InstId, int ToInstId, int FinancialYearId, System.DateTime ToDate, object userState) {
+            if ((this.ReconciliationSelectAllLedgersOperationCompleted == null)) {
+                this.ReconciliationSelectAllLedgersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnReconciliationSelectAllLedgersOperationCompleted);
+            }
+            this.InvokeAsync("ReconciliationSelectAllLedgers", new object[] {
+                        SKey,
+                        InstId,
+                        ToInstId,
+                        FinancialYearId,
+                        ToDate}, this.ReconciliationSelectAllLedgersOperationCompleted, userState);
+        }
+        
+        private void OnReconciliationSelectAllLedgersOperationCompleted(object arg) {
+            if ((this.ReconciliationSelectAllLedgersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ReconciliationSelectAllLedgersCompleted(this, new ReconciliationSelectAllLedgersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/ReconciliationLedgersByInstId", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet ReconciliationLedgersByInstId(string SKey, int InstId, int LedgerId, int ToInstId, int ToLedgerId, int FinancialYearId, System.DateTime ToDate) {
+            object[] results = this.Invoke("ReconciliationLedgersByInstId", new object[] {
+                        SKey,
+                        InstId,
+                        LedgerId,
+                        ToInstId,
+                        ToLedgerId,
+                        FinancialYearId,
+                        ToDate});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ReconciliationLedgersByInstIdAsync(string SKey, int InstId, int LedgerId, int ToInstId, int ToLedgerId, int FinancialYearId, System.DateTime ToDate) {
+            this.ReconciliationLedgersByInstIdAsync(SKey, InstId, LedgerId, ToInstId, ToLedgerId, FinancialYearId, ToDate, null);
+        }
+        
+        /// <remarks/>
+        public void ReconciliationLedgersByInstIdAsync(string SKey, int InstId, int LedgerId, int ToInstId, int ToLedgerId, int FinancialYearId, System.DateTime ToDate, object userState) {
+            if ((this.ReconciliationLedgersByInstIdOperationCompleted == null)) {
+                this.ReconciliationLedgersByInstIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnReconciliationLedgersByInstIdOperationCompleted);
+            }
+            this.InvokeAsync("ReconciliationLedgersByInstId", new object[] {
+                        SKey,
+                        InstId,
+                        LedgerId,
+                        ToInstId,
+                        ToLedgerId,
+                        FinancialYearId,
+                        ToDate}, this.ReconciliationLedgersByInstIdOperationCompleted, userState);
+        }
+        
+        private void OnReconciliationLedgersByInstIdOperationCompleted(object arg) {
+            if ((this.ReconciliationLedgersByInstIdCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ReconciliationLedgersByInstIdCompleted(this, new ReconciliationLedgersByInstIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/OpeningTrialDetailed", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet OpeningTrialDetailed(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime FromDate, System.DateTime ToDate) {
+            object[] results = this.Invoke("OpeningTrialDetailed", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        ForInstId,
+                        AccountGroupId,
+                        FromDate,
+                        ToDate});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void OpeningTrialDetailedAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime FromDate, System.DateTime ToDate) {
+            this.OpeningTrialDetailedAsync(SKey, InstId, FinancialYearId, ForInstId, AccountGroupId, FromDate, ToDate, null);
+        }
+        
+        /// <remarks/>
+        public void OpeningTrialDetailedAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime FromDate, System.DateTime ToDate, object userState) {
+            if ((this.OpeningTrialDetailedOperationCompleted == null)) {
+                this.OpeningTrialDetailedOperationCompleted = new System.Threading.SendOrPostCallback(this.OnOpeningTrialDetailedOperationCompleted);
+            }
+            this.InvokeAsync("OpeningTrialDetailed", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        ForInstId,
+                        AccountGroupId,
+                        FromDate,
+                        ToDate}, this.OpeningTrialDetailedOperationCompleted, userState);
+        }
+        
+        private void OnOpeningTrialDetailedOperationCompleted(object arg) {
+            if ((this.OpeningTrialDetailedCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.OpeningTrialDetailedCompleted(this, new OpeningTrialDetailedCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/OpeningBalanceByAccountGroupId", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet OpeningBalanceByAccountGroupId(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime ToDate, bool IsIncludeChildAccountGroup, string MyGuid) {
+            object[] results = this.Invoke("OpeningBalanceByAccountGroupId", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        ForInstId,
+                        AccountGroupId,
+                        ToDate,
+                        IsIncludeChildAccountGroup,
+                        MyGuid});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void OpeningBalanceByAccountGroupIdAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime ToDate, bool IsIncludeChildAccountGroup, string MyGuid) {
+            this.OpeningBalanceByAccountGroupIdAsync(SKey, InstId, FinancialYearId, ForInstId, AccountGroupId, ToDate, IsIncludeChildAccountGroup, MyGuid, null);
+        }
+        
+        /// <remarks/>
+        public void OpeningBalanceByAccountGroupIdAsync(string SKey, int InstId, int FinancialYearId, int ForInstId, int AccountGroupId, System.DateTime ToDate, bool IsIncludeChildAccountGroup, string MyGuid, object userState) {
+            if ((this.OpeningBalanceByAccountGroupIdOperationCompleted == null)) {
+                this.OpeningBalanceByAccountGroupIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnOpeningBalanceByAccountGroupIdOperationCompleted);
+            }
+            this.InvokeAsync("OpeningBalanceByAccountGroupId", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        ForInstId,
+                        AccountGroupId,
+                        ToDate,
+                        IsIncludeChildAccountGroup,
+                        MyGuid}, this.OpeningBalanceByAccountGroupIdOperationCompleted, userState);
+        }
+        
+        private void OnOpeningBalanceByAccountGroupIdOperationCompleted(object arg) {
+            if ((this.OpeningBalanceByAccountGroupIdCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.OpeningBalanceByAccountGroupIdCompleted(this, new OpeningBalanceByAccountGroupIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_FetchMaxId", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int KDL_FetchMaxId(string SKey, string val) {
+            object[] results = this.Invoke("KDL_FetchMaxId", new object[] {
+                        SKey,
+                        val});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void KDL_FetchMaxIdAsync(string SKey, string val) {
+            this.KDL_FetchMaxIdAsync(SKey, val, null);
+        }
+        
+        /// <remarks/>
+        public void KDL_FetchMaxIdAsync(string SKey, string val, object userState) {
+            if ((this.KDL_FetchMaxIdOperationCompleted == null)) {
+                this.KDL_FetchMaxIdOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_FetchMaxIdOperationCompleted);
+            }
+            this.InvokeAsync("KDL_FetchMaxId", new object[] {
+                        SKey,
+                        val}, this.KDL_FetchMaxIdOperationCompleted, userState);
+        }
+        
+        private void OnKDL_FetchMaxIdOperationCompleted(object arg) {
+            if ((this.KDL_FetchMaxIdCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.KDL_FetchMaxIdCompleted(this, new KDL_FetchMaxIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_InsertContactInfo", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool KDL_InsertContactInfo(string SKey, System.Data.DataTable dt) {
+            object[] results = this.Invoke("KDL_InsertContactInfo", new object[] {
+                        SKey,
+                        dt});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void KDL_InsertContactInfoAsync(string SKey, System.Data.DataTable dt) {
+            this.KDL_InsertContactInfoAsync(SKey, dt, null);
+        }
+        
+        /// <remarks/>
+        public void KDL_InsertContactInfoAsync(string SKey, System.Data.DataTable dt, object userState) {
+            if ((this.KDL_InsertContactInfoOperationCompleted == null)) {
+                this.KDL_InsertContactInfoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_InsertContactInfoOperationCompleted);
+            }
+            this.InvokeAsync("KDL_InsertContactInfo", new object[] {
+                        SKey,
+                        dt}, this.KDL_InsertContactInfoOperationCompleted, userState);
+        }
+        
+        private void OnKDL_InsertContactInfoOperationCompleted(object arg) {
+            if ((this.KDL_InsertContactInfoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.KDL_InsertContactInfoCompleted(this, new KDL_InsertContactInfoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_InsertMakeBill", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool KDL_InsertMakeBill(string SKey, System.Data.DataTable dt) {
+            object[] results = this.Invoke("KDL_InsertMakeBill", new object[] {
+                        SKey,
+                        dt});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void KDL_InsertMakeBillAsync(string SKey, System.Data.DataTable dt) {
+            this.KDL_InsertMakeBillAsync(SKey, dt, null);
+        }
+        
+        /// <remarks/>
+        public void KDL_InsertMakeBillAsync(string SKey, System.Data.DataTable dt, object userState) {
+            if ((this.KDL_InsertMakeBillOperationCompleted == null)) {
+                this.KDL_InsertMakeBillOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_InsertMakeBillOperationCompleted);
+            }
+            this.InvokeAsync("KDL_InsertMakeBill", new object[] {
+                        SKey,
+                        dt}, this.KDL_InsertMakeBillOperationCompleted, userState);
+        }
+        
+        private void OnKDL_InsertMakeBillOperationCompleted(object arg) {
+            if ((this.KDL_InsertMakeBillCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.KDL_InsertMakeBillCompleted(this, new KDL_InsertMakeBillCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/KDL_InsertBillTransactions", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool KDL_InsertBillTransactions(string SKey, System.Data.DataTable dt) {
+            object[] results = this.Invoke("KDL_InsertBillTransactions", new object[] {
+                        SKey,
+                        dt});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void KDL_InsertBillTransactionsAsync(string SKey, System.Data.DataTable dt) {
+            this.KDL_InsertBillTransactionsAsync(SKey, dt, null);
+        }
+        
+        /// <remarks/>
+        public void KDL_InsertBillTransactionsAsync(string SKey, System.Data.DataTable dt, object userState) {
+            if ((this.KDL_InsertBillTransactionsOperationCompleted == null)) {
+                this.KDL_InsertBillTransactionsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnKDL_InsertBillTransactionsOperationCompleted);
+            }
+            this.InvokeAsync("KDL_InsertBillTransactions", new object[] {
+                        SKey,
+                        dt}, this.KDL_InsertBillTransactionsOperationCompleted, userState);
+        }
+        
+        private void OnKDL_InsertBillTransactionsOperationCompleted(object arg) {
+            if ((this.KDL_InsertBillTransactionsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.KDL_InsertBillTransactionsCompleted(this, new KDL_InsertBillTransactionsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/BalanceTransferEndYear", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool BalanceTransferEndYear(string SKey, System.DateTime FromDate, System.DateTime ToDate, int FinancialYearId, int InstId) {
+            object[] results = this.Invoke("BalanceTransferEndYear", new object[] {
+                        SKey,
+                        FromDate,
+                        ToDate,
+                        FinancialYearId,
+                        InstId});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void BalanceTransferEndYearAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int FinancialYearId, int InstId) {
+            this.BalanceTransferEndYearAsync(SKey, FromDate, ToDate, FinancialYearId, InstId, null);
+        }
+        
+        /// <remarks/>
+        public void BalanceTransferEndYearAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int FinancialYearId, int InstId, object userState) {
+            if ((this.BalanceTransferEndYearOperationCompleted == null)) {
+                this.BalanceTransferEndYearOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBalanceTransferEndYearOperationCompleted);
+            }
+            this.InvokeAsync("BalanceTransferEndYear", new object[] {
+                        SKey,
+                        FromDate,
+                        ToDate,
+                        FinancialYearId,
+                        InstId}, this.BalanceTransferEndYearOperationCompleted, userState);
+        }
+        
+        private void OnBalanceTransferEndYearOperationCompleted(object arg) {
+            if ((this.BalanceTransferEndYearCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.BalanceTransferEndYearCompleted(this, new BalanceTransferEndYearCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/CreateLedgerVoucherBykeyword", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet CreateLedgerVoucherBykeyword(string SKey, int InstId, int FinancialYearId, string SearchValue) {
+            object[] results = this.Invoke("CreateLedgerVoucherBykeyword", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        SearchValue});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CreateLedgerVoucherBykeywordAsync(string SKey, int InstId, int FinancialYearId, string SearchValue) {
+            this.CreateLedgerVoucherBykeywordAsync(SKey, InstId, FinancialYearId, SearchValue, null);
+        }
+        
+        /// <remarks/>
+        public void CreateLedgerVoucherBykeywordAsync(string SKey, int InstId, int FinancialYearId, string SearchValue, object userState) {
+            if ((this.CreateLedgerVoucherBykeywordOperationCompleted == null)) {
+                this.CreateLedgerVoucherBykeywordOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateLedgerVoucherBykeywordOperationCompleted);
+            }
+            this.InvokeAsync("CreateLedgerVoucherBykeyword", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        SearchValue}, this.CreateLedgerVoucherBykeywordOperationCompleted, userState);
+        }
+        
+        private void OnCreateLedgerVoucherBykeywordOperationCompleted(object arg) {
+            if ((this.CreateLedgerVoucherBykeywordCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CreateLedgerVoucherBykeywordCompleted(this, new CreateLedgerVoucherBykeywordCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/NegativeCashBalance", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet NegativeCashBalance(string SKey, int InstId, int FinancialYearId) {
+            object[] results = this.Invoke("NegativeCashBalance", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void NegativeCashBalanceAsync(string SKey, int InstId, int FinancialYearId) {
+            this.NegativeCashBalanceAsync(SKey, InstId, FinancialYearId, null);
+        }
+        
+        /// <remarks/>
+        public void NegativeCashBalanceAsync(string SKey, int InstId, int FinancialYearId, object userState) {
+            if ((this.NegativeCashBalanceOperationCompleted == null)) {
+                this.NegativeCashBalanceOperationCompleted = new System.Threading.SendOrPostCallback(this.OnNegativeCashBalanceOperationCompleted);
+            }
+            this.InvokeAsync("NegativeCashBalance", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId}, this.NegativeCashBalanceOperationCompleted, userState);
+        }
+        
+        private void OnNegativeCashBalanceOperationCompleted(object arg) {
+            if ((this.NegativeCashBalanceCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.NegativeCashBalanceCompleted(this, new NegativeCashBalanceCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/MoveTransactiontoOtherLedtger", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool MoveTransactiontoOtherLedtger(string SKey, int InstId, int FinancialYearId, int FromLedgerId, int ToLedgerId) {
+            object[] results = this.Invoke("MoveTransactiontoOtherLedtger", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        FromLedgerId,
+                        ToLedgerId});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void MoveTransactiontoOtherLedtgerAsync(string SKey, int InstId, int FinancialYearId, int FromLedgerId, int ToLedgerId) {
+            this.MoveTransactiontoOtherLedtgerAsync(SKey, InstId, FinancialYearId, FromLedgerId, ToLedgerId, null);
+        }
+        
+        /// <remarks/>
+        public void MoveTransactiontoOtherLedtgerAsync(string SKey, int InstId, int FinancialYearId, int FromLedgerId, int ToLedgerId, object userState) {
+            if ((this.MoveTransactiontoOtherLedtgerOperationCompleted == null)) {
+                this.MoveTransactiontoOtherLedtgerOperationCompleted = new System.Threading.SendOrPostCallback(this.OnMoveTransactiontoOtherLedtgerOperationCompleted);
+            }
+            this.InvokeAsync("MoveTransactiontoOtherLedtger", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        FromLedgerId,
+                        ToLedgerId}, this.MoveTransactiontoOtherLedtgerOperationCompleted, userState);
+        }
+        
+        private void OnMoveTransactiontoOtherLedtgerOperationCompleted(object arg) {
+            if ((this.MoveTransactiontoOtherLedtgerCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.MoveTransactiontoOtherLedtgerCompleted(this, new MoveTransactiontoOtherLedtgerCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/LedgerTableConrent", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool LedgerTableConrent(string SKey, int InstId, int FinancialYearId, System.Data.DataTable MyTb) {
+            object[] results = this.Invoke("LedgerTableConrent", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        MyTb});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void LedgerTableConrentAsync(string SKey, int InstId, int FinancialYearId, System.Data.DataTable MyTb) {
+            this.LedgerTableConrentAsync(SKey, InstId, FinancialYearId, MyTb, null);
+        }
+        
+        /// <remarks/>
+        public void LedgerTableConrentAsync(string SKey, int InstId, int FinancialYearId, System.Data.DataTable MyTb, object userState) {
+            if ((this.LedgerTableConrentOperationCompleted == null)) {
+                this.LedgerTableConrentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnLedgerTableConrentOperationCompleted);
+            }
+            this.InvokeAsync("LedgerTableConrent", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId,
+                        MyTb}, this.LedgerTableConrentOperationCompleted, userState);
+        }
+        
+        private void OnLedgerTableConrentOperationCompleted(object arg) {
+            if ((this.LedgerTableConrentCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.LedgerTableConrentCompleted(this, new LedgerTableConrentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/LedgerTableConrentLoadData", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet LedgerTableConrentLoadData(string SKey, int InstId, int FinancialYearId) {
+            object[] results = this.Invoke("LedgerTableConrentLoadData", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void LedgerTableConrentLoadDataAsync(string SKey, int InstId, int FinancialYearId) {
+            this.LedgerTableConrentLoadDataAsync(SKey, InstId, FinancialYearId, null);
+        }
+        
+        /// <remarks/>
+        public void LedgerTableConrentLoadDataAsync(string SKey, int InstId, int FinancialYearId, object userState) {
+            if ((this.LedgerTableConrentLoadDataOperationCompleted == null)) {
+                this.LedgerTableConrentLoadDataOperationCompleted = new System.Threading.SendOrPostCallback(this.OnLedgerTableConrentLoadDataOperationCompleted);
+            }
+            this.InvokeAsync("LedgerTableConrentLoadData", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId}, this.LedgerTableConrentLoadDataOperationCompleted, userState);
+        }
+        
+        private void OnLedgerTableConrentLoadDataOperationCompleted(object arg) {
+            if ((this.LedgerTableConrentLoadDataCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.LedgerTableConrentLoadDataCompleted(this, new LedgerTableConrentLoadDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/TransactionPermissionSelect", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet TransactionPermissionSelect(string SKey, int FinancialYearId) {
+            object[] results = this.Invoke("TransactionPermissionSelect", new object[] {
+                        SKey,
+                        FinancialYearId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TransactionPermissionSelectAsync(string SKey, int FinancialYearId) {
+            this.TransactionPermissionSelectAsync(SKey, FinancialYearId, null);
+        }
+        
+        /// <remarks/>
+        public void TransactionPermissionSelectAsync(string SKey, int FinancialYearId, object userState) {
+            if ((this.TransactionPermissionSelectOperationCompleted == null)) {
+                this.TransactionPermissionSelectOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTransactionPermissionSelectOperationCompleted);
+            }
+            this.InvokeAsync("TransactionPermissionSelect", new object[] {
+                        SKey,
+                        FinancialYearId}, this.TransactionPermissionSelectOperationCompleted, userState);
+        }
+        
+        private void OnTransactionPermissionSelectOperationCompleted(object arg) {
+            if ((this.TransactionPermissionSelectCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TransactionPermissionSelectCompleted(this, new TransactionPermissionSelectCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/TransactionPermissionUpdate", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public bool TransactionPermissionUpdate(string SKey, int FinancialYearId, int InstitutionId, bool IsTransactionAddAllow, bool IsTransactionEditAllow, bool IsOpeningBalanceEditAllow, bool IsNewLedgerAddAllow) {
+            object[] results = this.Invoke("TransactionPermissionUpdate", new object[] {
+                        SKey,
+                        FinancialYearId,
+                        InstitutionId,
+                        IsTransactionAddAllow,
+                        IsTransactionEditAllow,
+                        IsOpeningBalanceEditAllow,
+                        IsNewLedgerAddAllow});
+            return ((bool)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TransactionPermissionUpdateAsync(string SKey, int FinancialYearId, int InstitutionId, bool IsTransactionAddAllow, bool IsTransactionEditAllow, bool IsOpeningBalanceEditAllow, bool IsNewLedgerAddAllow) {
+            this.TransactionPermissionUpdateAsync(SKey, FinancialYearId, InstitutionId, IsTransactionAddAllow, IsTransactionEditAllow, IsOpeningBalanceEditAllow, IsNewLedgerAddAllow, null);
+        }
+        
+        /// <remarks/>
+        public void TransactionPermissionUpdateAsync(string SKey, int FinancialYearId, int InstitutionId, bool IsTransactionAddAllow, bool IsTransactionEditAllow, bool IsOpeningBalanceEditAllow, bool IsNewLedgerAddAllow, object userState) {
+            if ((this.TransactionPermissionUpdateOperationCompleted == null)) {
+                this.TransactionPermissionUpdateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTransactionPermissionUpdateOperationCompleted);
+            }
+            this.InvokeAsync("TransactionPermissionUpdate", new object[] {
+                        SKey,
+                        FinancialYearId,
+                        InstitutionId,
+                        IsTransactionAddAllow,
+                        IsTransactionEditAllow,
+                        IsOpeningBalanceEditAllow,
+                        IsNewLedgerAddAllow}, this.TransactionPermissionUpdateOperationCompleted, userState);
+        }
+        
+        private void OnTransactionPermissionUpdateOperationCompleted(object arg) {
+            if ((this.TransactionPermissionUpdateCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TransactionPermissionUpdateCompleted(this, new TransactionPermissionUpdateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/PrintTransactionVoucherSlip", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet PrintTransactionVoucherSlip(string SKey, int TransactionMasterId) {
+            object[] results = this.Invoke("PrintTransactionVoucherSlip", new object[] {
+                        SKey,
+                        TransactionMasterId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void PrintTransactionVoucherSlipAsync(string SKey, int TransactionMasterId) {
+            this.PrintTransactionVoucherSlipAsync(SKey, TransactionMasterId, null);
+        }
+        
+        /// <remarks/>
+        public void PrintTransactionVoucherSlipAsync(string SKey, int TransactionMasterId, object userState) {
+            if ((this.PrintTransactionVoucherSlipOperationCompleted == null)) {
+                this.PrintTransactionVoucherSlipOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPrintTransactionVoucherSlipOperationCompleted);
+            }
+            this.InvokeAsync("PrintTransactionVoucherSlip", new object[] {
+                        SKey,
+                        TransactionMasterId}, this.PrintTransactionVoucherSlipOperationCompleted, userState);
+        }
+        
+        private void OnPrintTransactionVoucherSlipOperationCompleted(object arg) {
+            if ((this.PrintTransactionVoucherSlipCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.PrintTransactionVoucherSlipCompleted(this, new PrintTransactionVoucherSlipCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/GetLastDateForDataEntry", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.DateTime GetLastDateForDataEntry() {
+            object[] results = this.Invoke("GetLastDateForDataEntry", new object[0]);
+            return ((System.DateTime)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetLastDateForDataEntryAsync() {
+            this.GetLastDateForDataEntryAsync(null);
+        }
+        
+        /// <remarks/>
+        public void GetLastDateForDataEntryAsync(object userState) {
+            if ((this.GetLastDateForDataEntryOperationCompleted == null)) {
+                this.GetLastDateForDataEntryOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetLastDateForDataEntryOperationCompleted);
+            }
+            this.InvokeAsync("GetLastDateForDataEntry", new object[0], this.GetLastDateForDataEntryOperationCompleted, userState);
+        }
+        
+        private void OnGetLastDateForDataEntryOperationCompleted(object arg) {
+            if ((this.GetLastDateForDataEntryCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetLastDateForDataEntryCompleted(this, new GetLastDateForDataEntryCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AllowTransactionInTheseDates", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.DateTime[] AllowTransactionInTheseDates() {
+            object[] results = this.Invoke("AllowTransactionInTheseDates", new object[0]);
+            return ((System.DateTime[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AllowTransactionInTheseDatesAsync() {
+            this.AllowTransactionInTheseDatesAsync(null);
+        }
+        
+        /// <remarks/>
+        public void AllowTransactionInTheseDatesAsync(object userState) {
+            if ((this.AllowTransactionInTheseDatesOperationCompleted == null)) {
+                this.AllowTransactionInTheseDatesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAllowTransactionInTheseDatesOperationCompleted);
+            }
+            this.InvokeAsync("AllowTransactionInTheseDates", new object[0], this.AllowTransactionInTheseDatesOperationCompleted, userState);
+        }
+        
+        private void OnAllowTransactionInTheseDatesOperationCompleted(object arg) {
+            if ((this.AllowTransactionInTheseDatesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AllowTransactionInTheseDatesCompleted(this, new AllowTransactionInTheseDatesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AccountLedgerIndex", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet AccountLedgerIndex(string SKey, string Jsondata, int InstId) {
+            object[] results = this.Invoke("AccountLedgerIndex", new object[] {
+                        SKey,
+                        Jsondata,
+                        InstId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AccountLedgerIndexAsync(string SKey, string Jsondata, int InstId) {
+            this.AccountLedgerIndexAsync(SKey, Jsondata, InstId, null);
+        }
+        
+        /// <remarks/>
+        public void AccountLedgerIndexAsync(string SKey, string Jsondata, int InstId, object userState) {
+            if ((this.AccountLedgerIndexOperationCompleted == null)) {
+                this.AccountLedgerIndexOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAccountLedgerIndexOperationCompleted);
+            }
+            this.InvokeAsync("AccountLedgerIndex", new object[] {
+                        SKey,
+                        Jsondata,
+                        InstId}, this.AccountLedgerIndexOperationCompleted, userState);
+        }
+        
+        private void OnAccountLedgerIndexOperationCompleted(object arg) {
+            if ((this.AccountLedgerIndexCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AccountLedgerIndexCompleted(this, new AccountLedgerIndexCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/TransactionDetailsBackup", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int TransactionDetailsBackup(string SKey, string Jsondata) {
+            object[] results = this.Invoke("TransactionDetailsBackup", new object[] {
+                        SKey,
+                        Jsondata});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TransactionDetailsBackupAsync(string SKey, string Jsondata) {
+            this.TransactionDetailsBackupAsync(SKey, Jsondata, null);
+        }
+        
+        /// <remarks/>
+        public void TransactionDetailsBackupAsync(string SKey, string Jsondata, object userState) {
+            if ((this.TransactionDetailsBackupOperationCompleted == null)) {
+                this.TransactionDetailsBackupOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTransactionDetailsBackupOperationCompleted);
+            }
+            this.InvokeAsync("TransactionDetailsBackup", new object[] {
+                        SKey,
+                        Jsondata}, this.TransactionDetailsBackupOperationCompleted, userState);
+        }
+        
+        private void OnTransactionDetailsBackupOperationCompleted(object arg) {
+            if ((this.TransactionDetailsBackupCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TransactionDetailsBackupCompleted(this, new TransactionDetailsBackupCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AccountGenreteLedgerTranscationListAllIndex", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet AccountGenreteLedgerTranscationListAllIndex(string SKey, System.DateTime FromDate, System.DateTime ToDate, int LedgerId, int InstId, int DepartmentId, int FinancialYearId, int ForInstId, int AccountGroupId) {
+            object[] results = this.Invoke("AccountGenreteLedgerTranscationListAllIndex", new object[] {
+                        SKey,
+                        FromDate,
+                        ToDate,
+                        LedgerId,
+                        InstId,
+                        DepartmentId,
+                        FinancialYearId,
+                        ForInstId,
+                        AccountGroupId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AccountGenreteLedgerTranscationListAllIndexAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int LedgerId, int InstId, int DepartmentId, int FinancialYearId, int ForInstId, int AccountGroupId) {
+            this.AccountGenreteLedgerTranscationListAllIndexAsync(SKey, FromDate, ToDate, LedgerId, InstId, DepartmentId, FinancialYearId, ForInstId, AccountGroupId, null);
+        }
+        
+        /// <remarks/>
+        public void AccountGenreteLedgerTranscationListAllIndexAsync(string SKey, System.DateTime FromDate, System.DateTime ToDate, int LedgerId, int InstId, int DepartmentId, int FinancialYearId, int ForInstId, int AccountGroupId, object userState) {
+            if ((this.AccountGenreteLedgerTranscationListAllIndexOperationCompleted == null)) {
+                this.AccountGenreteLedgerTranscationListAllIndexOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAccountGenreteLedgerTranscationListAllIndexOperationCompleted);
+            }
+            this.InvokeAsync("AccountGenreteLedgerTranscationListAllIndex", new object[] {
+                        SKey,
+                        FromDate,
+                        ToDate,
+                        LedgerId,
+                        InstId,
+                        DepartmentId,
+                        FinancialYearId,
+                        ForInstId,
+                        AccountGroupId}, this.AccountGenreteLedgerTranscationListAllIndexOperationCompleted, userState);
+        }
+        
+        private void OnAccountGenreteLedgerTranscationListAllIndexOperationCompleted(object arg) {
+            if ((this.AccountGenreteLedgerTranscationListAllIndexCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AccountGenreteLedgerTranscationListAllIndexCompleted(this, new AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/GetPartyLedgersForGST", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet GetPartyLedgersForGST(string SKey, int InstId, int FinancialYearId) {
+            object[] results = this.Invoke("GetPartyLedgersForGST", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetPartyLedgersForGSTAsync(string SKey, int InstId, int FinancialYearId) {
+            this.GetPartyLedgersForGSTAsync(SKey, InstId, FinancialYearId, null);
+        }
+        
+        /// <remarks/>
+        public void GetPartyLedgersForGSTAsync(string SKey, int InstId, int FinancialYearId, object userState) {
+            if ((this.GetPartyLedgersForGSTOperationCompleted == null)) {
+                this.GetPartyLedgersForGSTOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetPartyLedgersForGSTOperationCompleted);
+            }
+            this.InvokeAsync("GetPartyLedgersForGST", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId}, this.GetPartyLedgersForGSTOperationCompleted, userState);
+        }
+        
+        private void OnGetPartyLedgersForGSTOperationCompleted(object arg) {
+            if ((this.GetPartyLedgersForGSTCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetPartyLedgersForGSTCompleted(this, new GetPartyLedgersForGSTCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/GetItemsByIncomeGSTSalesGroup", RequestNamespace="http://kccsasr.org/", ResponseNamespace="http://kccsasr.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataSet GetItemsByIncomeGSTSalesGroup(string SKey, int InstId, int FinancialYearId) {
+            object[] results = this.Invoke("GetItemsByIncomeGSTSalesGroup", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId});
+            return ((System.Data.DataSet)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetItemsByIncomeGSTSalesGroupAsync(string SKey, int InstId, int FinancialYearId) {
+            this.GetItemsByIncomeGSTSalesGroupAsync(SKey, InstId, FinancialYearId, null);
+        }
+        
+        /// <remarks/>
+        public void GetItemsByIncomeGSTSalesGroupAsync(string SKey, int InstId, int FinancialYearId, object userState) {
+            if ((this.GetItemsByIncomeGSTSalesGroupOperationCompleted == null)) {
+                this.GetItemsByIncomeGSTSalesGroupOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetItemsByIncomeGSTSalesGroupOperationCompleted);
+            }
+            this.InvokeAsync("GetItemsByIncomeGSTSalesGroup", new object[] {
+                        SKey,
+                        InstId,
+                        FinancialYearId}, this.GetItemsByIncomeGSTSalesGroupOperationCompleted, userState);
+        }
+        
+        private void OnGetItemsByIncomeGSTSalesGroupOperationCompleted(object arg) {
+            if ((this.GetItemsByIncomeGSTSalesGroupCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetItemsByIncomeGSTSalesGroupCompleted(this, new GetItemsByIncomeGSTSalesGroupCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -4910,11 +4781,7 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         private bool isUnderSecretaryField;
         
         private System.Nullable<bool> isShowMainCollegeField;
-
-        private string gstField;
-
-        private bool isGstSalesField;
-
+        
         /// <remarks/>
         public int LedgerId {
             get {
@@ -5144,31 +5011,7 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
                 this.isUnderSecretaryField = value;
             }
         }
-
-        public string GST
-        {
-            get
-            {
-                return this.gstField;
-            }
-            set
-            {
-                this.gstField = value;
-            }
-        }
-
-        public bool IsGSTSales
-        {
-            get
-            {
-                return this.isGstSalesField;
-            }
-            set
-            {
-                this.isGstSalesField = value;
-            }
-        }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public System.Nullable<bool> IsShowMainCollege {
@@ -5179,8 +5022,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
                 this.isShowMainCollegeField = value;
             }
         }
-
-        
     }
     
     /// <remarks/>
@@ -5499,604 +5340,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
             }
             set {
                 this.forInstIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void ReconciliationLedgerConfirmedUpdateCompletedEventHandler(object sender, ReconciliationLedgerConfirmedUpdateCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ReconciliationLedgerConfirmedUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ReconciliationLedgerConfirmedUpdateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void ReconciliationSelectAllLedgersCompletedEventHandler(object sender, ReconciliationSelectAllLedgersCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ReconciliationSelectAllLedgersCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ReconciliationSelectAllLedgersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void ReconciliationLedgersByInstIdCompletedEventHandler(object sender, ReconciliationLedgersByInstIdCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ReconciliationLedgersByInstIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ReconciliationLedgersByInstIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void OpeningTrialDetailedCompletedEventHandler(object sender, OpeningTrialDetailedCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class OpeningTrialDetailedCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal OpeningTrialDetailedCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void OpeningBalanceByAccountGroupIdCompletedEventHandler(object sender, OpeningBalanceByAccountGroupIdCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class OpeningBalanceByAccountGroupIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal OpeningBalanceByAccountGroupIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void KDL_FetchMaxIdCompletedEventHandler(object sender, KDL_FetchMaxIdCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class KDL_FetchMaxIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal KDL_FetchMaxIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void KDL_InsertContactInfoCompletedEventHandler(object sender, KDL_InsertContactInfoCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class KDL_InsertContactInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal KDL_InsertContactInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void KDL_InsertMakeBillCompletedEventHandler(object sender, KDL_InsertMakeBillCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class KDL_InsertMakeBillCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal KDL_InsertMakeBillCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void KDL_InsertBillTransactionsCompletedEventHandler(object sender, KDL_InsertBillTransactionsCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class KDL_InsertBillTransactionsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal KDL_InsertBillTransactionsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void BalanceTransferEndYearCompletedEventHandler(object sender, BalanceTransferEndYearCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class BalanceTransferEndYearCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal BalanceTransferEndYearCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void CreateLedgerVoucherBykeywordCompletedEventHandler(object sender, CreateLedgerVoucherBykeywordCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CreateLedgerVoucherBykeywordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CreateLedgerVoucherBykeywordCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void NegativeCashBalanceCompletedEventHandler(object sender, NegativeCashBalanceCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class NegativeCashBalanceCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal NegativeCashBalanceCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void MoveTransactiontoOtherLedtgerCompletedEventHandler(object sender, MoveTransactiontoOtherLedtgerCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class MoveTransactiontoOtherLedtgerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal MoveTransactiontoOtherLedtgerCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void LedgerTableConrentCompletedEventHandler(object sender, LedgerTableConrentCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class LedgerTableConrentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal LedgerTableConrentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void LedgerTableConrentLoadDataCompletedEventHandler(object sender, LedgerTableConrentLoadDataCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class LedgerTableConrentLoadDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal LedgerTableConrentLoadDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void TransactionPermissionSelectCompletedEventHandler(object sender, TransactionPermissionSelectCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class TransactionPermissionSelectCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal TransactionPermissionSelectCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void TransactionPermissionUpdateCompletedEventHandler(object sender, TransactionPermissionUpdateCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class TransactionPermissionUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal TransactionPermissionUpdateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void PrintTransactionVoucherSlipCompletedEventHandler(object sender, PrintTransactionVoucherSlipCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class PrintTransactionVoucherSlipCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal PrintTransactionVoucherSlipCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void GetLastDateForDataEntryCompletedEventHandler(object sender, GetLastDateForDataEntryCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetLastDateForDataEntryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetLastDateForDataEntryCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.DateTime Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.DateTime)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void AllowTransactionInTheseDatesCompletedEventHandler(object sender, AllowTransactionInTheseDatesCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class AllowTransactionInTheseDatesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal AllowTransactionInTheseDatesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.DateTime[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.DateTime[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void AccountLedgerIndexCompletedEventHandler(object sender, AccountLedgerIndexCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class AccountLedgerIndexCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal AccountLedgerIndexCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void TransactionDetailsBackupCompletedEventHandler(object sender, TransactionDetailsBackupCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class TransactionDetailsBackupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal TransactionDetailsBackupCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void AccountGenreteLedgerTranscationListAllIndexCompletedEventHandler(object sender, AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
             }
         }
     }
@@ -6764,136 +6007,6 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
         private object[] results;
         
         internal AccountLedgerForTransactionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void AccountLedgerForBudgetCompletedEventHandler(object sender, AccountLedgerForBudgetCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class AccountLedgerForBudgetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal AccountLedgerForBudgetCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void ViewAccountLedgerForBudgetCompletedEventHandler(object sender, ViewAccountLedgerForBudgetCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ViewAccountLedgerForBudgetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ViewAccountLedgerForBudgetCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void InsertOrUpdateAccountBudgetCompletedEventHandler(object sender, InsertOrUpdateAccountBudgetCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class InsertOrUpdateAccountBudgetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal InsertOrUpdateAccountBudgetCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void GetBudgetDetailsForExpenditureCompletedEventHandler(object sender, GetBudgetDetailsForExpenditureCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBudgetDetailsForExpenditureCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBudgetDetailsForExpenditureCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataSet Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataSet)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    public delegate void GetBudgetDetailsForIncomeCompletedEventHandler(object sender, GetBudgetDetailsForIncomeCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class GetBudgetDetailsForIncomeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal GetBudgetDetailsForIncomeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
@@ -8231,20 +7344,656 @@ namespace AccountsAppWeb.Core.com.kccsasr.accounts {
                 return ((System.Data.DataSet)(this.results[0]));
             }
         }
-
-        ///// <remarks/>
-        //[System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://kccsasr.org/AccountPartyForGSTSales", RequestNamespace = "http://kccsasr.org/", ResponseNamespace = "http://kccsasr.org/", Use = System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle = System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        //public System.Data.DataSet AccountPartyForGSTSales(string SKey, int InstId, int FinancialYearId, int DepartmentId, int GroupId, int ShowInTransactionPage)
-        //{
-        //    object[] results = this.Invoke("AccountPartyForGSTSales", new object[] {
-        //                SKey,
-        //                InstId,
-        //                FinancialYearId,
-        //                DepartmentId,
-        //                GroupId,
-        //                ShowInTransactionPage});
-        //    return ((System.Data.DataSet)(results[0]));
-        //}
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void ReconciliationLedgerConfirmedUpdateCompletedEventHandler(object sender, ReconciliationLedgerConfirmedUpdateCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ReconciliationLedgerConfirmedUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ReconciliationLedgerConfirmedUpdateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void ReconciliationSelectAllLedgersCompletedEventHandler(object sender, ReconciliationSelectAllLedgersCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ReconciliationSelectAllLedgersCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ReconciliationSelectAllLedgersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void ReconciliationLedgersByInstIdCompletedEventHandler(object sender, ReconciliationLedgersByInstIdCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ReconciliationLedgersByInstIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ReconciliationLedgersByInstIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void OpeningTrialDetailedCompletedEventHandler(object sender, OpeningTrialDetailedCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class OpeningTrialDetailedCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal OpeningTrialDetailedCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void OpeningBalanceByAccountGroupIdCompletedEventHandler(object sender, OpeningBalanceByAccountGroupIdCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class OpeningBalanceByAccountGroupIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal OpeningBalanceByAccountGroupIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void KDL_FetchMaxIdCompletedEventHandler(object sender, KDL_FetchMaxIdCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class KDL_FetchMaxIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal KDL_FetchMaxIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void KDL_InsertContactInfoCompletedEventHandler(object sender, KDL_InsertContactInfoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class KDL_InsertContactInfoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal KDL_InsertContactInfoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void KDL_InsertMakeBillCompletedEventHandler(object sender, KDL_InsertMakeBillCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class KDL_InsertMakeBillCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal KDL_InsertMakeBillCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void KDL_InsertBillTransactionsCompletedEventHandler(object sender, KDL_InsertBillTransactionsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class KDL_InsertBillTransactionsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal KDL_InsertBillTransactionsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void BalanceTransferEndYearCompletedEventHandler(object sender, BalanceTransferEndYearCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class BalanceTransferEndYearCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal BalanceTransferEndYearCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void CreateLedgerVoucherBykeywordCompletedEventHandler(object sender, CreateLedgerVoucherBykeywordCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateLedgerVoucherBykeywordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateLedgerVoucherBykeywordCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void NegativeCashBalanceCompletedEventHandler(object sender, NegativeCashBalanceCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class NegativeCashBalanceCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal NegativeCashBalanceCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void MoveTransactiontoOtherLedtgerCompletedEventHandler(object sender, MoveTransactiontoOtherLedtgerCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class MoveTransactiontoOtherLedtgerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal MoveTransactiontoOtherLedtgerCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void LedgerTableConrentCompletedEventHandler(object sender, LedgerTableConrentCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class LedgerTableConrentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal LedgerTableConrentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void LedgerTableConrentLoadDataCompletedEventHandler(object sender, LedgerTableConrentLoadDataCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class LedgerTableConrentLoadDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal LedgerTableConrentLoadDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void TransactionPermissionSelectCompletedEventHandler(object sender, TransactionPermissionSelectCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TransactionPermissionSelectCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TransactionPermissionSelectCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void TransactionPermissionUpdateCompletedEventHandler(object sender, TransactionPermissionUpdateCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TransactionPermissionUpdateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TransactionPermissionUpdateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void PrintTransactionVoucherSlipCompletedEventHandler(object sender, PrintTransactionVoucherSlipCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PrintTransactionVoucherSlipCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PrintTransactionVoucherSlipCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void GetLastDateForDataEntryCompletedEventHandler(object sender, GetLastDateForDataEntryCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetLastDateForDataEntryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetLastDateForDataEntryCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.DateTime Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.DateTime)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void AllowTransactionInTheseDatesCompletedEventHandler(object sender, AllowTransactionInTheseDatesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AllowTransactionInTheseDatesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AllowTransactionInTheseDatesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.DateTime[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.DateTime[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void AccountLedgerIndexCompletedEventHandler(object sender, AccountLedgerIndexCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AccountLedgerIndexCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AccountLedgerIndexCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void TransactionDetailsBackupCompletedEventHandler(object sender, TransactionDetailsBackupCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TransactionDetailsBackupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TransactionDetailsBackupCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void AccountGenreteLedgerTranscationListAllIndexCompletedEventHandler(object sender, AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AccountGenreteLedgerTranscationListAllIndexCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void GetPartyLedgersForGSTCompletedEventHandler(object sender, GetPartyLedgersForGSTCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetPartyLedgersForGSTCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetPartyLedgersForGSTCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    public delegate void GetItemsByIncomeGSTSalesGroupCompletedEventHandler(object sender, GetItemsByIncomeGSTSalesGroupCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9032.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetItemsByIncomeGSTSalesGroupCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetItemsByIncomeGSTSalesGroupCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataSet Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataSet)(this.results[0]));
+            }
+        }
     }
 }
 

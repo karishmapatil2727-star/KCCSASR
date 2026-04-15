@@ -21,6 +21,10 @@ function loaddropdownsOnLoad() {
     $.ajax({
         type: "GET",
         url: '/Admin/GetAccountGroupsList',
+        data: {
+            showInLedger: 0,
+            financialYearId: userData.FinancialYearId
+        },
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         beforeSend: function () {
@@ -112,12 +116,28 @@ function loadAccountGroupList() {
         ],
         ajax: {
             url: "GetAccountGroupsList",
+            data: { 
+                showInLedger: 0, 
+                financialYearId: userData.FinancialYearId 
+            },
             dataSrc: ''
         },
         columns: [
             { data: "AccountGroupId", name: "Group Id" },
             { data: "AccountGroupName", name: "Group Name" },
             { data: "UnderGroupTitle", name: "Under Group" },
+           {
+               data: "IsParty",
+               name: "Party GST Group",
+               "render": function (data, type, full, meta) {
+                   // If IsParty is true (1), show Yes; else show No
+                   if (data === true || data === 1) {
+                       return '<span class="label label-success">Yes</span>';
+                   } else {
+                       return '<span class="label label-default">No</span>';
+                   }
+               }
+           },
             { data: "Nature", name: "Nature" },
             {
                 "title": "Edit",
@@ -166,7 +186,7 @@ function accountGroupOnFailure(error) {
     alert('error occured while saving the data');
 }
 function editAccountGroup(groupId) {
-
+    debugger;
     $.ajax({
         type: "GET",
         url: '/Admin/GetAccountGroup',
@@ -179,6 +199,18 @@ function editAccountGroup(groupId) {
             $('#AccountGroupNameAlias').val(data.AccountGroupNameAlias);
             $("#GroupUnder option:contains(" + data.UnderGroupTitle + ")").attr('selected', true);
             $('#Nature').val(data.Nature);
+            if ($('#GroupUnder').data('combobox')) {
+                $('#GroupUnder').combobox('destroy');
+            }
+            $('#GroupUnder').val(data.GroupUnder);
+            $('#GroupUnder').combobox();
+            $('#GroupUnder').parent()
+                .find('input.ui-autocomplete-input')
+                .val(data.UnderGroupTitle);
+
+            $('#IsCommonGroup').prop('checked',
+                data.IsCommonGroup === true || data.IsCommonGroup == 1);         
+
             if (data.IsAdminGroup) {
                 $('#AccountGroupName').attr('readonly', true);
                 $('#AccountGroupNameAlias').attr('readonly', true);
@@ -186,6 +218,12 @@ function editAccountGroup(groupId) {
                 $('#AccountGroupName').attr('readonly', false);
                 $('#AccountGroupNameAlias').attr('readonly', false)
             }
+            //if (isParty === "True" || isParty === "true" || isParty == 1) {
+            //    $('#IsParty').prop('checked', true);
+            //} else {
+            //    $('#IsParty').prop('checked', false);
+            //}
+            $('#IsParty').prop('checked', data.IsParty === true || data.IsParty == 1);
         },
         error: function (error) { console.log(error); }
     });

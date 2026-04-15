@@ -26,19 +26,18 @@
     // ================= PROCEED =================
     $('#btnGSTProceed').on('click', function () {
 
-        if ($('#ddlParty').val() === '') {
+        if (!$('#ddlParty').val()) {
             alert('Please select Party');
             return;
         }
-        if ($('#ddlGSTSlab').val() === '') {
+        if (!$('#ddlGSTSlab').val()) {
             alert('Please select GST Slab');
             return;
         }
-        if ($('#ddlGSTType').val() === '') {
+        if (!$('#ddlGSTType').val()) {
             alert('Please select GST Type');
             return;
         }
-
         $('#tblGSTItems tbody').empty();
         $('#lblGSTTotal').text('0.00');
 
@@ -52,20 +51,21 @@
     // ================= ADD ITEM =================
     $('#btnAddGSTItem').on('click', function () {
 
-        var item = $('#ddlGSTItems option:selected').text();
-        var hsn = $('#txtHSN').val().trim();
+        var itemId = $('#ddlGSTItems').val();
+        var itemText = $('#ddlGSTItems option:selected').text().trim();
         var baseAmount = parseFloat($('#txtItemAmount').val());
 
-        if (hsn === '') {
-            alert('Please enter HSN Code');
+        // ✅ Item validation
+        if (!itemId || itemId === '' || itemId === '0' || itemText === 'Select Item') {
+            alert('Please select Item');
             return;
         }
 
+        // ✅ Amount validation
         if (isNaN(baseAmount) || baseAmount <= 0) {
-            alert('Enter valid amount');
+            alert('Please Enter Amount');
             return;
         }
-
         var slab = parseFloat($('#ddlGSTSlab').val());
         var type = $('#ddlGSTType').val();
 
@@ -80,26 +80,28 @@
 
         var totalGST = cgst + sgst + igst;
 
+        // ✅ Get HSN from map
+        // ✅ HSN from map (no UI label)
+        var hsnCode = (typeof itemHSNMap !== 'undefined' && itemHSNMap[itemId])
+                      ? itemHSNMap[itemId]
+                      : '-';
         $('#dvGSTItemTable').show();
 
         var markup =
-            "<tr " +
-            "data-base='" + baseAmount.toFixed(2) + "' " +
-            "data-cgst='" + cgst.toFixed(2) + "' " +
-            "data-sgst='" + sgst.toFixed(2) + "' " +
-            "data-igst='" + igst.toFixed(2) + "'>" +
-            "<td><input type='checkbox' class='chkGSTRow'></td>" +
-            "<td>" + item + "</td>" +
-            "<td>" + hsn + "</td>" +
-            "<td class='align-right'>" + baseAmount.toFixed(2) + "</td>" +
-            "</tr>";
+        "<tr " +
+        "data-base='" + baseAmount.toFixed(2) + "' " +
+        "data-cgst='" + cgst.toFixed(2) + "' " +
+        "data-sgst='" + sgst.toFixed(2) + "' " +
+        "data-igst='" + igst.toFixed(2) + "'>" +
+        "<td><input type='checkbox' class='chkGSTRow'></td>" +
+        "<td>" + itemText + "</td>" +
+        "<td>" + hsnCode + "</td>" +
+        "<td class='align-right'>" + baseAmount.toFixed(2) + "</td>" +
+        "</tr>";
 
         $('#tblGSTItems tbody').append(markup);
-
+        // ✅ Reset after adding
         calculateGSTTotals();
-
-        $('#txtHSN').val('');
-        $('#txtItemAmount').val('');
     });
 
     // ================= CHECKBOX CHANGE =================
@@ -138,12 +140,8 @@
             var cgst = Number($(this).attr('data-cgst')) || 0;
             var sgst = Number($(this).attr('data-sgst')) || 0;
             var igst = Number($(this).attr('data-igst')) || 0;
-
             var isChecked = $(this).find('.chkGSTRow').is(':checked');
 
-            // RULE:
-            // If any checkbox is checked → use only checked rows
-            // If none checked → use all rows
             if (checkedCount > 0 && !isChecked) {
                 return;
             }
@@ -197,4 +195,9 @@
         }
     }
 
+    // ================= ITEM → AUTO-FILL HSN =================
+    $('#ddlGSTItems').on('change', function () {
+        var selectedId = $(this).val();
+        clearError('ddlGSTItems');
+    });
 });

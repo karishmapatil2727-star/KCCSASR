@@ -1,4 +1,5 @@
 ﻿var userData = {};
+window.isLoadingEdit = false;  // GLOBAL on window object
 $.getJSON('/Base/GetUserData', function (data) {
     userData = JSON.parse(data);
     $(document).ready(function () {
@@ -76,7 +77,7 @@ function loadAccountLedgerList() {
             },
         ],
         ajax: {
-        
+
             type: "GET",
             url: '/Admin/GetAccountLedgerList',
             data: { showInTransactionPage: '0' },
@@ -187,16 +188,20 @@ function accountLedgeronFailure() {
     alert('error occured while saving the data');
 }
 function editAccountLedger(ledgerId) {
+    debugger;
     $.ajax({
         type: "GET",
         url: '/Admin/GetAccountLedger',
-        data: { ledgerId: ledgerId,showInTransactionPage: '0'},
+        data: { ledgerId: ledgerId, showInTransactionPage: '0' },
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         beforeSend: function () {
             ShowLoading();
         },
         success: function (data) {
+            debugger;
+            // SET FLAG — prevent toggleGSTFields clearing GSTNo
+            isLoadingEdit = true;
             $('#LedgerId').val(data.LedgerId);
             $('#LedgerName').val(data.LedgerName);
             $('#AccountGroupId').val(data.AccountGroupId);
@@ -208,6 +213,54 @@ function editAccountLedger(ledgerId) {
             $('#PAN').val(data.PAN);
             $('#Address').val(data.Address);
             $('#Narration').val(data.Narration);
+            // Check both bool and int
+            var isGST = (data.IsGSTSales === true || data.IsGSTSales == 1);
+
+            if (isGST) {
+                // GST Sales ON
+                // 1. Clear and disable TIN CST FIRST
+                $('#TIN').val('').prop('disabled', true);
+                $('#CST').val('').prop('disabled', true);
+
+                // 2. Check checkbox
+                $('#chkIsGSTSales').prop('checked', true);
+
+                // 3. Show GST section
+                $('#gstPanSection').show();
+
+                // 4. Set GSTNo
+                $('#GSTNo').val(data.GSTNo != null ? data.GSTNo : '');
+
+            } else {
+                // GST Sales OFF
+                // 1. Enable and set TIN CST
+                $('#TIN').prop('disabled', false).val(data.TIN != null ? data.TIN : '');
+                $('#CST').prop('disabled', false).val(data.CST != null ? data.CST : '');
+
+                // 2. Uncheck checkbox
+                $('#chkIsGSTSales').prop('checked', false);
+
+                // 3. Hide GST section
+                $('#gstPanSection').hide();
+
+                // 4. Clear GSTNo
+                $('#GSTNo').val('');
+            }
+            var isItem = (data.IsItem === true || data.IsItem == 1);
+            if (isItem) {
+                $('#chkIsItem').prop('checked', true);
+                $('#divHSNCode').show();
+                $('#HSNCode').val(data.HSNCode != null ? data.HSNCode : '');
+            } else {
+                $('#chkIsItem').prop('checked', false);
+                $('#divHSNCode').hide();
+                $('#HSNCode').val('');
+            }
+            // RESET FLAG
+            isLoadingEdit = false;
+
+            // Scroll to top
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
         },
         error: function (error) { console.log(error); },
         complete: function () {
@@ -282,6 +335,30 @@ function validateLedgerfrom() {
             return false;
         }
     }
+    // --- NEW GST VALIDATION LOGIC ---
+
+    // Check if the GST checkbox is checked
+    if ($('#chkIsGSTSales').is(':checked')) {
+        debugger;
+        var gstNo = $('#GSTNo').val().trim().toUpperCase();
+
+        // 3. Check if GST Number is empty
+        if (gstNo === "") {
+            alert("Please enter GST Number.");
+            $('#GSTNo').focus();
+            return false;
+        }
+
+        // 4. GST Format Regex Validation
+        var gstRegex = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/;
+        if (!gstRegex.test(gstNo)) {
+            alert("Invalid GST Number format. Please enter a valid 15-digit GSTIN.");
+            $('#GSTNo').focus();
+            return false;
+        }
+    }
+    // If all checks pass
+    return true;
 }
 
 

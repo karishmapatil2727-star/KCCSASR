@@ -1,504 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://kccsasr.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://kccsasr.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://kccsasr.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://kccsasr.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://kccsasr.org/">
-      <s:element name="ReconciliationLedgerConfirmedUpdate">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="NotificationToLedgerId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ReconciliationLedgerConfirmedUpdateResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="ReconciliationLedgerConfirmedUpdateResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ReconciliationSelectAllLedgers">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToInstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ReconciliationSelectAllLedgersResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="ReconciliationSelectAllLedgersResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ReconciliationLedgersByInstId">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="LedgerId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToInstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToLedgerId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ReconciliationLedgersByInstIdResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="ReconciliationLedgersByInstIdResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="OpeningTrialDetailed">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ForInstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="AccountGroupId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="OpeningTrialDetailedResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="OpeningTrialDetailedResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="OpeningBalanceByAccountGroupId">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ForInstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="AccountGroupId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
-            <s:element minOccurs="1" maxOccurs="1" name="IsIncludeChildAccountGroup" type="s:boolean" />
-            <s:element minOccurs="0" maxOccurs="1" name="MyGuid" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="OpeningBalanceByAccountGroupIdResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="OpeningBalanceByAccountGroupIdResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_FetchMaxId">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="val" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_FetchMaxIdResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="KDL_FetchMaxIdResult" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_InsertContactInfo">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="dt">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_InsertContactInfoResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="KDL_InsertContactInfoResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_InsertMakeBill">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="dt">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_InsertMakeBillResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="KDL_InsertMakeBillResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_InsertBillTransactions">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="dt">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="KDL_InsertBillTransactionsResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="KDL_InsertBillTransactionsResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="BalanceTransferEndYear">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="BalanceTransferEndYearResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="BalanceTransferEndYearResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateLedgerVoucherBykeyword">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="0" maxOccurs="1" name="SearchValue" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="CreateLedgerVoucherBykeywordResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="CreateLedgerVoucherBykeywordResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="NegativeCashBalance">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="NegativeCashBalanceResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="NegativeCashBalanceResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="MoveTransactiontoOtherLedtger">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FromLedgerId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToLedgerId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="MoveTransactiontoOtherLedtgerResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="MoveTransactiontoOtherLedtgerResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="LedgerTableConrent">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="0" maxOccurs="1" name="MyTb">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="LedgerTableConrentResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="LedgerTableConrentResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="LedgerTableConrentLoadData">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="LedgerTableConrentLoadDataResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="LedgerTableConrentLoadDataResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TransactionPermissionSelect">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TransactionPermissionSelectResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="TransactionPermissionSelectResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TransactionPermissionUpdate">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstitutionId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="IsTransactionAddAllow" type="s:boolean" />
-            <s:element minOccurs="1" maxOccurs="1" name="IsTransactionEditAllow" type="s:boolean" />
-            <s:element minOccurs="1" maxOccurs="1" name="IsOpeningBalanceEditAllow" type="s:boolean" />
-            <s:element minOccurs="1" maxOccurs="1" name="IsNewLedgerAddAllow" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TransactionPermissionUpdateResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="TransactionPermissionUpdateResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="PrintTransactionVoucherSlip">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="TransactionMasterId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="PrintTransactionVoucherSlipResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="PrintTransactionVoucherSlipResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetLastDateForDataEntry">
-        <s:complexType />
-      </s:element>
-      <s:element name="GetLastDateForDataEntryResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="GetLastDateForDataEntryResult" type="s:dateTime" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="AllowTransactionInTheseDates">
-        <s:complexType />
-      </s:element>
-      <s:element name="AllowTransactionInTheseDatesResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="AllowTransactionInTheseDatesResult" type="tns:ArrayOfDateTime" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="ArrayOfDateTime">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="dateTime" type="s:dateTime" />
-        </s:sequence>
-      </s:complexType>
-      <s:element name="AccountLedgerIndex">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="Jsondata" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="AccountLedgerIndexResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="AccountLedgerIndexResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TransactionDetailsBackup">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="Jsondata" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="TransactionDetailsBackupResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="TransactionDetailsBackupResult" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="AccountGenreteLedgerTranscationListAllIndex">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
-            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
-            <s:element minOccurs="1" maxOccurs="1" name="LedgerId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="DepartmentId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="ForInstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="AccountGroupId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="AccountGenreteLedgerTranscationListAllIndexResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="AccountGenreteLedgerTranscationListAllIndexResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="MenuBind">
         <s:complexType>
           <s:sequence>
@@ -1166,124 +669,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="AccountLedgerForBudget">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="AccountLedgerForBudgetResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="AccountLedgerForBudgetResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ViewAccountLedgerForBudget">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="LedgerId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ViewAccountLedgerForBudgetResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="ViewAccountLedgerForBudgetResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="InsertOrUpdateAccountBudget">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="LedgerId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="BudgetAmount" type="s:decimal" />
-            <s:element minOccurs="1" maxOccurs="1" name="BudgetAmount_4Months" type="s:decimal" />
-            <s:element minOccurs="1" maxOccurs="1" name="InsertDate" type="s:dateTime" />
-            <s:element minOccurs="1" maxOccurs="1" name="Financial0BudgetAmount" type="s:decimal" />
-            <s:element minOccurs="1" maxOccurs="1" name="Financial1BudgetAmount" type="s:decimal" />
-            <s:element minOccurs="1" maxOccurs="1" name="Financial2BudgetAmount" type="s:decimal" />
-            <s:element minOccurs="1" maxOccurs="1" name="Financial3BudgetAmount" type="s:decimal" />
-            <s:element minOccurs="1" maxOccurs="1" name="Financial4BudgetAmount" type="s:decimal" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="InsertOrUpdateAccountBudgetResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="InsertOrUpdateAccountBudgetResult" type="s:boolean" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetBudgetDetailsForExpenditure">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetBudgetDetailsForExpenditureResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetBudgetDetailsForExpenditureResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetBudgetDetailsForIncome">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="GetBudgetDetailsForIncomeResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="GetBudgetDetailsForIncomeResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:element ref="s:schema" />
-                  <s:any />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="TransactionMasterAndDetailById">
         <s:complexType>
           <s:sequence>
@@ -1479,6 +864,7 @@
             <s:element minOccurs="1" maxOccurs="1" name="IsModify" type="s:boolean" />
             <s:element minOccurs="1" maxOccurs="1" name="IsCommonGroup" type="s:boolean" />
             <s:element minOccurs="1" maxOccurs="1" name="financialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsParty" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -1667,6 +1053,10 @@
             <s:element minOccurs="1" maxOccurs="1" name="IsModify" type="s:boolean" />
             <s:element minOccurs="1" maxOccurs="1" name="OldForInstId" type="s:int" />
             <s:element minOccurs="1" maxOccurs="1" name="financialYearId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="GSTNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsGSTSales" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="HSNCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsItem" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -2564,146 +1954,551 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="ReconciliationLedgerConfirmedUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NotificationToLedgerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReconciliationLedgerConfirmedUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReconciliationLedgerConfirmedUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReconciliationSelectAllLedgers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToInstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReconciliationSelectAllLedgersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReconciliationSelectAllLedgersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReconciliationLedgersByInstId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="LedgerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToInstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToLedgerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReconciliationLedgersByInstIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReconciliationLedgersByInstIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpeningTrialDetailed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ForInstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="AccountGroupId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpeningTrialDetailedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpeningTrialDetailedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpeningBalanceByAccountGroupId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ForInstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="AccountGroupId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsIncludeChildAccountGroup" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyGuid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpeningBalanceByAccountGroupIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpeningBalanceByAccountGroupIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_FetchMaxId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="val" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_FetchMaxIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KDL_FetchMaxIdResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_InsertContactInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_InsertContactInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KDL_InsertContactInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_InsertMakeBill">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_InsertMakeBillResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KDL_InsertMakeBillResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_InsertBillTransactions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KDL_InsertBillTransactionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KDL_InsertBillTransactionsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BalanceTransferEndYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BalanceTransferEndYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BalanceTransferEndYearResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateLedgerVoucherBykeyword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SearchValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateLedgerVoucherBykeywordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateLedgerVoucherBykeywordResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NegativeCashBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NegativeCashBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NegativeCashBalanceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveTransactiontoOtherLedtger">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromLedgerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToLedgerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveTransactiontoOtherLedtgerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MoveTransactiontoOtherLedtgerResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LedgerTableConrent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MyTb">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LedgerTableConrentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LedgerTableConrentResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LedgerTableConrentLoadData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LedgerTableConrentLoadDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LedgerTableConrentLoadDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionPermissionSelect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionPermissionSelectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionPermissionSelectResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionPermissionUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstitutionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsTransactionAddAllow" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsTransactionEditAllow" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOpeningBalanceEditAllow" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsNewLedgerAddAllow" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionPermissionUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionPermissionUpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintTransactionVoucherSlip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionMasterId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintTransactionVoucherSlipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrintTransactionVoucherSlipResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastDateForDataEntry">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLastDateForDataEntryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLastDateForDataEntryResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AllowTransactionInTheseDates">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllowTransactionInTheseDatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AllowTransactionInTheseDatesResult" type="tns:ArrayOfDateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDateTime">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="dateTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AccountLedgerIndex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Jsondata" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AccountLedgerIndexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountLedgerIndexResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionDetailsBackup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Jsondata" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionDetailsBackupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionDetailsBackupResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AccountGenreteLedgerTranscationListAllIndex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="LedgerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DepartmentId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ForInstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="AccountGroupId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AccountGenreteLedgerTranscationListAllIndexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountGenreteLedgerTranscationListAllIndexResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPartyLedgersForGST">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPartyLedgersForGSTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPartyLedgersForGSTResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemsByIncomeGSTSalesGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="InstId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinancialYearId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemsByIncomeGSTSalesGroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemsByIncomeGSTSalesGroupResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
-  <wsdl:message name="ReconciliationLedgerConfirmedUpdateSoapIn">
-    <wsdl:part name="parameters" element="tns:ReconciliationLedgerConfirmedUpdate" />
-  </wsdl:message>
-  <wsdl:message name="ReconciliationLedgerConfirmedUpdateSoapOut">
-    <wsdl:part name="parameters" element="tns:ReconciliationLedgerConfirmedUpdateResponse" />
-  </wsdl:message>
-  <wsdl:message name="ReconciliationSelectAllLedgersSoapIn">
-    <wsdl:part name="parameters" element="tns:ReconciliationSelectAllLedgers" />
-  </wsdl:message>
-  <wsdl:message name="ReconciliationSelectAllLedgersSoapOut">
-    <wsdl:part name="parameters" element="tns:ReconciliationSelectAllLedgersResponse" />
-  </wsdl:message>
-  <wsdl:message name="ReconciliationLedgersByInstIdSoapIn">
-    <wsdl:part name="parameters" element="tns:ReconciliationLedgersByInstId" />
-  </wsdl:message>
-  <wsdl:message name="ReconciliationLedgersByInstIdSoapOut">
-    <wsdl:part name="parameters" element="tns:ReconciliationLedgersByInstIdResponse" />
-  </wsdl:message>
-  <wsdl:message name="OpeningTrialDetailedSoapIn">
-    <wsdl:part name="parameters" element="tns:OpeningTrialDetailed" />
-  </wsdl:message>
-  <wsdl:message name="OpeningTrialDetailedSoapOut">
-    <wsdl:part name="parameters" element="tns:OpeningTrialDetailedResponse" />
-  </wsdl:message>
-  <wsdl:message name="OpeningBalanceByAccountGroupIdSoapIn">
-    <wsdl:part name="parameters" element="tns:OpeningBalanceByAccountGroupId" />
-  </wsdl:message>
-  <wsdl:message name="OpeningBalanceByAccountGroupIdSoapOut">
-    <wsdl:part name="parameters" element="tns:OpeningBalanceByAccountGroupIdResponse" />
-  </wsdl:message>
-  <wsdl:message name="KDL_FetchMaxIdSoapIn">
-    <wsdl:part name="parameters" element="tns:KDL_FetchMaxId" />
-  </wsdl:message>
-  <wsdl:message name="KDL_FetchMaxIdSoapOut">
-    <wsdl:part name="parameters" element="tns:KDL_FetchMaxIdResponse" />
-  </wsdl:message>
-  <wsdl:message name="KDL_InsertContactInfoSoapIn">
-    <wsdl:part name="parameters" element="tns:KDL_InsertContactInfo" />
-  </wsdl:message>
-  <wsdl:message name="KDL_InsertContactInfoSoapOut">
-    <wsdl:part name="parameters" element="tns:KDL_InsertContactInfoResponse" />
-  </wsdl:message>
-  <wsdl:message name="KDL_InsertMakeBillSoapIn">
-    <wsdl:part name="parameters" element="tns:KDL_InsertMakeBill" />
-  </wsdl:message>
-  <wsdl:message name="KDL_InsertMakeBillSoapOut">
-    <wsdl:part name="parameters" element="tns:KDL_InsertMakeBillResponse" />
-  </wsdl:message>
-  <wsdl:message name="KDL_InsertBillTransactionsSoapIn">
-    <wsdl:part name="parameters" element="tns:KDL_InsertBillTransactions" />
-  </wsdl:message>
-  <wsdl:message name="KDL_InsertBillTransactionsSoapOut">
-    <wsdl:part name="parameters" element="tns:KDL_InsertBillTransactionsResponse" />
-  </wsdl:message>
-  <wsdl:message name="BalanceTransferEndYearSoapIn">
-    <wsdl:part name="parameters" element="tns:BalanceTransferEndYear" />
-  </wsdl:message>
-  <wsdl:message name="BalanceTransferEndYearSoapOut">
-    <wsdl:part name="parameters" element="tns:BalanceTransferEndYearResponse" />
-  </wsdl:message>
-  <wsdl:message name="CreateLedgerVoucherBykeywordSoapIn">
-    <wsdl:part name="parameters" element="tns:CreateLedgerVoucherBykeyword" />
-  </wsdl:message>
-  <wsdl:message name="CreateLedgerVoucherBykeywordSoapOut">
-    <wsdl:part name="parameters" element="tns:CreateLedgerVoucherBykeywordResponse" />
-  </wsdl:message>
-  <wsdl:message name="NegativeCashBalanceSoapIn">
-    <wsdl:part name="parameters" element="tns:NegativeCashBalance" />
-  </wsdl:message>
-  <wsdl:message name="NegativeCashBalanceSoapOut">
-    <wsdl:part name="parameters" element="tns:NegativeCashBalanceResponse" />
-  </wsdl:message>
-  <wsdl:message name="MoveTransactiontoOtherLedtgerSoapIn">
-    <wsdl:part name="parameters" element="tns:MoveTransactiontoOtherLedtger" />
-  </wsdl:message>
-  <wsdl:message name="MoveTransactiontoOtherLedtgerSoapOut">
-    <wsdl:part name="parameters" element="tns:MoveTransactiontoOtherLedtgerResponse" />
-  </wsdl:message>
-  <wsdl:message name="LedgerTableConrentSoapIn">
-    <wsdl:part name="parameters" element="tns:LedgerTableConrent" />
-  </wsdl:message>
-  <wsdl:message name="LedgerTableConrentSoapOut">
-    <wsdl:part name="parameters" element="tns:LedgerTableConrentResponse" />
-  </wsdl:message>
-  <wsdl:message name="LedgerTableConrentLoadDataSoapIn">
-    <wsdl:part name="parameters" element="tns:LedgerTableConrentLoadData" />
-  </wsdl:message>
-  <wsdl:message name="LedgerTableConrentLoadDataSoapOut">
-    <wsdl:part name="parameters" element="tns:LedgerTableConrentLoadDataResponse" />
-  </wsdl:message>
-  <wsdl:message name="TransactionPermissionSelectSoapIn">
-    <wsdl:part name="parameters" element="tns:TransactionPermissionSelect" />
-  </wsdl:message>
-  <wsdl:message name="TransactionPermissionSelectSoapOut">
-    <wsdl:part name="parameters" element="tns:TransactionPermissionSelectResponse" />
-  </wsdl:message>
-  <wsdl:message name="TransactionPermissionUpdateSoapIn">
-    <wsdl:part name="parameters" element="tns:TransactionPermissionUpdate" />
-  </wsdl:message>
-  <wsdl:message name="TransactionPermissionUpdateSoapOut">
-    <wsdl:part name="parameters" element="tns:TransactionPermissionUpdateResponse" />
-  </wsdl:message>
-  <wsdl:message name="PrintTransactionVoucherSlipSoapIn">
-    <wsdl:part name="parameters" element="tns:PrintTransactionVoucherSlip" />
-  </wsdl:message>
-  <wsdl:message name="PrintTransactionVoucherSlipSoapOut">
-    <wsdl:part name="parameters" element="tns:PrintTransactionVoucherSlipResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetLastDateForDataEntrySoapIn">
-    <wsdl:part name="parameters" element="tns:GetLastDateForDataEntry" />
-  </wsdl:message>
-  <wsdl:message name="GetLastDateForDataEntrySoapOut">
-    <wsdl:part name="parameters" element="tns:GetLastDateForDataEntryResponse" />
-  </wsdl:message>
-  <wsdl:message name="AllowTransactionInTheseDatesSoapIn">
-    <wsdl:part name="parameters" element="tns:AllowTransactionInTheseDates" />
-  </wsdl:message>
-  <wsdl:message name="AllowTransactionInTheseDatesSoapOut">
-    <wsdl:part name="parameters" element="tns:AllowTransactionInTheseDatesResponse" />
-  </wsdl:message>
-  <wsdl:message name="AccountLedgerIndexSoapIn">
-    <wsdl:part name="parameters" element="tns:AccountLedgerIndex" />
-  </wsdl:message>
-  <wsdl:message name="AccountLedgerIndexSoapOut">
-    <wsdl:part name="parameters" element="tns:AccountLedgerIndexResponse" />
-  </wsdl:message>
-  <wsdl:message name="TransactionDetailsBackupSoapIn">
-    <wsdl:part name="parameters" element="tns:TransactionDetailsBackup" />
-  </wsdl:message>
-  <wsdl:message name="TransactionDetailsBackupSoapOut">
-    <wsdl:part name="parameters" element="tns:TransactionDetailsBackupResponse" />
-  </wsdl:message>
-  <wsdl:message name="AccountGenreteLedgerTranscationListAllIndexSoapIn">
-    <wsdl:part name="parameters" element="tns:AccountGenreteLedgerTranscationListAllIndex" />
-  </wsdl:message>
-  <wsdl:message name="AccountGenreteLedgerTranscationListAllIndexSoapOut">
-    <wsdl:part name="parameters" element="tns:AccountGenreteLedgerTranscationListAllIndexResponse" />
-  </wsdl:message>
   <wsdl:message name="MenuBindSoapIn">
     <wsdl:part name="parameters" element="tns:MenuBind" />
   </wsdl:message>
@@ -2859,36 +2654,6 @@
   </wsdl:message>
   <wsdl:message name="AccountLedgerForTransactionSoapOut">
     <wsdl:part name="parameters" element="tns:AccountLedgerForTransactionResponse" />
-  </wsdl:message>
-  <wsdl:message name="AccountLedgerForBudgetSoapIn">
-    <wsdl:part name="parameters" element="tns:AccountLedgerForBudget" />
-  </wsdl:message>
-  <wsdl:message name="AccountLedgerForBudgetSoapOut">
-    <wsdl:part name="parameters" element="tns:AccountLedgerForBudgetResponse" />
-  </wsdl:message>
-  <wsdl:message name="ViewAccountLedgerForBudgetSoapIn">
-    <wsdl:part name="parameters" element="tns:ViewAccountLedgerForBudget" />
-  </wsdl:message>
-  <wsdl:message name="ViewAccountLedgerForBudgetSoapOut">
-    <wsdl:part name="parameters" element="tns:ViewAccountLedgerForBudgetResponse" />
-  </wsdl:message>
-  <wsdl:message name="InsertOrUpdateAccountBudgetSoapIn">
-    <wsdl:part name="parameters" element="tns:InsertOrUpdateAccountBudget" />
-  </wsdl:message>
-  <wsdl:message name="InsertOrUpdateAccountBudgetSoapOut">
-    <wsdl:part name="parameters" element="tns:InsertOrUpdateAccountBudgetResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetBudgetDetailsForExpenditureSoapIn">
-    <wsdl:part name="parameters" element="tns:GetBudgetDetailsForExpenditure" />
-  </wsdl:message>
-  <wsdl:message name="GetBudgetDetailsForExpenditureSoapOut">
-    <wsdl:part name="parameters" element="tns:GetBudgetDetailsForExpenditureResponse" />
-  </wsdl:message>
-  <wsdl:message name="GetBudgetDetailsForIncomeSoapIn">
-    <wsdl:part name="parameters" element="tns:GetBudgetDetailsForIncome" />
-  </wsdl:message>
-  <wsdl:message name="GetBudgetDetailsForIncomeSoapOut">
-    <wsdl:part name="parameters" element="tns:GetBudgetDetailsForIncomeResponse" />
   </wsdl:message>
   <wsdl:message name="TransactionMasterAndDetailByIdSoapIn">
     <wsdl:part name="parameters" element="tns:TransactionMasterAndDetailById" />
@@ -3196,99 +2961,157 @@
   <wsdl:message name="ReconciliationLedgerConfirmedDeleteSoapOut">
     <wsdl:part name="parameters" element="tns:ReconciliationLedgerConfirmedDeleteResponse" />
   </wsdl:message>
+  <wsdl:message name="ReconciliationLedgerConfirmedUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:ReconciliationLedgerConfirmedUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ReconciliationLedgerConfirmedUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:ReconciliationLedgerConfirmedUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReconciliationSelectAllLedgersSoapIn">
+    <wsdl:part name="parameters" element="tns:ReconciliationSelectAllLedgers" />
+  </wsdl:message>
+  <wsdl:message name="ReconciliationSelectAllLedgersSoapOut">
+    <wsdl:part name="parameters" element="tns:ReconciliationSelectAllLedgersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReconciliationLedgersByInstIdSoapIn">
+    <wsdl:part name="parameters" element="tns:ReconciliationLedgersByInstId" />
+  </wsdl:message>
+  <wsdl:message name="ReconciliationLedgersByInstIdSoapOut">
+    <wsdl:part name="parameters" element="tns:ReconciliationLedgersByInstIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpeningTrialDetailedSoapIn">
+    <wsdl:part name="parameters" element="tns:OpeningTrialDetailed" />
+  </wsdl:message>
+  <wsdl:message name="OpeningTrialDetailedSoapOut">
+    <wsdl:part name="parameters" element="tns:OpeningTrialDetailedResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpeningBalanceByAccountGroupIdSoapIn">
+    <wsdl:part name="parameters" element="tns:OpeningBalanceByAccountGroupId" />
+  </wsdl:message>
+  <wsdl:message name="OpeningBalanceByAccountGroupIdSoapOut">
+    <wsdl:part name="parameters" element="tns:OpeningBalanceByAccountGroupIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="KDL_FetchMaxIdSoapIn">
+    <wsdl:part name="parameters" element="tns:KDL_FetchMaxId" />
+  </wsdl:message>
+  <wsdl:message name="KDL_FetchMaxIdSoapOut">
+    <wsdl:part name="parameters" element="tns:KDL_FetchMaxIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="KDL_InsertContactInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:KDL_InsertContactInfo" />
+  </wsdl:message>
+  <wsdl:message name="KDL_InsertContactInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:KDL_InsertContactInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="KDL_InsertMakeBillSoapIn">
+    <wsdl:part name="parameters" element="tns:KDL_InsertMakeBill" />
+  </wsdl:message>
+  <wsdl:message name="KDL_InsertMakeBillSoapOut">
+    <wsdl:part name="parameters" element="tns:KDL_InsertMakeBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="KDL_InsertBillTransactionsSoapIn">
+    <wsdl:part name="parameters" element="tns:KDL_InsertBillTransactions" />
+  </wsdl:message>
+  <wsdl:message name="KDL_InsertBillTransactionsSoapOut">
+    <wsdl:part name="parameters" element="tns:KDL_InsertBillTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BalanceTransferEndYearSoapIn">
+    <wsdl:part name="parameters" element="tns:BalanceTransferEndYear" />
+  </wsdl:message>
+  <wsdl:message name="BalanceTransferEndYearSoapOut">
+    <wsdl:part name="parameters" element="tns:BalanceTransferEndYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateLedgerVoucherBykeywordSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateLedgerVoucherBykeyword" />
+  </wsdl:message>
+  <wsdl:message name="CreateLedgerVoucherBykeywordSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateLedgerVoucherBykeywordResponse" />
+  </wsdl:message>
+  <wsdl:message name="NegativeCashBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:NegativeCashBalance" />
+  </wsdl:message>
+  <wsdl:message name="NegativeCashBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:NegativeCashBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="MoveTransactiontoOtherLedtgerSoapIn">
+    <wsdl:part name="parameters" element="tns:MoveTransactiontoOtherLedtger" />
+  </wsdl:message>
+  <wsdl:message name="MoveTransactiontoOtherLedtgerSoapOut">
+    <wsdl:part name="parameters" element="tns:MoveTransactiontoOtherLedtgerResponse" />
+  </wsdl:message>
+  <wsdl:message name="LedgerTableConrentSoapIn">
+    <wsdl:part name="parameters" element="tns:LedgerTableConrent" />
+  </wsdl:message>
+  <wsdl:message name="LedgerTableConrentSoapOut">
+    <wsdl:part name="parameters" element="tns:LedgerTableConrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="LedgerTableConrentLoadDataSoapIn">
+    <wsdl:part name="parameters" element="tns:LedgerTableConrentLoadData" />
+  </wsdl:message>
+  <wsdl:message name="LedgerTableConrentLoadDataSoapOut">
+    <wsdl:part name="parameters" element="tns:LedgerTableConrentLoadDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionPermissionSelectSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionPermissionSelect" />
+  </wsdl:message>
+  <wsdl:message name="TransactionPermissionSelectSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionPermissionSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionPermissionUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionPermissionUpdate" />
+  </wsdl:message>
+  <wsdl:message name="TransactionPermissionUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionPermissionUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrintTransactionVoucherSlipSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintTransactionVoucherSlip" />
+  </wsdl:message>
+  <wsdl:message name="PrintTransactionVoucherSlipSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintTransactionVoucherSlipResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastDateForDataEntrySoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastDateForDataEntry" />
+  </wsdl:message>
+  <wsdl:message name="GetLastDateForDataEntrySoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastDateForDataEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="AllowTransactionInTheseDatesSoapIn">
+    <wsdl:part name="parameters" element="tns:AllowTransactionInTheseDates" />
+  </wsdl:message>
+  <wsdl:message name="AllowTransactionInTheseDatesSoapOut">
+    <wsdl:part name="parameters" element="tns:AllowTransactionInTheseDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AccountLedgerIndexSoapIn">
+    <wsdl:part name="parameters" element="tns:AccountLedgerIndex" />
+  </wsdl:message>
+  <wsdl:message name="AccountLedgerIndexSoapOut">
+    <wsdl:part name="parameters" element="tns:AccountLedgerIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionDetailsBackupSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionDetailsBackup" />
+  </wsdl:message>
+  <wsdl:message name="TransactionDetailsBackupSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionDetailsBackupResponse" />
+  </wsdl:message>
+  <wsdl:message name="AccountGenreteLedgerTranscationListAllIndexSoapIn">
+    <wsdl:part name="parameters" element="tns:AccountGenreteLedgerTranscationListAllIndex" />
+  </wsdl:message>
+  <wsdl:message name="AccountGenreteLedgerTranscationListAllIndexSoapOut">
+    <wsdl:part name="parameters" element="tns:AccountGenreteLedgerTranscationListAllIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPartyLedgersForGSTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPartyLedgersForGST" />
+  </wsdl:message>
+  <wsdl:message name="GetPartyLedgersForGSTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPartyLedgersForGSTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemsByIncomeGSTSalesGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemsByIncomeGSTSalesGroup" />
+  </wsdl:message>
+  <wsdl:message name="GetItemsByIncomeGSTSalesGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemsByIncomeGSTSalesGroupResponse" />
+  </wsdl:message>
   <wsdl:portType name="AccountsAppAPISoap">
-    <wsdl:operation name="ReconciliationLedgerConfirmedUpdate">
-      <wsdl:input message="tns:ReconciliationLedgerConfirmedUpdateSoapIn" />
-      <wsdl:output message="tns:ReconciliationLedgerConfirmedUpdateSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="ReconciliationSelectAllLedgers">
-      <wsdl:input message="tns:ReconciliationSelectAllLedgersSoapIn" />
-      <wsdl:output message="tns:ReconciliationSelectAllLedgersSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="ReconciliationLedgersByInstId">
-      <wsdl:input message="tns:ReconciliationLedgersByInstIdSoapIn" />
-      <wsdl:output message="tns:ReconciliationLedgersByInstIdSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="OpeningTrialDetailed">
-      <wsdl:input message="tns:OpeningTrialDetailedSoapIn" />
-      <wsdl:output message="tns:OpeningTrialDetailedSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="OpeningBalanceByAccountGroupId">
-      <wsdl:input message="tns:OpeningBalanceByAccountGroupIdSoapIn" />
-      <wsdl:output message="tns:OpeningBalanceByAccountGroupIdSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="KDL_FetchMaxId">
-      <wsdl:input message="tns:KDL_FetchMaxIdSoapIn" />
-      <wsdl:output message="tns:KDL_FetchMaxIdSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="KDL_InsertContactInfo">
-      <wsdl:input message="tns:KDL_InsertContactInfoSoapIn" />
-      <wsdl:output message="tns:KDL_InsertContactInfoSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="KDL_InsertMakeBill">
-      <wsdl:input message="tns:KDL_InsertMakeBillSoapIn" />
-      <wsdl:output message="tns:KDL_InsertMakeBillSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="KDL_InsertBillTransactions">
-      <wsdl:input message="tns:KDL_InsertBillTransactionsSoapIn" />
-      <wsdl:output message="tns:KDL_InsertBillTransactionsSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="BalanceTransferEndYear">
-      <wsdl:input message="tns:BalanceTransferEndYearSoapIn" />
-      <wsdl:output message="tns:BalanceTransferEndYearSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="CreateLedgerVoucherBykeyword">
-      <wsdl:input message="tns:CreateLedgerVoucherBykeywordSoapIn" />
-      <wsdl:output message="tns:CreateLedgerVoucherBykeywordSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="NegativeCashBalance">
-      <wsdl:input message="tns:NegativeCashBalanceSoapIn" />
-      <wsdl:output message="tns:NegativeCashBalanceSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="MoveTransactiontoOtherLedtger">
-      <wsdl:input message="tns:MoveTransactiontoOtherLedtgerSoapIn" />
-      <wsdl:output message="tns:MoveTransactiontoOtherLedtgerSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="LedgerTableConrent">
-      <wsdl:input message="tns:LedgerTableConrentSoapIn" />
-      <wsdl:output message="tns:LedgerTableConrentSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="LedgerTableConrentLoadData">
-      <wsdl:input message="tns:LedgerTableConrentLoadDataSoapIn" />
-      <wsdl:output message="tns:LedgerTableConrentLoadDataSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TransactionPermissionSelect">
-      <wsdl:input message="tns:TransactionPermissionSelectSoapIn" />
-      <wsdl:output message="tns:TransactionPermissionSelectSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TransactionPermissionUpdate">
-      <wsdl:input message="tns:TransactionPermissionUpdateSoapIn" />
-      <wsdl:output message="tns:TransactionPermissionUpdateSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="PrintTransactionVoucherSlip">
-      <wsdl:input message="tns:PrintTransactionVoucherSlipSoapIn" />
-      <wsdl:output message="tns:PrintTransactionVoucherSlipSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetLastDateForDataEntry">
-      <wsdl:input message="tns:GetLastDateForDataEntrySoapIn" />
-      <wsdl:output message="tns:GetLastDateForDataEntrySoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="AllowTransactionInTheseDates">
-      <wsdl:input message="tns:AllowTransactionInTheseDatesSoapIn" />
-      <wsdl:output message="tns:AllowTransactionInTheseDatesSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="AccountLedgerIndex">
-      <wsdl:input message="tns:AccountLedgerIndexSoapIn" />
-      <wsdl:output message="tns:AccountLedgerIndexSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="TransactionDetailsBackup">
-      <wsdl:input message="tns:TransactionDetailsBackupSoapIn" />
-      <wsdl:output message="tns:TransactionDetailsBackupSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="AccountGenreteLedgerTranscationListAllIndex">
-      <wsdl:input message="tns:AccountGenreteLedgerTranscationListAllIndexSoapIn" />
-      <wsdl:output message="tns:AccountGenreteLedgerTranscationListAllIndexSoapOut" />
-    </wsdl:operation>
     <wsdl:operation name="MenuBind">
       <wsdl:input message="tns:MenuBindSoapIn" />
       <wsdl:output message="tns:MenuBindSoapOut" />
@@ -3392,26 +3215,6 @@
     <wsdl:operation name="AccountLedgerForTransaction">
       <wsdl:input message="tns:AccountLedgerForTransactionSoapIn" />
       <wsdl:output message="tns:AccountLedgerForTransactionSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="AccountLedgerForBudget">
-      <wsdl:input message="tns:AccountLedgerForBudgetSoapIn" />
-      <wsdl:output message="tns:AccountLedgerForBudgetSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="ViewAccountLedgerForBudget">
-      <wsdl:input message="tns:ViewAccountLedgerForBudgetSoapIn" />
-      <wsdl:output message="tns:ViewAccountLedgerForBudgetSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="InsertOrUpdateAccountBudget">
-      <wsdl:input message="tns:InsertOrUpdateAccountBudgetSoapIn" />
-      <wsdl:output message="tns:InsertOrUpdateAccountBudgetSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetBudgetDetailsForExpenditure">
-      <wsdl:input message="tns:GetBudgetDetailsForExpenditureSoapIn" />
-      <wsdl:output message="tns:GetBudgetDetailsForExpenditureSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="GetBudgetDetailsForIncome">
-      <wsdl:input message="tns:GetBudgetDetailsForIncomeSoapIn" />
-      <wsdl:output message="tns:GetBudgetDetailsForIncomeSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="TransactionMasterAndDetailById">
       <wsdl:input message="tns:TransactionMasterAndDetailByIdSoapIn" />
@@ -3617,216 +3420,109 @@
       <wsdl:input message="tns:ReconciliationLedgerConfirmedDeleteSoapIn" />
       <wsdl:output message="tns:ReconciliationLedgerConfirmedDeleteSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="ReconciliationLedgerConfirmedUpdate">
+      <wsdl:input message="tns:ReconciliationLedgerConfirmedUpdateSoapIn" />
+      <wsdl:output message="tns:ReconciliationLedgerConfirmedUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReconciliationSelectAllLedgers">
+      <wsdl:input message="tns:ReconciliationSelectAllLedgersSoapIn" />
+      <wsdl:output message="tns:ReconciliationSelectAllLedgersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReconciliationLedgersByInstId">
+      <wsdl:input message="tns:ReconciliationLedgersByInstIdSoapIn" />
+      <wsdl:output message="tns:ReconciliationLedgersByInstIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpeningTrialDetailed">
+      <wsdl:input message="tns:OpeningTrialDetailedSoapIn" />
+      <wsdl:output message="tns:OpeningTrialDetailedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpeningBalanceByAccountGroupId">
+      <wsdl:input message="tns:OpeningBalanceByAccountGroupIdSoapIn" />
+      <wsdl:output message="tns:OpeningBalanceByAccountGroupIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KDL_FetchMaxId">
+      <wsdl:input message="tns:KDL_FetchMaxIdSoapIn" />
+      <wsdl:output message="tns:KDL_FetchMaxIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KDL_InsertContactInfo">
+      <wsdl:input message="tns:KDL_InsertContactInfoSoapIn" />
+      <wsdl:output message="tns:KDL_InsertContactInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KDL_InsertMakeBill">
+      <wsdl:input message="tns:KDL_InsertMakeBillSoapIn" />
+      <wsdl:output message="tns:KDL_InsertMakeBillSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KDL_InsertBillTransactions">
+      <wsdl:input message="tns:KDL_InsertBillTransactionsSoapIn" />
+      <wsdl:output message="tns:KDL_InsertBillTransactionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BalanceTransferEndYear">
+      <wsdl:input message="tns:BalanceTransferEndYearSoapIn" />
+      <wsdl:output message="tns:BalanceTransferEndYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLedgerVoucherBykeyword">
+      <wsdl:input message="tns:CreateLedgerVoucherBykeywordSoapIn" />
+      <wsdl:output message="tns:CreateLedgerVoucherBykeywordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NegativeCashBalance">
+      <wsdl:input message="tns:NegativeCashBalanceSoapIn" />
+      <wsdl:output message="tns:NegativeCashBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveTransactiontoOtherLedtger">
+      <wsdl:input message="tns:MoveTransactiontoOtherLedtgerSoapIn" />
+      <wsdl:output message="tns:MoveTransactiontoOtherLedtgerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LedgerTableConrent">
+      <wsdl:input message="tns:LedgerTableConrentSoapIn" />
+      <wsdl:output message="tns:LedgerTableConrentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LedgerTableConrentLoadData">
+      <wsdl:input message="tns:LedgerTableConrentLoadDataSoapIn" />
+      <wsdl:output message="tns:LedgerTableConrentLoadDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionPermissionSelect">
+      <wsdl:input message="tns:TransactionPermissionSelectSoapIn" />
+      <wsdl:output message="tns:TransactionPermissionSelectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionPermissionUpdate">
+      <wsdl:input message="tns:TransactionPermissionUpdateSoapIn" />
+      <wsdl:output message="tns:TransactionPermissionUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintTransactionVoucherSlip">
+      <wsdl:input message="tns:PrintTransactionVoucherSlipSoapIn" />
+      <wsdl:output message="tns:PrintTransactionVoucherSlipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastDateForDataEntry">
+      <wsdl:input message="tns:GetLastDateForDataEntrySoapIn" />
+      <wsdl:output message="tns:GetLastDateForDataEntrySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AllowTransactionInTheseDates">
+      <wsdl:input message="tns:AllowTransactionInTheseDatesSoapIn" />
+      <wsdl:output message="tns:AllowTransactionInTheseDatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AccountLedgerIndex">
+      <wsdl:input message="tns:AccountLedgerIndexSoapIn" />
+      <wsdl:output message="tns:AccountLedgerIndexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionDetailsBackup">
+      <wsdl:input message="tns:TransactionDetailsBackupSoapIn" />
+      <wsdl:output message="tns:TransactionDetailsBackupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AccountGenreteLedgerTranscationListAllIndex">
+      <wsdl:input message="tns:AccountGenreteLedgerTranscationListAllIndexSoapIn" />
+      <wsdl:output message="tns:AccountGenreteLedgerTranscationListAllIndexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartyLedgersForGST">
+      <wsdl:input message="tns:GetPartyLedgersForGSTSoapIn" />
+      <wsdl:output message="tns:GetPartyLedgersForGSTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemsByIncomeGSTSalesGroup">
+      <wsdl:input message="tns:GetItemsByIncomeGSTSalesGroupSoapIn" />
+      <wsdl:output message="tns:GetItemsByIncomeGSTSalesGroupSoapOut" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="AccountsAppAPISoap" type="tns:AccountsAppAPISoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="ReconciliationLedgerConfirmedUpdate">
-      <soap:operation soapAction="http://kccsasr.org/ReconciliationLedgerConfirmedUpdate" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ReconciliationSelectAllLedgers">
-      <soap:operation soapAction="http://kccsasr.org/ReconciliationSelectAllLedgers" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ReconciliationLedgersByInstId">
-      <soap:operation soapAction="http://kccsasr.org/ReconciliationLedgersByInstId" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="OpeningTrialDetailed">
-      <soap:operation soapAction="http://kccsasr.org/OpeningTrialDetailed" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="OpeningBalanceByAccountGroupId">
-      <soap:operation soapAction="http://kccsasr.org/OpeningBalanceByAccountGroupId" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="KDL_FetchMaxId">
-      <soap:operation soapAction="http://kccsasr.org/KDL_FetchMaxId" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="KDL_InsertContactInfo">
-      <soap:operation soapAction="http://kccsasr.org/KDL_InsertContactInfo" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="KDL_InsertMakeBill">
-      <soap:operation soapAction="http://kccsasr.org/KDL_InsertMakeBill" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="KDL_InsertBillTransactions">
-      <soap:operation soapAction="http://kccsasr.org/KDL_InsertBillTransactions" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="BalanceTransferEndYear">
-      <soap:operation soapAction="http://kccsasr.org/BalanceTransferEndYear" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="CreateLedgerVoucherBykeyword">
-      <soap:operation soapAction="http://kccsasr.org/CreateLedgerVoucherBykeyword" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="NegativeCashBalance">
-      <soap:operation soapAction="http://kccsasr.org/NegativeCashBalance" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="MoveTransactiontoOtherLedtger">
-      <soap:operation soapAction="http://kccsasr.org/MoveTransactiontoOtherLedtger" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="LedgerTableConrent">
-      <soap:operation soapAction="http://kccsasr.org/LedgerTableConrent" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="LedgerTableConrentLoadData">
-      <soap:operation soapAction="http://kccsasr.org/LedgerTableConrentLoadData" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TransactionPermissionSelect">
-      <soap:operation soapAction="http://kccsasr.org/TransactionPermissionSelect" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TransactionPermissionUpdate">
-      <soap:operation soapAction="http://kccsasr.org/TransactionPermissionUpdate" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="PrintTransactionVoucherSlip">
-      <soap:operation soapAction="http://kccsasr.org/PrintTransactionVoucherSlip" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetLastDateForDataEntry">
-      <soap:operation soapAction="http://kccsasr.org/GetLastDateForDataEntry" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AllowTransactionInTheseDates">
-      <soap:operation soapAction="http://kccsasr.org/AllowTransactionInTheseDates" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AccountLedgerIndex">
-      <soap:operation soapAction="http://kccsasr.org/AccountLedgerIndex" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="TransactionDetailsBackup">
-      <soap:operation soapAction="http://kccsasr.org/TransactionDetailsBackup" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AccountGenreteLedgerTranscationListAllIndex">
-      <soap:operation soapAction="http://kccsasr.org/AccountGenreteLedgerTranscationListAllIndex" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="MenuBind">
       <soap:operation soapAction="http://kccsasr.org/MenuBind" style="document" />
       <wsdl:input>
@@ -4054,51 +3750,6 @@
     </wsdl:operation>
     <wsdl:operation name="AccountLedgerForTransaction">
       <soap:operation soapAction="http://kccsasr.org/AccountLedgerForTransaction" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AccountLedgerForBudget">
-      <soap:operation soapAction="http://kccsasr.org/AccountLedgerForBudget" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ViewAccountLedgerForBudget">
-      <soap:operation soapAction="http://kccsasr.org/ViewAccountLedgerForBudget" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="InsertOrUpdateAccountBudget">
-      <soap:operation soapAction="http://kccsasr.org/InsertOrUpdateAccountBudget" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetBudgetDetailsForExpenditure">
-      <soap:operation soapAction="http://kccsasr.org/GetBudgetDetailsForExpenditure" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetBudgetDetailsForIncome">
-      <soap:operation soapAction="http://kccsasr.org/GetBudgetDetailsForIncome" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -4565,216 +4216,234 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-  </wsdl:binding>
-  <wsdl:binding name="AccountsAppAPISoap12" type="tns:AccountsAppAPISoap">
-    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="ReconciliationLedgerConfirmedUpdate">
-      <soap12:operation soapAction="http://kccsasr.org/ReconciliationLedgerConfirmedUpdate" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/ReconciliationLedgerConfirmedUpdate" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ReconciliationSelectAllLedgers">
-      <soap12:operation soapAction="http://kccsasr.org/ReconciliationSelectAllLedgers" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/ReconciliationSelectAllLedgers" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ReconciliationLedgersByInstId">
-      <soap12:operation soapAction="http://kccsasr.org/ReconciliationLedgersByInstId" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/ReconciliationLedgersByInstId" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="OpeningTrialDetailed">
-      <soap12:operation soapAction="http://kccsasr.org/OpeningTrialDetailed" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/OpeningTrialDetailed" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="OpeningBalanceByAccountGroupId">
-      <soap12:operation soapAction="http://kccsasr.org/OpeningBalanceByAccountGroupId" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/OpeningBalanceByAccountGroupId" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="KDL_FetchMaxId">
-      <soap12:operation soapAction="http://kccsasr.org/KDL_FetchMaxId" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/KDL_FetchMaxId" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="KDL_InsertContactInfo">
-      <soap12:operation soapAction="http://kccsasr.org/KDL_InsertContactInfo" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/KDL_InsertContactInfo" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="KDL_InsertMakeBill">
-      <soap12:operation soapAction="http://kccsasr.org/KDL_InsertMakeBill" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/KDL_InsertMakeBill" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="KDL_InsertBillTransactions">
-      <soap12:operation soapAction="http://kccsasr.org/KDL_InsertBillTransactions" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/KDL_InsertBillTransactions" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="BalanceTransferEndYear">
-      <soap12:operation soapAction="http://kccsasr.org/BalanceTransferEndYear" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/BalanceTransferEndYear" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="CreateLedgerVoucherBykeyword">
-      <soap12:operation soapAction="http://kccsasr.org/CreateLedgerVoucherBykeyword" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/CreateLedgerVoucherBykeyword" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="NegativeCashBalance">
-      <soap12:operation soapAction="http://kccsasr.org/NegativeCashBalance" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/NegativeCashBalance" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="MoveTransactiontoOtherLedtger">
-      <soap12:operation soapAction="http://kccsasr.org/MoveTransactiontoOtherLedtger" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/MoveTransactiontoOtherLedtger" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="LedgerTableConrent">
-      <soap12:operation soapAction="http://kccsasr.org/LedgerTableConrent" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/LedgerTableConrent" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="LedgerTableConrentLoadData">
-      <soap12:operation soapAction="http://kccsasr.org/LedgerTableConrentLoadData" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/LedgerTableConrentLoadData" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="TransactionPermissionSelect">
-      <soap12:operation soapAction="http://kccsasr.org/TransactionPermissionSelect" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/TransactionPermissionSelect" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="TransactionPermissionUpdate">
-      <soap12:operation soapAction="http://kccsasr.org/TransactionPermissionUpdate" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/TransactionPermissionUpdate" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="PrintTransactionVoucherSlip">
-      <soap12:operation soapAction="http://kccsasr.org/PrintTransactionVoucherSlip" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/PrintTransactionVoucherSlip" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="GetLastDateForDataEntry">
-      <soap12:operation soapAction="http://kccsasr.org/GetLastDateForDataEntry" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/GetLastDateForDataEntry" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AllowTransactionInTheseDates">
-      <soap12:operation soapAction="http://kccsasr.org/AllowTransactionInTheseDates" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/AllowTransactionInTheseDates" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AccountLedgerIndex">
-      <soap12:operation soapAction="http://kccsasr.org/AccountLedgerIndex" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/AccountLedgerIndex" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="TransactionDetailsBackup">
-      <soap12:operation soapAction="http://kccsasr.org/TransactionDetailsBackup" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/TransactionDetailsBackup" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="AccountGenreteLedgerTranscationListAllIndex">
-      <soap12:operation soapAction="http://kccsasr.org/AccountGenreteLedgerTranscationListAllIndex" style="document" />
+      <soap:operation soapAction="http://kccsasr.org/AccountGenreteLedgerTranscationListAllIndex" style="document" />
       <wsdl:input>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <soap12:body use="literal" />
+        <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetPartyLedgersForGST">
+      <soap:operation soapAction="http://kccsasr.org/GetPartyLedgersForGST" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemsByIncomeGSTSalesGroup">
+      <soap:operation soapAction="http://kccsasr.org/GetItemsByIncomeGSTSalesGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AccountsAppAPISoap12" type="tns:AccountsAppAPISoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="MenuBind">
       <soap12:operation soapAction="http://kccsasr.org/MenuBind" style="document" />
       <wsdl:input>
@@ -5002,51 +4671,6 @@
     </wsdl:operation>
     <wsdl:operation name="AccountLedgerForTransaction">
       <soap12:operation soapAction="http://kccsasr.org/AccountLedgerForTransaction" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AccountLedgerForBudget">
-      <soap12:operation soapAction="http://kccsasr.org/AccountLedgerForBudget" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ViewAccountLedgerForBudget">
-      <soap12:operation soapAction="http://kccsasr.org/ViewAccountLedgerForBudget" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="InsertOrUpdateAccountBudget">
-      <soap12:operation soapAction="http://kccsasr.org/InsertOrUpdateAccountBudget" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetBudgetDetailsForExpenditure">
-      <soap12:operation soapAction="http://kccsasr.org/GetBudgetDetailsForExpenditure" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetBudgetDetailsForIncome">
-      <soap12:operation soapAction="http://kccsasr.org/GetBudgetDetailsForIncome" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -5513,13 +5137,238 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="ReconciliationLedgerConfirmedUpdate">
+      <soap12:operation soapAction="http://kccsasr.org/ReconciliationLedgerConfirmedUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReconciliationSelectAllLedgers">
+      <soap12:operation soapAction="http://kccsasr.org/ReconciliationSelectAllLedgers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReconciliationLedgersByInstId">
+      <soap12:operation soapAction="http://kccsasr.org/ReconciliationLedgersByInstId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpeningTrialDetailed">
+      <soap12:operation soapAction="http://kccsasr.org/OpeningTrialDetailed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpeningBalanceByAccountGroupId">
+      <soap12:operation soapAction="http://kccsasr.org/OpeningBalanceByAccountGroupId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KDL_FetchMaxId">
+      <soap12:operation soapAction="http://kccsasr.org/KDL_FetchMaxId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KDL_InsertContactInfo">
+      <soap12:operation soapAction="http://kccsasr.org/KDL_InsertContactInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KDL_InsertMakeBill">
+      <soap12:operation soapAction="http://kccsasr.org/KDL_InsertMakeBill" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KDL_InsertBillTransactions">
+      <soap12:operation soapAction="http://kccsasr.org/KDL_InsertBillTransactions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BalanceTransferEndYear">
+      <soap12:operation soapAction="http://kccsasr.org/BalanceTransferEndYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLedgerVoucherBykeyword">
+      <soap12:operation soapAction="http://kccsasr.org/CreateLedgerVoucherBykeyword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NegativeCashBalance">
+      <soap12:operation soapAction="http://kccsasr.org/NegativeCashBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveTransactiontoOtherLedtger">
+      <soap12:operation soapAction="http://kccsasr.org/MoveTransactiontoOtherLedtger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LedgerTableConrent">
+      <soap12:operation soapAction="http://kccsasr.org/LedgerTableConrent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LedgerTableConrentLoadData">
+      <soap12:operation soapAction="http://kccsasr.org/LedgerTableConrentLoadData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionPermissionSelect">
+      <soap12:operation soapAction="http://kccsasr.org/TransactionPermissionSelect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionPermissionUpdate">
+      <soap12:operation soapAction="http://kccsasr.org/TransactionPermissionUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintTransactionVoucherSlip">
+      <soap12:operation soapAction="http://kccsasr.org/PrintTransactionVoucherSlip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastDateForDataEntry">
+      <soap12:operation soapAction="http://kccsasr.org/GetLastDateForDataEntry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllowTransactionInTheseDates">
+      <soap12:operation soapAction="http://kccsasr.org/AllowTransactionInTheseDates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountLedgerIndex">
+      <soap12:operation soapAction="http://kccsasr.org/AccountLedgerIndex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionDetailsBackup">
+      <soap12:operation soapAction="http://kccsasr.org/TransactionDetailsBackup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountGenreteLedgerTranscationListAllIndex">
+      <soap12:operation soapAction="http://kccsasr.org/AccountGenreteLedgerTranscationListAllIndex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartyLedgersForGST">
+      <soap12:operation soapAction="http://kccsasr.org/GetPartyLedgersForGST" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemsByIncomeGSTSalesGroup">
+      <soap12:operation soapAction="http://kccsasr.org/GetItemsByIncomeGSTSalesGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="AccountsAppAPI">
     <wsdl:port name="AccountsAppAPISoap" binding="tns:AccountsAppAPISoap">
-      <soap:address location="http://localhost:63189/WebAPI/AccountsAppAPI.asmx" />
+      <soap:address location="http://dev.kccsaccounts.com/webapi/AccountsAppAPI.asmx" />
     </wsdl:port>
     <wsdl:port name="AccountsAppAPISoap12" binding="tns:AccountsAppAPISoap12">
-      <soap12:address location="http://localhost:63189/WebAPI/AccountsAppAPI.asmx" />
+      <soap12:address location="http://dev.kccsaccounts.com/webapi/AccountsAppAPI.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
